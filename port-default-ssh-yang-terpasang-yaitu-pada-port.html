@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Port Default Ssh Yang Terpasang Yaitu Pada Port - QnA</title>
+    <meta name="description" content="Port Default Ssh Yang Terpasang Yaitu Pada Port, Tutorial Membloki SSH, FTP dan Telnet pada port default, , , , Albert Kusuma Wijaya 1822250075, 2022-01-15T10:43:54.000000Z, 20, How to Change Default SSH Port in Linux [Safely], linuxhandbook.com, 1014 x 676, png, , 20, port-default-ssh-yang-terpasang-yaitu-pada-port, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Port Default Ssh Yang Terpasang Yaitu Pada Port - QnA" />
+    <meta property="og:description" content="Port Default Ssh Yang Terpasang Yaitu Pada Port, Tutorial Membloki SSH, FTP dan Telnet pada port default, , , , Albert Kusuma Wijaya 1822250075, 2022-01-15T10:43:54.000000Z, 20, How to Change Default SSH Port in Linux [Safely], linuxhandbook.com, 1014 x 676, png, , 20, port-default-ssh-yang-terpasang-yaitu-pada-port, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Port Default Ssh Yang Terpasang Yaitu Pada Port - QnA" />
+    <meta name="twitter:description" content="Port Default Ssh Yang Terpasang Yaitu Pada Port, Tutorial Membloki SSH, FTP dan Telnet pada port default, , , , Albert Kusuma Wijaya 1822250075, 2022-01-15T10:43:54.000000Z, 20, How to Change Default SSH Port in Linux [Safely], linuxhandbook.com, 1014 x 676, png, , 20, port-default-ssh-yang-terpasang-yaitu-pada-port, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://variableph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://variableph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://variableph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://variableph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://variableph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://variableph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Port Default Ssh Yang Terpasang Yaitu Pada Port</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Almasqonita05</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Port+Default+Ssh+Yang+Terpasang+Yaitu+Pada+Port" alt="Port Default Ssh Yang Terpasang Yaitu Pada Port">
+                    </div>
+                    <p></p>
+                    <p>port default ssh yang terpasang yaitu pada port</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#port-default-ssh-yang-terpasang-yaitu-pada-port">1.
+                                            port default ssh yang terpasang yaitu pada port</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#secara-umum-secure-shell-ssh-akan-berjalan-pada-port-default-yaitu-port">2.
+                                            secara umum secure Shell (ssh) akan berjalan pada port default yaitu port?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-merubah-port-default-ssh-menjadi-1003">3.
+                                            cara merubah port default SSH menjadi 1003</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#port-default-untuk-menjalankan-webmin-pada-internet-browser-adalah">4.
+                                            port default untuk menjalankan webmin pada internet browser adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jumlah-port-yang-ada-pada-switch-260-24tt-adalah%e2%80%a6a-22-port-fastethernet-dan-2-port-gigabit-ethernetb-23-port-fastethernet-dan-1-port-gigabit-ethernetc-24-port-fastethernet-dan-2-port-gigabit-e">5.
+                                            Jumlah port yang ada pada Switch 260-24TT adalah…A.22 port fastEthernet dan 2 port Gigabit Ethernetb.23 port fastEthernet dan 1 port Gigabit EthernetC.24 port fastEthernet dan 2 port Gigabit EthernetD.25 port fastEthernet dan 1 port Gigabit EthernetE.20 port fastEthernet dan 4 port Gigabit Ethernet​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#11-port-komunikasi-protocol-transfer-file-adalah-a-port-20-b-port-21-c-port-30-d-port-25-e-port-110">6.
+                                            11. port komunikasi protocol transfer file adalah : a. port 20 b. port 21 c. port 30 d. port 25 e. port 110</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#port-protocol-telnet-dan-ssh-adalah">7.
+                                            port protocol telnet dan ssh adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mouse-usb-dipasang-pada-port">8.
+                                            mouse usb dipasang pada port</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-no-pin-vccground-port-aport-bport-cport-d%e2%80%8b">9.
+                                            sebutkan no pin vccground port Aport Bport cport d​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kegunan-port-80-port-25-port-22-adalah">10.
+                                            kegunan port 80, port 25, port 22 adalah...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#langkah-langkah-merubah-port-default-ssh-menjadi-1003">11.
+                                            Langkah langkah merubah port default ssh menjadi 1003</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#monitor-dihubungkan-ke-cpu-harus-lewat-port-a-vga-portb-serial-portc-paralel-portd-lan-port">12.
+                                            Monitor dihubungkan ke CPU harus lewat port...A.VGA portB.Serial PortC.Paralel PortD.LAN port</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#port-default-pada-aplikasi-seperti-apache2-adalah">13.
+                                            port default pada aplikasi seperti apache2 adalah ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#vlan-yang-sudah-ada-sejak-pertama-kali-switch-dihidupkan-sebelum-di-konfigurasi-semua-port-yang-ada-pada-switch-akan-tergabung-ke-dalam-default-vlan-dan-dapat-terhubung-pada-masing-masing-port-pada">14.
+                                            vlan yang sudah ada sejak pertama kali switch dihidupkan, sebelum di konfigurasi semua port yang ada pada switch akan tergabung ke dalam default VLAN dan dapat terhubung pada masing-masing port. Pada Cisco, default VLAN adalah VLAN1,Pernyataan tersebut merupakan pengertian..
+a. Default VLAN
+b. Data VLAN
+c. Voice BULAN
+d. Management VLAN
+e. Management VLAN</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#35-port-komunikasi-default-beberapa-proxy-server-biasanya-adalah-a-port-200-b-port-3128-c-port-10000-d-port-253-e-port-110">15.
+                                            35. port komunikasi default beberapa proxy server biasanya adalah : a. port 200 b. port 3128 c. port 10000 d. port 253 e. port 110</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-dibawah-ini-perangkat-port-fisik-komputer-yang-benar-adalah-a-port-atab-port-processorc-port-satad-port-usb%e2%80%8b">16.
+                                            1.Dibawah Ini perangkat port fisik komputer yang benar adalah? a. Port ATAb. Port processorc. Port satad. Port USB​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#port-computer-yang-berfungsi-untuk-menghubungkan-antara-computer-dengan-monitor-di-sebut-%e2%80%a6port-parallelport-serialport-vgaport-usbport-rj-45bantu-aku-ya-kakak%e2%80%8b">17.
+                                            Port computer yang berfungsi untuk menghubungkan antara computer dengan monitor di sebut …Port parallelPort serialPort VGAPort USBPort RJ 45bantu aku ya kakak​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dibawah-ini-bukan-termasuk-port-pada-komputer-adalaha-port-usbb-port-serialc-port-lan-d-port-power%e2%80%8b">18.
+                                            dibawah ini bukan termasuk port pada komputer adalaha. port USBb. port Serialc. port LAN d. port power​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mouse-usb-biasa-dipasang-pada-port">19.
+                                            mouse USB biasa dipasang pada port</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-cara-merubah-port-default-ssh-menjadi-5758bantu-jawab-poin-nya-banyak-lohh%e2%80%8b">20.
+                                            jelaskan cara merubah port default ssh menjadi 5758bantu jawab poin nya banyak lohh​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berapakah-port-default-untuk-layanan-dns">21.
+                                            Berapakah port default untuk layanan DNS ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#default-port-yang-digunakan-oleh-web-server-adalah%e2%80%8b">22.
+                                            Default port yang digunakan oleh web server adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-yang-digunakan-untuk-mengubah-port-default-ssh-adalah">23.
+                                            Perintah yang digunakan untuk mengubah port default ssh adalah .....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#agar-proses-capture-kaset-tidak-memerlukan-driver-camcorder-maka-digunakan-port-%e2%80%a6a-usb-2-0-portb-iee-1934-portc-svga-portd-rca-porte-lan-card-port">24.
+                                               Agar proses capture kaset tidak memerlukan driver camcorder, maka digunakan port …A.   USB 2.0 PortB.   IEE 1934 PortC.   SVGA portD.   RCA PortE.   LAN Card Port</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-port-default-pada-ssh-adalah-%e2%80%a6a-22b-21c-23d-20e-803-port-telnet-adalah-%e2%80%a6a-22b-21c-23d-20e-80">25.
+                                            2. Port default pada SSH adalah …A. 22B. 21C. 23D. 20E. 803. Port telnet adalah …A. 22B. 21C. 23D. 20E. 80</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#protokol-jaringan-http-menggunakan-port-yang-digunakan-sebagai-default-saluran-data-yaitu-%e2%80%a6-a-port-110-b-port-80-c-port-443-d-port-25-e-port-21">26.
+                                            Protokol jaringan HTTP menggunakan port yang digunakan sebagai default saluran data yaitu … A Port 110 B Port 80 C Port 443 D Port 25 E Port 21</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#port-yang-berfungsi-untuk-menghubungkan-cpu-dengan-peralatan-audio-adalah-a-port-vga-b-port-usb-c-port-lan-d-port-sound-card%e2%80%8b">27.
+                                            Port yang berfungsi untuk menghubungkan CPU dengan peralatan audio adalah? a. Port VGA b. Port USB c. Port LAN d. Port sound card​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#modem-eksternal-dipasang-pada-cpu-melalui-port">28.
+                                            modem eksternal dipasang pada CPU melalui port</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#port-yang-sering-disebut-sebagai-command-port-adalah%e2%80%8b">29.
+                                            port yang sering disebut sebagai command port adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mouse-usb-dipasang-pada-port">30.
+                                            Mouse USB dipasang pada port</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="port-default-ssh-yang-terpasang-yaitu-pada-port">
+                            1. port default ssh yang terpasang yaitu pada port</h2><br />
+                        <p>port 22</p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="secara-umum-secure-shell-ssh-akan-berjalan-pada-port-default-yaitu-port">
+                            2. secara umum secure Shell (ssh) akan berjalan pada port default yaitu port?</h2><br />
+                        kalau setahu saya port nya adalah port 22<br />
+                                            <h2 class="ez-toc-section" id="cara-merubah-port-default-ssh-menjadi-1003">
+                            3. cara merubah port default SSH menjadi 1003</h2><br />
+                        login root ke terminal, ganti aja di /etc/sshd.conf<br />
+                                            <h2 class="ez-toc-section" id="port-default-untuk-menjalankan-webmin-pada-internet-browser-adalah">
+                            4. port default untuk menjalankan webmin pada internet browser adalah</h2><br />
+                        <strong>[jawaban]<br /></strong><strong><br />Mata Pelajaran: Teknologi Informatika<br /></strong><strong>Kata kunci: Port, Webmin<br /></strong><strong><br />• Jawaban pendek:<br /><br /></strong>Port default untuk menjalankan webmin pada internet browser adalah<br /><br /><strong>Port HTTP default Webmin adalah 10000</strong><br />
+                                            <h2 class="ez-toc-section" id="jumlah-port-yang-ada-pada-switch-260-24tt-adalah%e2%80%a6a-22-port-fastethernet-dan-2-port-gigabit-ethernetb-23-port-fastethernet-dan-1-port-gigabit-ethernetc-24-port-fastethernet-dan-2-port-gigabit-e">
+                            5. Jumlah port yang ada pada Switch 260-24TT adalah…A.22 port fastEthernet dan 2 port Gigabit Ethernetb.23 port fastEthernet dan 1 port Gigabit EthernetC.24 port fastEthernet dan 2 port Gigabit EthernetD.25 port fastEthernet dan 1 port Gigabit EthernetE.20 port fastEthernet dan 4 port Gigabit Ethernet​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>C. 24 port fastEthernet dan 2 port Gigabit Ethernet</strong></p><p>semoga bermanfaat</p><br />
+                                            <h2 class="ez-toc-section" id="11-port-komunikasi-protocol-transfer-file-adalah-a-port-20-b-port-21-c-port-30-d-port-25-e-port-110">
+                            6. 11. port komunikasi protocol transfer file adalah : a. port 20 b. port 21 c. port 30 d. port 25 e. port 110</h2><br />
+                         FTP bekerja di TCP port 21 <br />
+                                            <h2 class="ez-toc-section" id="port-protocol-telnet-dan-ssh-adalah">
+                            7. port protocol telnet dan ssh adalah</h2><br />
+                        telnet bekerja pada port 23 dan ssh pada port 22<br />fungsi keduanya sama untuk memonitoring device<br />
+                                            <h2 class="ez-toc-section" id="mouse-usb-dipasang-pada-port">
+                            8. mouse usb dipasang pada port</h2><br />
+                        dipasang di Port USB dekat dgn LAN On Board.port usb/bentuknya persegi panjang<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-no-pin-vccground-port-aport-bport-cport-d%e2%80%8b">
+                            9. sebutkan no pin vccground port Aport Bport cport d​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>vcc = positif</p><p>ground = netral</p><p>port = </p><br />
+                                            <h2 class="ez-toc-section" id="kegunan-port-80-port-25-port-22-adalah">
+                            10. kegunan port 80, port 25, port 22 adalah...</h2><br />
+                        Port 80, WWW atau HTTP port server web. Port yang paling umum digunakan di Internet.<br /><br />Port 22 , SSH (Secure Shell), Port ini ini adalah port standar untuk SSH, biasanya diubah oleh pengelola server untuk alasan keamanan.<br /><br />Port 25, SMTP, Simple Mail Transfer Protocol, atau port server mail, merupakan port standar yang Port digunakan dalam komunikasi pengiriman email antara sesama SMTP Server.<br /><br />Semoga Membantu<br />
+                                            <h2 class="ez-toc-section" id="langkah-langkah-merubah-port-default-ssh-menjadi-1003">
+                            11. Langkah langkah merubah port default ssh menjadi 1003</h2><br />
+                        <p>1. ketikkan " nano /etc/ssh/sshd_conf " (tanpa tanda petik)</p><p>2. ubah port default dari 22 menjadi 1003</p><br />
+                                            <h2 class="ez-toc-section" id="monitor-dihubungkan-ke-cpu-harus-lewat-port-a-vga-portb-serial-portc-paralel-portd-lan-port">
+                            12. Monitor dihubungkan ke CPU harus lewat port...A.VGA portB.Serial PortC.Paralel PortD.LAN port</h2><br />
+                        A. VGA Port<br />VGA Port, adalah sebuah antarmuka analog pada kartu grafis yang umumnya digunakan untuk menghubungkan antara komputer dengan monitor yang menggunakan plug 15-pin dan soket.<br /><br />
+                                            <h2 class="ez-toc-section" id="port-default-pada-aplikasi-seperti-apache2-adalah">
+                            13. port default pada aplikasi seperti apache2 adalah ?</h2><br />
+                        port default pada apache2 adalah 80port defaultnya adalah 80<br />
+                                            <h2 class="ez-toc-section" id="vlan-yang-sudah-ada-sejak-pertama-kali-switch-dihidupkan-sebelum-di-konfigurasi-semua-port-yang-ada-pada-switch-akan-tergabung-ke-dalam-default-vlan-dan-dapat-terhubung-pada-masing-masing-port-pada">
+                            14. vlan yang sudah ada sejak pertama kali switch dihidupkan, sebelum di konfigurasi semua port yang ada pada switch akan tergabung ke dalam default VLAN dan dapat terhubung pada masing-masing port. Pada Cisco, default VLAN adalah VLAN1,Pernyataan tersebut merupakan pengertian..
+a. Default VLAN
+b. Data VLAN
+c. Voice BULAN
+d. Management VLAN
+e. Management VLAN</h2><br />
+                        <p>Jawaban:Data vlan</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="35-port-komunikasi-default-beberapa-proxy-server-biasanya-adalah-a-port-200-b-port-3128-c-port-10000-d-port-253-e-port-110">
+                            15. 35. port komunikasi default beberapa proxy server biasanya adalah : a. port 200 b. port 3128 c. port 10000 d. port 253 e. port 110</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>b. port 3128</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-dibawah-ini-perangkat-port-fisik-komputer-yang-benar-adalah-a-port-atab-port-processorc-port-satad-port-usb%e2%80%8b">
+                            16. 1.Dibawah Ini perangkat port fisik komputer yang benar adalah? a. Port ATAb. Port processorc. Port satad. Port USB​</h2><br />
+                        <p><strong>D.Port USB</strong></p><p><strong>Maaf Kalau Salah Jawabanya</strong></p><br />
+                                            <h2 class="ez-toc-section" id="port-computer-yang-berfungsi-untuk-menghubungkan-antara-computer-dengan-monitor-di-sebut-%e2%80%a6port-parallelport-serialport-vgaport-usbport-rj-45bantu-aku-ya-kakak%e2%80%8b">
+                            17. Port computer yang berfungsi untuk menghubungkan antara computer dengan monitor di sebut …Port parallelPort serialPort VGAPort USBPort RJ 45bantu aku ya kakak​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>port serial</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="dibawah-ini-bukan-termasuk-port-pada-komputer-adalaha-port-usbb-port-serialc-port-lan-d-port-power%e2%80%8b">
+                            18. dibawah ini bukan termasuk port pada komputer adalaha. port USBb. port Serialc. port LAN d. port power​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. Port Serial </p><p></p><p>maaf kalo salah.</p><br />
+                                            <h2 class="ez-toc-section" id="mouse-usb-biasa-dipasang-pada-port">
+                            19. mouse USB biasa dipasang pada port</h2><br />
+                        dipasang di Port USB dkt dengan LAN On Board.di port usb/bentuknya persegi panjang<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-cara-merubah-port-default-ssh-menjadi-5758bantu-jawab-poin-nya-banyak-lohh%e2%80%8b">
+                            20. jelaskan cara merubah port default ssh menjadi 5758bantu jawab poin nya banyak lohh​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>nano  etc ssh sshd_config</p><p>lalu cari port 22, dan ganti menjadi 5758</p><p>tekan ctrl+x untuk menyimpan</p><p>etc init.d sshd restart</p><p></p><p> Penjelasan :</p><p>cari tulisan port 22 lalu ganti menjadi port 5758</p><br />
+                                            <h2 class="ez-toc-section" id="berapakah-port-default-untuk-layanan-dns">
+                            21. Berapakah port default untuk layanan DNS ?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kelas berapah sih kamu hehehe</p><br />
+                                            <h2 class="ez-toc-section" id="default-port-yang-digunakan-oleh-web-server-adalah%e2%80%8b">
+                            22. Default port yang digunakan oleh web server adalah​</h2><br />
+                        <p>Jawaban:</p><p>80</p><p>Penjelasan:</p><p>Itu default portnya</p><br />
+                                            <h2 class="ez-toc-section" id="perintah-yang-digunakan-untuk-mengubah-port-default-ssh-adalah">
+                            23. Perintah yang digunakan untuk mengubah port default ssh adalah .....</h2><br />
+                        <p></p><p>Mengubah Port SSH Menggunakan Perintah 'Sed'</p><br />
+                                            <h2 class="ez-toc-section" id="agar-proses-capture-kaset-tidak-memerlukan-driver-camcorder-maka-digunakan-port-%e2%80%a6a-usb-2-0-portb-iee-1934-portc-svga-portd-rca-porte-lan-card-port">
+                            24.    Agar proses capture kaset tidak memerlukan driver camcorder, maka digunakan port …A.   USB 2.0 PortB.   IEE 1934 PortC.   SVGA portD.   RCA PortE.   LAN Card Port</h2><br />
+                        <p>(B).IEE 1934 Port </p><p>maaf kalo salah ya</p><br />
+                                            <h2 class="ez-toc-section" id="2-port-default-pada-ssh-adalah-%e2%80%a6a-22b-21c-23d-20e-803-port-telnet-adalah-%e2%80%a6a-22b-21c-23d-20e-80">
+                            25. 2. Port default pada SSH adalah …A. 22B. 21C. 23D. 20E. 803. Port telnet adalah …A. 22B. 21C. 23D. 20E. 80</h2><br />
+                        2.Port default pada SSH adalah<br />   =22(A)<br /><br />3.Port telnet adalah<br />   =23(C)<br /><br />Maaf Kalau Salah<br />Senang Bisa Membantu :)<br />1. a, 22<br />2. c, 23<br />semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="protokol-jaringan-http-menggunakan-port-yang-digunakan-sebagai-default-saluran-data-yaitu-%e2%80%a6-a-port-110-b-port-80-c-port-443-d-port-25-e-port-21">
+                            26. Protokol jaringan HTTP menggunakan port yang digunakan sebagai default saluran data yaitu … A Port 110 B Port 80 C Port 443 D Port 25 E Port 21</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. Port 80</p><p><strong>Penjelasan:</strong></p><p>Protokol jaringan HTTP menggunakan port 80 sebagai port default,sedangkan Protokol jaringan HTTPS menggunakan port 443 sebagai port default.</p><p>Maaf kalo salah</p><p>Semoga Membantu :)</p><br />
+                                            <h2 class="ez-toc-section" id="port-yang-berfungsi-untuk-menghubungkan-cpu-dengan-peralatan-audio-adalah-a-port-vga-b-port-usb-c-port-lan-d-port-sound-card%e2%80%8b">
+                            27. Port yang berfungsi untuk menghubungkan CPU dengan peralatan audio adalah? a. Port VGA b. Port USB c. Port LAN d. Port sound card​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D.port Sound Card</p><p><strong>Penjelasan:</strong></p><p>Maaf Kalau slaah kk</p><p></p><p> </p><p>D. port sound card</p><p></p><p>port sound card (kartu suara) adalah ekpansi internal yang dapat menyediakan input output sinyal suara ke dan dari komputer dalam kontrol program komputer. portnya sendiri ada :</p><p>1.Digital out (warna putih atau kuning dengan kata "Digital out") digunakan untuk mengirim Dolby digital atau DTS surround sound sebagai aliran audio digital tersandi ke sistem home theater atau sistem speaker digital.</p><p>2.Sound in atau line in (warna biru dan simbol panah yang menunjuk gelombang). Koneksi ini digunakan untuk sumber audio eksternal seperti tape recorder, record player dan CD player.</p><p>3.Microphone atau Mic (warna merah muda dan simbol microphone). Koneksi ini digunakan untuk microphone atau headphone.</p><p>4.Sound out atau line out (warna hijau dan simbol panah yang menunjuk keluar gelombang). Merupakan koneksi suara utama untuk speaker atau headphone. Kartu suara dalam contoh ini juga mempunyai koneksi kedua (warna hitam) dan yang ketiga (warna oranye).</p><p>5.MIDI (warna emas dengan 15 lubang kecil). Koneksi ini digunakan untuk menghubungkan instrumen musikal dan juga dapat difungsikan sebagai port game untuk joystick atau gamepad.</p><br />
+                                            <h2 class="ez-toc-section" id="modem-eksternal-dipasang-pada-cpu-melalui-port">
+                            28. modem eksternal dipasang pada CPU melalui port</h2><br />
+                        bisa dariport USB bisa dari port ethernal cable<br />
+                                            <h2 class="ez-toc-section" id="port-yang-sering-disebut-sebagai-command-port-adalah%e2%80%8b">
+                            29. port yang sering disebut sebagai command port adalah​</h2><br />
+                        <p>Jawaban:port 21</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="mouse-usb-dipasang-pada-port">
+                            30. Mouse USB dipasang pada port</h2><br />
+                        Pelajaran: TIK <br />Kategori: Bagian-bagian perangkat komputer<br />Pembahasan: <br /><br />Mouse USB dipasang pada port USB (port yang berbentuk kotak). <br /><br />Semoga membantu! :)dipasang di port usb bukan dekat dengan Lan On Board<br /><br />semoga membantu<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/pAjIgjpLrxQ?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/what-is-the-writer-s-intention-of-writing-the-text.html">What Is The Writer s Intention Of Writing The Text</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/tari-nusantara-yang-pola-lantainya-segi-empat.html">Tari Nusantara Yang Pola Lantainya Segi Empat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/apa-yang-perlu-diperhatikan-dalam-menampilkan-tari-kreasi-tunggal-jelaskan.html">Apa Yang Perlu Diperhatikan Dalam Menampilkan Tari Kreasi Tunggal Jelaskan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/surat-undangan-rapat-semi-block-style.html">Surat Undangan Rapat Semi Block Style</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/apa-bentuk-pengaruh-hindu-budha-yang-masih-dilakukan-masyarakat-setempat.html">Apa Bentuk Pengaruh Hindu Budha Yang Masih Dilakukan Masyarakat Setempat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/cara-memainkan-tifa-dan-cara-menghasilkan-bunyinya.html">Cara Memainkan Tifa Dan Cara Menghasilkan Bunyinya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/apa-yang-dimaksud-dengan-strategi-winning-the-heart.html">Apa Yang Dimaksud Dengan Strategi Winning The Heart</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/pendirian-negara-pengusul-rumusan-dasar-negara.html">Pendirian Negara Pengusul Rumusan Dasar Negara</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/mengapa-menyanyikan-lagu-harus-dengan-irama-yang-tepat.html">Mengapa Menyanyikan Lagu Harus Dengan Irama Yang Tepat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/istilah-lain-dari-tingkat-kebugaran-jasmani-adalah.html">Istilah Lain Dari Tingkat Kebugaran Jasmani Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/bagaimana-peluang-usaha-kerajinan-dari-bahan-limbah.html">Bagaimana Peluang Usaha Kerajinan Dari Bahan Limbah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/nada-nada-yang-memiliki-interval-nada-1-1-2-adalah.html">Nada Nada Yang Memiliki Interval Nada 1 1 2 Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/gerak-berirama-diiringi-dengan.html">Gerak Berirama Diiringi Dengan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/nada-si-do-berjarak.html">Nada Si Do Berjarak</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/kerugian-tata-ruang-kantor-berhias-atau-berpanorama-yaitu.html">Kerugian Tata Ruang Kantor Berhias Atau Berpanorama Yaitu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/tujuan-dari-lompat-jauh-adalah.html">Tujuan Dari Lompat Jauh Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/apakah-yang-dimaksud-dengan-rasul-ulul-azmi.html">Apakah Yang Dimaksud Dengan Rasul Ulul Azmi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/hikmah-iman-kepada-rasul.html">Hikmah Iman Kepada Rasul</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/reklame-non-komersial-adalah.html">Reklame Non Komersial Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/nama-asli-sunan-drajat.html">Nama Asli Sunan Drajat</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://variableph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://variableph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

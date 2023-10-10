@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Definisikan Struktur Kontrol Perulangan Dalam Pemrograman Dan Sebutkan Contohnya - QnA</title>
+    <meta name="description" content="Definisikan Struktur Kontrol Perulangan Dalam Pemrograman Dan Sebutkan Contohnya, Struktur Kontrol Percabangan &amp;amp; Perulangan, , , , Agung Wiratmo, 2022-10-01T18:00:01.000000Z, 20, Definisikan Struktur kontrol perulangan dalam Pemrograman dan sebutkan, pskji.org, 595 x 842, png, , 20, definisikan-struktur-kontrol-perulangan-dalam-pemrograman-dan-sebutkan-contohnya, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Definisikan Struktur Kontrol Perulangan Dalam Pemrograman Dan Sebutkan Contohnya - QnA" />
+    <meta property="og:description" content="Definisikan Struktur Kontrol Perulangan Dalam Pemrograman Dan Sebutkan Contohnya, Struktur Kontrol Percabangan &amp;amp; Perulangan, , , , Agung Wiratmo, 2022-10-01T18:00:01.000000Z, 20, Definisikan Struktur kontrol perulangan dalam Pemrograman dan sebutkan, pskji.org, 595 x 842, png, , 20, definisikan-struktur-kontrol-perulangan-dalam-pemrograman-dan-sebutkan-contohnya, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Definisikan Struktur Kontrol Perulangan Dalam Pemrograman Dan Sebutkan Contohnya - QnA" />
+    <meta name="twitter:description" content="Definisikan Struktur Kontrol Perulangan Dalam Pemrograman Dan Sebutkan Contohnya, Struktur Kontrol Percabangan &amp;amp; Perulangan, , , , Agung Wiratmo, 2022-10-01T18:00:01.000000Z, 20, Definisikan Struktur kontrol perulangan dalam Pemrograman dan sebutkan, pskji.org, 595 x 842, png, , 20, definisikan-struktur-kontrol-perulangan-dalam-pemrograman-dan-sebutkan-contohnya, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://variableph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://variableph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://variableph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://variableph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://variableph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://variableph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Definisikan Struktur Kontrol Perulangan Dalam Pemrograman Dan Sebutkan Contohnya</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">andrea45137</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Definisikan+Struktur+Kontrol+Perulangan+Dalam+Pemrograman+Dan+Sebutkan+Contohnya" alt="Definisikan Struktur Kontrol Perulangan Dalam Pemrograman Dan Sebutkan Contohnya">
+                    </div>
+                    <p></p>
+                    <p>definisikan struktur kontrol perulangan dalam pemrograman Dan sebutkan contohnya​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#definisikan-struktur-kontrol-perulangan-dalam-pemrograman-dan-sebutkan-contohnya%e2%80%8b">1.
+                                            definisikan struktur kontrol perulangan dalam pemrograman Dan sebutkan contohnya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#definisikan-struktur-kontrol-perulangan-dalam-pemrograman">2.
+                                            Definisikan struktur kontrol perulangan dalam pemrograman</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-definisi-struktur-kontrol-percabangan-dalam-pemrograman%e2%80%8b">3.
+                                            jelaskan definisi struktur kontrol percabangan dalam pemrograman​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-dari-struktur-kontrol-percabangan-dengan-struktur-kontrol-perulangan-%e2%80%8b">4.
+                                            Jelaskan perbedaan dari Struktur Kontrol Percabangan dengan Struktur Kontrol Perulangan ?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#struktur-kontrol-perulangan%e2%80%8b">5.
+                                            struktur kontrol perulangan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-struktur-kontrol-percabang-dengan-case-of-pada-bahasa-pemrograman%e2%80%8b">6.
+                                            jelaskan struktur kontrol percabang dengan case...of pada bahasa pemrograman​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#termasuk-dalam-struktur-kontrol-pengulangan-adalah">7.
+                                            Termasuk dalam struktur kontrol pengulangan adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pemrograman-tidak-terstruktur-disebut">8.
+                                            pemrograman tidak terstruktur disebut?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#beberapa-variasi-yang-mungkin-pada-struktur-kontrol-perulangan">9.
+                                            Beberapa variasi yang mungkin pada struktur kontrol perulangan,</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bantu-kak-plis1-apa-yang-dimaksud-konsep-dasar-pemrogramandan-apa-konsep-dasarnya-serta-kembangkan2-apa-itu-pseude-code-dan-contohnya3-jelaskan-definisi-flowchart-dan-contoh-jenisnya4-pengertia">10.
+                                            bantu kak plis1. Apa yang dimaksud konsep dasar pemrogramandan apa konsep dasarnya serta kembangkan!2. Apa itu Pseude code dan contohnya!3. Jelaskan definisi flowchart dan contoh jenisnya!4. pengertian dari aray dua dimensi dan Arrayadalah..5. Definisi struktur kontrol percabangan dalampemrograman...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-struktur-perulangan-yang-terdapat-pada-bahasa-pemrogram-c">11.
+                                            sebutkan struktur perulangan yang terdapat pada bahasa pemrogram c++</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fungsi-struktur-kontrol-dalam-pemrograman%e2%80%8b">12.
+                                            sebutkan fungsi struktur kontrol dalam pemrograman​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#struktur-kontrol-keputusan-dalam-pemrograman%e2%80%8b">13.
+                                            struktur kontrol keputusan dalam pemrograman​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-sebutkan-secara-lengkap-pengertian-fungs-i-dan-sebutkan-tujuannyaadalah-2-definisikan-struktur-kontrol-perulangan-dalam-pemrograman-dansebutkan-contohnya-3-nama-lain-dari-flowchart4-elaska">14.
+                                            1. Sebutkan secara lengkap Pengertian fungs I dan sebutkan tujuannyaadalah ??2. Definisikan struktur kontrol perulangan dalam pemrograman dansebutkan contohnya ??3. Nama lain dari flowchart??4. elaskan definisi flowchart dan contoh jenisnya??5. pengertian dari array dua dimensi dan Array adalah??6. Apa itu Pseude code dan contohnya??7. Elemen terakhir dari array umumnya diisi dengan karakter??8. Yang termasuk bagian-bagian dalam definisi fungsi adalah??9. Uraikan yang anda ketahui tentang Insertion Sort??10. Gambarkan fungsi yang menggunakan parameter lebih dari satu??​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fungsi-struktur-kontrol-dalam-pemrograman%e2%80%8b">15.
+                                            ,Sebutkan fungsi Struktur kontrol dalam pemrograman!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#struktur-kontrol-perulangan-di-bagi-jadi">16.
+                                            struktur kontrol perulangan di bagi jadi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-definisi-pemrograman-berorientasi-objek%e2%80%8b">17.
+                                            Sebutkan definisi pemrograman berorientasi objek​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#seperangkat-aturan-dalam-bahasa-pemrograman-yang-mendefinisikan-kombinasi-simbol-yang-dianggap-sebagai-dokumen-terstruktur-dengan-benar-disebut">18.
+                                            seperangkat aturan dalam bahasa pemrograman yang mendefinisikan kombinasi simbol yang dianggap sebagai dokumen terstruktur dengan benar disebut. </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#definisi-dan-contoh-variabel-kontrol-dalam-penelitian">19.
+                                            Definisi dan contoh variabel kontrol dalam penelitian</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-2-buah-contoh-struktur-kontrol-perulangan%e2%80%8b">20.
+                                            Berikan 2 buah contoh struktur kontrol perulangan!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebut-dan-jelaskan-bagian-bagian-pada-struktur-kontrol-perulangan%e2%80%8b">21.
+                                            Sebut dan jelaskan bagian-bagian pada struktur kontrol perulangan!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menerapkan-struktur-kontrol-perulangan-dalam-bahasa-pemrograman">22.
+                                            Menerapkan struktur kontrol Perulangan dalam bahasa pemrograman</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pemrograman-tidak-terstruktur-disebut">23.
+                                            pemrograman tidak terstruktur disebut?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-uraikan-yang-kalian-ketahui-tentang-definisi-struktur-kontrol-percabangan2-jelaskan-fungsi-kontrol-perulangan-for%e2%80%8btlong-dijawab-cepat">24.
+                                            1.Uraikan yang kalian ketahui tentang definisi struktur kontrol percabangan2.jelaskan fungsi kontrol perulangan FOR​tlong dijawab cepat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tujuan-utama-dari-struktur-kontrol-keputusan-dalam-bahasa-pemrograman-adalah-untuk%e2%80%8b">25.
+                                            tujuan utama dari struktur kontrol keputusan dalam bahasa pemrograman adalah untuk​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tentang-struktur-kontrol-perulangan-bersarang">26.
+                                            Jelaskan tentang struktur kontrol perulangan bersarang!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pemrograman-tidak-terstruktur-disebut">27.
+                                            pemrograman tidak terstruktur disebut?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-uraikan-pengertian-bahasa-tingkat-tinggi2-jelaskan-yang-kalian-ketahui-tentang-fungsi-array3-terangkan-yang-dimaksud-dengan-konstanta4-uraikan-yang-kalian-ketahui-tentang-definisi-struktur-ko">28.
+                                            1. Uraikan pengertian bahasa tingkat tinggi!2. Jelaskan yang kalian ketahui tentang fungsi Array!3. Terangkan yang dimaksud dengan konstanta!4. Uraikan yang kalian ketahui tentang definisi struktur kontrol percabangan!5. Jelaskan fungsi struktur kontrol perulangan FOR!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-kegunaan-struktur-kontrol-dalam-bahasa-pemrograman-java%e2%80%8b">29.
+                                            apa kegunaan struktur kontrol dalam bahasa pemrograman java​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-suatu-perintah-yang-digunakan-untuk-mengatur-jalannya-suatu-program-disebut-dengan-istilah-struktur-a-kontrolb-keputusan-c-terdatad-pengulangane-percabangan-2-tujuan-utama-dari-struktur-kon">30.
+                                            1. suatu perintah yang digunakan untuk mengatur jalannya suatu program disebut dengan istilah struktur...a. kontrolb. keputusan c. terdatad. pengulangane. percabangan 2. Tujuan utama dari struktur kontrol keputusan dalam bahasa pemrograman adalah untuk...a. meneruskan b. menimbang c. mengingatd. memutuskan e. menafsirkan 3. Adanya perulangan pada blok-blok tertentu dapat menggunakan struktur...a. kontrolb. keputusan c. terdatad. pengulangan e. percabangan4. Titik pemberhentian dapat diberikan dengan secara...a. acak dan bebasb. bersyarat dan pencacah c. sesuai aturan pemrogramand. tipe data bentukan e. variabel yang sejenis ​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="definisikan-struktur-kontrol-perulangan-dalam-pemrograman-dan-sebutkan-contohnya%e2%80%8b">
+                            1. definisikan struktur kontrol perulangan dalam pemrograman Dan sebutkan contohnya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Struktur Kontrol Perulangan digunakan apabila ada suatu fungsi dari program akan dijalankan secara berulang-ulang. Contohnya apabila anda ingin menampilkan nama anda sebanyak 100 kali, tentunya akan sangat lama apabila anda menuliskan kode programnya secara manual.</p><p></p><p>Semoga membantu, maap kalau salah,,</p><p>Night:)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="definisikan-struktur-kontrol-perulangan-dalam-pemrograman">
+                            2. Definisikan struktur kontrol perulangan dalam pemrograman</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Struktur Kontrol Perulangan adalah statement dari Java di mana kita bisa mengeksekusi blok code berulang-ulang dalam kurun nilai tertentu. ada tiga macam jenis struktur pengulangan yaitu while, do-while, dan for-loops. ... Statement di dalam do-while loop akan dieksekusi beberapa kali selama kondisi bernilai true (benar</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-definisi-struktur-kontrol-percabangan-dalam-pemrograman%e2%80%8b">
+                            3. jelaskan definisi struktur kontrol percabangan dalam pemrograman​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Kontrol adalah ketika logaritma dari program tersebut mempunyai banyak kondisi tertentu. Dimana kondisi tersebut akan menentukan pemilihan keputusan yang selanjutnya akan menentukan juga seperti apa jalan operasi program tersebut. </p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-dari-struktur-kontrol-percabangan-dengan-struktur-kontrol-perulangan-%e2%80%8b">
+                            4. Jelaskan perbedaan dari Struktur Kontrol Percabangan dengan Struktur Kontrol Perulangan ?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p></p><p><strong>percaba</strong><strong>ngan</strong> adalah suatu keadaan dimana salah satu dari 2 atau lebih pernyataan dapat di eksekusi apabila salah satu dari 2 atau lebih kondisi memenuhi syarat untuk mengerjakan pernyataan tersebut.</p><p></p><p>Sedangkan <strong>perula</strong><strong>ngan</strong> adalah suatu keadaan dimana satu pernyataan dapat di eksekusi secara berulang-ulang selama kondisi masih memenuhi persyaratan. Jika kondisi tersebut sudah tidak memenuhi persyaratan, maka pernyataan akan tidak akan di eksekusi dan akan dilewati ke stetment selanjutnya.</p><p></p><p><strong>Penjelasan:</strong></p><p></p><p>Macam-Macam &amp; Bentuk Umum</p><p></p><p>Di dalam java, <strong>percaba</strong><strong>ngan</strong> yang dituliskan ada tiga yaitu:</p><p>- if</p><p>- if...else</p><p>- switch...case</p><p></p><p>Perintah if dapat dituliskan jika kondisi memenuhi syarat maka pernyataan akan dikerjakan dan jika tidak memenuhi syarat maka program akan di batalkan.</p><p>if (kondisi);</p><p>pernyataan;</p><p></p><p>Perintah if...else dapat dituliskan jika kondisi memenuhi salah satu dari banyak syarat maka, salah satu pernyataan akan dikerjakan dan jika tidak memenuhi syarat sama sekali maka, program akan dibatalkan. </p><p></p><p>Perintah switch..case dapat dituliskan jika kondisi memenuhi salah satu dari banyak syarat maka, salah satu pernyataan akan dikerjakan dan jika tidak memenuhi syarat sama sekali maka, program akan dibatalkan. Namun yang membedakan dengan if...else adalah pernyataan berdasarkan pemeriksaan nilai ekpresi.</p><p>switch (ekspresi) {</p><p>  case nilai_1:</p><p>    </p><p></p><p>Sedangkan Di dalam <strong>perula</strong><strong>ngan</strong> yang dituliskan juga ada tiga yaitu:</p><p>- while</p><p>- do...while</p><p>- for</p><p></p><p>Perintah while dapat dituliskan bila pernyataan dapat dikerjakan jika kondisi itu terpenuhi.</p><p>while (kondisi) {</p><p></p><p></p><p>Perintah do...while dapat dituliskan sepeti while, akan tetapi jika do...while pengecekan kondisi (syarat) perulangan dilakukan setelah eksekusi statement yang diulang. Sehingga statement dalam blok do-while paling sedikit dieksekusi satu kali.</p><p>do {</p><p> </p><p>Perintah for dapat dituliskan seperti for(kondisi;syarat;perubah) dimana:</p><p>Kondisi ini digunakan untuk menentukan nilai awal dan tiap kali berulang maka nilai ini akan berubah tergantung dari Perubah.</p><p>Syarat ini digunakan agar perulangan dapat dilakukan tergantung dari Kondisi.</p><p>Perubah ini digunakan untuk merubah nilai dari konsisi tersebut tiap kali berulang.</p><p>for(kondisi;syarat;perubah).</p><p></p><p>semoga membantu...</p><p></p><p>tetap semangat..</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="struktur-kontrol-perulangan%e2%80%8b">
+                            5. struktur kontrol perulangan​</h2><br />
+                        <p>Struktur kontrol pengulangan adalah berupa pernyataan dari Java yang mengijinkan kita untuk mengeksekusi blok code berulang-ulang sesuai dengan jumlah tertentu yang diinginkan. Ada tiga macam jenis dari struktur kontrol pengulangan yaitu while, dowhile, dan for-loops.</p><p></p><p><strong>Penjelasan:</strong></p><p><strong>semoga</strong><strong> </strong><strong>membantu</strong><strong> </strong><strong>ya</strong><strong> </strong></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-struktur-kontrol-percabang-dengan-case-of-pada-bahasa-pemrograman%e2%80%8b">
+                            6. jelaskan struktur kontrol percabang dengan case...of pada bahasa pemrograman​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kontrol adalah ketika logaritma dari program tersebut mempunyai banyak kondisi tertentu dimana kondisi tersebut akan menentukan pemilihan keputusan yang selanjutnya akan menentukan seperti apa jalan operasi program tersebut.</p><br />
+                                            <h2 class="ez-toc-section" id="termasuk-dalam-struktur-kontrol-pengulangan-adalah">
+                            7. Termasuk dalam struktur kontrol pengulangan adalah</h2><br />
+                        Perulangan For,<br />Perulangan While,<br />Perulangan Do-While,dan<br />Perulangan Goto<br /><br />
+                                            <h2 class="ez-toc-section" id="pemrograman-tidak-terstruktur-disebut">
+                            8. pemrograman tidak terstruktur disebut?</h2><br />
+                        jawabannya software<br />smga mmbantu<br />
+                                            <h2 class="ez-toc-section" id="beberapa-variasi-yang-mungkin-pada-struktur-kontrol-perulangan">
+                            9. Beberapa variasi yang mungkin pada struktur kontrol perulangan,</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Tidak hanya increment tetapi juga decrement</p><p>2. Penggunaan perintah break.</p><p>3. Penggunaan perintah continue.</p><p></p><p><strong>Penjelasan:</strong></p><p>karena variasi tersebut dapat dilakukan pada struktur kontrol perulangan/loop</p><br />
+                                            <h2 class="ez-toc-section" id="bantu-kak-plis1-apa-yang-dimaksud-konsep-dasar-pemrogramandan-apa-konsep-dasarnya-serta-kembangkan2-apa-itu-pseude-code-dan-contohnya3-jelaskan-definisi-flowchart-dan-contoh-jenisnya4-pengertia">
+                            10. bantu kak plis1. Apa yang dimaksud konsep dasar pemrogramandan apa konsep dasarnya serta kembangkan!2. Apa itu Pseude code dan contohnya!3. Jelaskan definisi flowchart dan contoh jenisnya!4. pengertian dari aray dua dimensi dan Arrayadalah..5. Definisi struktur kontrol percabangan dalampemrograman...​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Pemrograman diartikan proses, cara, perbuatan program.</p><p>Konsep dasarnya :: Konsep Dasar Pemrograman pada umumnya adalah IPO (Input Proses Output)</p><p>Pengembangannya menjadi :: Originating -&amp;gt; input -&amp;gt; proses -&amp;gt; Output -&amp;gt; Distribution</p><p>2. pseudecode adalah sebuah kode yang digunakan untuk menulis sebuah algoritma dengan cara yang bebas yang tidak terikat dengan bahasa pemrograman tertentu.</p><p>3. Flowchart adalah Bagan-bagan yang mempunyai arus yang menggambarkan langkah-langkah penyelesaian suatu masalah. ... Ada beberapa jenis flowchart diantaranya: Bagan alir sistem (systems flowchart). Bagan alir dokumen (document flowchart).</p><p>4. Array dua dimensi adalah sebutan untuk array yang penomoran index-nya menggunakan 2 buah angka. Analogi yang sering dipakai seperti titik koordinat dalam diagram kartesius.</p><p>5. Struktur Kontrol Pecabangan merupakan suatu algoritma program memiliki suatu kondisi yang dimana kondisi tersebutlah yang akan menentukan perintah-perintah yang akan dijalankan oleh suatu program.</p><p><strong>Penjelasan:</strong></p><p> btw ntr enak tau:v</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-struktur-perulangan-yang-terdapat-pada-bahasa-pemrogram-c">
+                            11. sebutkan struktur perulangan yang terdapat pada bahasa pemrogram c++</h2><br />
+                        1. Struktur Perulangan For<br />2. Struktur Perulangan While<br />3.  Struktur Perulangan Do-While<br /><br />Semoga membantu ^_^Mapel : TI<br />Kelas : XI<br />Kategori : Program<br /><br />Pembahasan :<br />Struktur perulangan yang terdapat pada bahasa pemrogram c++ antara lain :<br /><br />1. Perulangan For<br />2. Perulangan While<br />3. Perulangan Do-While<br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fungsi-struktur-kontrol-dalam-pemrograman%e2%80%8b">
+                            12. sebutkan fungsi struktur kontrol dalam pemrograman​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>untuk mengontrol aliran eksekusi kode di aplikasi anda jika kondisinya benar kode kondisional akan dieksekusi kan oleh ada</p><p><strong>Penjelasan:</strong></p><p> semoga membantu y</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="struktur-kontrol-keputusan-dalam-pemrograman%e2%80%8b">
+                            13. struktur kontrol keputusan dalam pemrograman​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Di dalam bahasa (kebanyakan bahasa pemrograman) terdapat 4 struktur kontrol perulangan, yakni if, if else, if else if, dan switch.</p><p></p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="1-sebutkan-secara-lengkap-pengertian-fungs-i-dan-sebutkan-tujuannyaadalah-2-definisikan-struktur-kontrol-perulangan-dalam-pemrograman-dansebutkan-contohnya-3-nama-lain-dari-flowchart4-elaska">
+                            14. 1. Sebutkan secara lengkap Pengertian fungs I dan sebutkan tujuannyaadalah ??2. Definisikan struktur kontrol perulangan dalam pemrograman dansebutkan contohnya ??3. Nama lain dari flowchart??4. elaskan definisi flowchart dan contoh jenisnya??5. pengertian dari array dua dimensi dan Array adalah??6. Apa itu Pseude code dan contohnya??7. Elemen terakhir dari array umumnya diisi dengan karakter??8. Yang termasuk bagian-bagian dalam definisi fungsi adalah??9. Uraikan yang anda ketahui tentang Insertion Sort??10. Gambarkan fungsi yang menggunakan parameter lebih dari satu??​</h2><br />
+                        <p><strong>1</strong>. Italic tujuan ny agar tulisan menjadi miring</p><p><strong>2</strong>. Struktur Kontrol Perulangan adalah statement dari Java di mana kita bisa mengeksekusi blok code berulang-ulang dalam kurun nilai tertentu. ada tiga macam jenis struktur pengulangan yaitu while, do-while, dan for-loops. ... Statement di dalam do-while loop akan dieksekusi beberapa kali selama kondisi bernilai true (benar</p><p><strong>3</strong>. Bagan Alir</p><p><strong>4</strong>. Suatu bagan dengan simbol-simbol tertentu yang menggambarkan urutan proses secara mendetail dan hubungan antara suatu proses (instruksi) dengan proses lainnya dalam suatu program</p><p><strong>5</strong>. Merupakan sebuah variabel yang menyimpan sekumpulan data yang memiliki tipe sama dan elemen yang akan diakses melalui 2 indeks atau subskrip yaitu indeks baris dan indeks kolom</p><p><strong>6</strong>.bagian dari algoritma yang bertujuan untuk memahami alur logika dari suatu program. Pada umumnya pseudocode tidak terlalu banyak digunakan, ia masuk ke dalam bahasa tiruan mirip dengan bahasa pemograman</p><p><strong>7</strong>. 0</p><p><strong>8</strong>. Body</p><p><strong>9</strong>. sebuah algoritma pengurutan yang membandingkan dua elemen data pertama, mengurutkannya, kemudian mengecek elemen data berikutnya satu persatu dan membandingkannya dengan elemen data yang telah diurutkan</p><p><strong>1</strong><strong>0</strong>. -</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fungsi-struktur-kontrol-dalam-pemrograman%e2%80%8b">
+                            15. ,Sebutkan fungsi Struktur kontrol dalam pemrograman!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Struktur kontrol yang merupakan pengaturan aliran program, berbentuk rangkaian perintah yang harus ditulis untuk memenuhi beberapa keadaaan, yaitu : Mengulang suatu perintah jika terpenuhi suatu kondisi (Iteration). Melanjutkan sebuah pernyataan bila kondisi terpenuhi (Sequence)</p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="struktur-kontrol-perulangan-di-bagi-jadi">
+                            16. struktur kontrol perulangan di bagi jadi</h2><br />
+                        Menjadi 2 :<br />Perulangan Menaik (Ascending)<br />Perulangan Menurun (Descending) <br /><br />Maaf kalau salah.<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-definisi-pemrograman-berorientasi-objek%e2%80%8b">
+                            17. Sebutkan definisi pemrograman berorientasi objek​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Pemrograman berorientasi objek (Object Oriented Programming atau disingkat OOP) adalah paradigma pemrograman yang berorientasikan kepada objek yang merupakan suatu metode dalam pembuatan program, dengan tujuan untuk menyelesaikan kompleksnya berbagai masalah program yang terus meningkat.</p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="seperangkat-aturan-dalam-bahasa-pemrograman-yang-mendefinisikan-kombinasi-simbol-yang-dianggap-sebagai-dokumen-terstruktur-dengan-benar-disebut">
+                            18. seperangkat aturan dalam bahasa pemrograman yang mendefinisikan kombinasi simbol yang dianggap sebagai dokumen terstruktur dengan benar disebut. </h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Syntax atau sintaks</p><p><strong>Penjelasan:</strong></p><p>Syntax adalah sebuah aturan yang digunakan untuk menulis kalimat agar mampu dimengerti oleh bahasa pemrograman.</p><br />
+                                            <h2 class="ez-toc-section" id="definisi-dan-contoh-variabel-kontrol-dalam-penelitian">
+                            19. Definisi dan contoh variabel kontrol dalam penelitian</h2><br />
+                        <p><strong>Variabel kontrol merupakan variabel yang dibuat sama dalam suatu penelitian. </strong>Biasanya berupa faktor lain diluar perlakuan yang dikenakan pada objek penelitian. Misalnya tentang pengaruh jenis pupuk pada tanaman maka kontrolnya adalah cahaya. Contoh lain dalam penelitian tersebut dapat berupa jumlah air, jenis tanah maupun jumlah pupuk.
+</p><p></p>Pembahasan
+<p><strong>Biologi merupakan ilmu pengetahuan alam (IPA) dan sering juga disebut ilmu eksakta. </strong>Dikatakan ilmu pengetahuan alam karena biologi adalah ilmu yang diperoleh dari fakta-fakta yang terjadi di alam (fenomena alam) dan dapat diuji coba di laboratorium.  </p><p>Biologi dikembangkan dengan metode ilmiah, karenanya kesimpulan yang ditarik harus sah, benar, dapat dibuktikan, tidak berdasar pada persepsi peneliti tetapi berdasarkan dari data-data dan fakta.
+</p><p><strong>Tahap-tahap metode ilmiah sebagai berikut:
+</strong></p><p><strong>1. Melakukan Observasi
+</strong></p><p>Observasi adalah pengamatan lingkungan sekitar untuk menentukan objek yang paling tepat untuk penelitian. Menurut pelaksanaannya observasi dapat dibedakan menjadi 2 buah bentuk sebagai berikut.</p><p><strong>2. Merumuskan masalah
+</strong></p><p>Merumuskan masalah merupakan suatu pertanyaan apa, mengapa, atau bagaimana tentang objek yang akan diteliti. Masalah yang akan diteliti harus jelas batasannya. Misalnya, <strong>"Bagaimana pengaruh jenis pupuk terhadap pertumbuhan tanaman cabai".
+</strong></p><p><strong>3. Mengumpulkan Data
+</strong></p><p>Setelah masalah dapat dirumuskan, maka dapat mulai mengumpulkan data atau keterangan. Pengumpulan data bisa dilakukan melalui pengamatan langsung (observasi) atau secara kepustakaan (membaca buku-buku hasil penelitian sebelumnya).
+</p><p><strong>4. Mengajukan hipotesis
+</strong></p><p>Hipotesis menunjukkan jawaban dari masalah yang sedang diteliti. Jadi hipotesis yaitu dugaan sementara yang didukung oleh pengetahuan dan teori relevan yang telah dimiliki. Hipotesis tersebut yang harus diuji kebenarannya melalui observasi atau eksperimen. Contoh hipotesis adalah <strong>"Ada pengaruh pemberian jenis pupuk terhadap pertumbuhan tanaman cabai".
+</strong></p><p><strong>5. Melakukan eksperimen
+</strong></p><p>Hipotesis harus diuji dengan mengumpulkan berbagai fakta-fakta dan data yang relevan untuk mengetahui apakah fakta-fakta dan data itu mendukung hipotesis yang telah diajukan atau tidak. Fakta dapat berupa observasi atau pengamatan, contohnya pengamatan secara langsung atau dengan mikroskop. Data dapat diperoleh melalui percobaan atau esperimen baik di lapangan maupun di laboratorium.
+</p><p>Variabel dalam penelitian antara lain variabel bebas, variabel terikat, variabel kontrol, dan variabel pengganggu (galat atau kesalahan).
+</p><strong>Variabel bebas</strong> atau variabel percobaan adalah variabel yang sengaja dibuat tidak sama untuk menunjukkan pengaruhnya terhadap variabel terikat. Contoh dalam penelitian tersebut adalah jenis pupuk.<strong>Variabel terikat </strong>merupakan variabel yang mengalami perubahan karena perlakuan variabel bebas. Contoh dalam penelitian adalah pertumbuhan tanaman.<strong>Variabel kontrol</strong> yaitu variabel yang dibuat sama dalam suatu penelitian, biasanya faktor lain diluar perlakuan yang dikenakan pada objek penelitian. Contoh dalam penelitian adalah jumlah air, jenis pupuk maupun cahaya.<strong>Variabel pengganggu</strong> merupakan variabel yang tidak diharapkan tetapi dapat mempengaruhi hasil percobaan.  Contoh dalam penelitian adalah ulat atau hama.<p><strong>6. Mengolah dan menganalisis data
+</strong></p><p>Data yang diperoleh dapat berupa data kuantitatif (berupa angka-angka, misalnya tinggi, berat, panjang, luas, kandungan zat, dan sebagainya) maupun data kualitatif (misalnya warna, tekstur, bentuk, dan sebagainya). Pengambilan data harus menggunakan alat ukur yang tepat dan standar sehingga diperoleh data kuantitatif yang akurat.
+</p><p><strong>7. Menarik kesimpulan
+</strong></p><p>Kesimpulan diambil dari data-data yang telah dianalisis dan diuji untuk menerima atau menolak hipotesis yang telah diajukan. Hipotesis diterima jika data-data yang dikumpulkan sesuai atau mendukung pernyataan dalam hipotesis. Sebaliknya apabila data tidak sesuai dengan eksperimen maka hipotesis ditolak. Contohnya adalah ada pengaruh jenis pupuk terhadap pertumbuhan tanaman.
+</p><p><strong>8. Mempublikasikan Hasil
+</strong></p><p>Mempublikasikan hasil yaitu memberikan informasi kepada orang lain hasil dari eksperimen yang telah dilakukan agar orang lain mengetahui atau dapat mengujicobakan kembali. Mempublikasikan hasil dapat dilakukan dengan menyusun laporan hasil penelitian atau laporan ilmiah, menerbitkan dalam jurnal penelitian, ataupun koran sekolah.</p><p></p>Pelajari lebih lanjut
+<p>1. cabang-cabang biologi: https://brainly.co.id/tugas/43785
+</p><p>2. manfaat biologi: https://brainly.co.id/tugas/306602
+</p><p>3. variabel penelitian: https://brainly.co.id/tugas/17552846
+</p><p></p>Detil jawaban
+<p><strong>Kelas</strong>: 10
+</p><p><strong>Mapel</strong>: Biologi
+</p><p><strong>Bab</strong>: Ruang Lingkup Biologi
+</p><p><strong>Kode</strong>: 10.4.1
+</p><p></p><p><strong>Kata kunci</strong>: metode ilmiah, langkah-langkah metode ilmiah, variabel bebas, variabel kontrol, variabel terikat</p><br />
+                                            <h2 class="ez-toc-section" id="berikan-2-buah-contoh-struktur-kontrol-perulangan%e2%80%8b">
+                            20. Berikan 2 buah contoh struktur kontrol perulangan!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p> 2 Responses to " Pembahasan dan Contoh Struktur Kontrol Perulangan pada Bahasa Pemrograman C++". Try Gusmawan ...</p><p>Tidak ada: buah ‎| Harus menyertakan: buah</p><p><strong>Penjelasan:</strong></p><p>dan maaf kalau salah</p><p><strong>Penjelasan:</strong></p><p>Struktur Kontrol Perulangan adalah statement dari Java di mana kita bisa mengeksekusi blok code berulang-ulang dalam kurun nilai tertentu. ada tiga macam jenis struktur pengulangan yaitu while, do-while, dan for-loops. ... Statement di dalam do-while loop akan dieksekusi beberapa kali selama kondisi bernilai true (benar</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebut-dan-jelaskan-bagian-bagian-pada-struktur-kontrol-perulangan%e2%80%8b">
+                            21. Sebut dan jelaskan bagian-bagian pada struktur kontrol perulangan!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Ada tiga macam jenis dari struktur kontrol pengulangan (loop) yaitu :</strong></p><p><strong>1.     While</strong></p><p><strong>2.     Do-while</strong></p><p><strong>3.     For </strong><strong>loops</strong></p><p></p><p><strong>1.</strong><strong>)</strong><strong> </strong><strong>While</strong></p><p></p><p><strong>Pernyataan while loop adalah pernyataan atau blok pernyataan yang diulang-ulang sampai mencapai kondisi yang cocok. </strong></p><p></p><p><strong>2</strong><strong>.</strong><strong>)</strong><strong> </strong><strong>Do </strong><strong>While</strong></p><p></p><p><strong>Do-while loop mirip dengan while-loop. Pernyataan di dalam do-while loop akan dieksekusi beberapa kali selama kondisi bernilai benar(true). Perbedaan antara while dan do-while loop adalah dimana pernyataan di dalam do-while loop akan dieksekusi sedikitnya satu kali.</strong></p><p></p><p><strong>3</strong><strong>.</strong><strong>)</strong><strong>Perulangan For</strong></p><p></p><p><strong>Perulangan for menyediakan sarana mengulang kode dalam jumlah yang tertentu. Pengulangan ini terstruktur untuk mengulangi kode sampai tercapai batas tertentu. </strong></p><p></p><p></p><p><strong>#</strong><strong>S</strong><strong>E</strong><strong>M</strong><strong>O</strong><strong>G</strong><strong>A</strong><strong> </strong><strong>MEMBA</strong><strong>NTU</strong></p><p></p><p><strong>TRIM</strong><strong>AKASIH</strong><strong>^_^</strong></p><br />
+                                            <h2 class="ez-toc-section" id="menerapkan-struktur-kontrol-perulangan-dalam-bahasa-pemrograman">
+                            22. Menerapkan struktur kontrol Perulangan dalam bahasa pemrograman</h2><br />
+                        <p>Pada dasarnya perulangan pada pemrograman yang sama dengan perulangan bahasa pemrograman lainnya. Struktur kontrol perulangan yang dipakai memilki suatu fungsi dari program yang akan dijalankan secara berulang. Contohnya anda ingin membuat tampilan nama anda sebanyak 100 kali, tentu akan sangat lama jika anda menuliskan kode program secara dengan manual. Dengan struktur kontrol perulangan bisa menampilkan dengan nama sebanyak 100 kali hanya dengan beberapa baris program yang sederhana. Dalam bahasa pemrograman ada dikenal dengan macam-macam struktur kontrol perulangan.</p><br />
+                                            <h2 class="ez-toc-section" id="pemrograman-tidak-terstruktur-disebut">
+                            23. pemrograman tidak terstruktur disebut?</h2><br />
+                        bahasa pemrograman tingkat rendah?<br /><br />
+                                            <h2 class="ez-toc-section" id="1-uraikan-yang-kalian-ketahui-tentang-definisi-struktur-kontrol-percabangan2-jelaskan-fungsi-kontrol-perulangan-for%e2%80%8btlong-dijawab-cepat">
+                            24. 1.Uraikan yang kalian ketahui tentang definisi struktur kontrol percabangan2.jelaskan fungsi kontrol perulangan FOR​tlong dijawab cepat</h2><br />
+                        <p>• Struktur Kontrol Pecabangan merupakan suatu algoritma program memiliki suatu kondisi yang dimana kondisi tersebutlah yang akan menentukan perintah-perintah yang akan dijalankan oleh suatu program.</p><p></p><p>• Perulangan for yaitu struktur yang memilki kontrol perulangan yang menjalankan dengan satu atau lebih dari satu perintah dengan jumlah perulangan yang telah ditentukan di dalam proses inisialisasi kondisi.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tujuan-utama-dari-struktur-kontrol-keputusan-dalam-bahasa-pemrograman-adalah-untuk%e2%80%8b">
+                            25. tujuan utama dari struktur kontrol keputusan dalam bahasa pemrograman adalah untuk​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Struktur kontrol adalah blok pemrograman yang menganalisis variabel dan memilih arah yang akan didasarkan pada parameter yang diberikan. Oleh karena itu proses pengambilan keputusan dasar dalam komputasi, flow control menentukan bagaimana komputer akan merespon ketika diberikan kondisi dan parameter tertentu.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tentang-struktur-kontrol-perulangan-bersarang">
+                            26. Jelaskan tentang struktur kontrol perulangan bersarang!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Struktur kontrol perulangan bersarang merupakan struktur pengulangan yang terdiri dari perulangan dalam perulangan. Contohnya, kita dapat menggunakan struktur kontrol perulangan bersarang untuk melakukan operasi pada setiap elemen matriks. Struktur kontrol perulangan bersarang dapat dilakukan menggunakan beberapa cara, seperti :</p><p></p><p>1. Menggunakan pernyataan "for" bersarang: kita dapat menggunakan pernyataan "for" untuk membuat perulangan bersarang. Misalnya, jika kita ingin mencetak semua elemen dalam matriks 2D, kita dapat menggunakan dua pernyataan "for" bersarang, satu untuk baris dan satu lagi untuk kolom.</p><p></p>Contoh kode:<p></p><p></p><p>for(int i = 0; i &lt; baris; i++) {</p><p>    for(int j = 0; j &lt; kolom; j++) {</p><p>        cout &lt;&lt; matriks[i][j] &lt;&lt; " ";</p><p>    }</p><p>    cout &lt;&lt; endl;</p><p>}</p><p></p><p>2. Menggunakan pernyataan "while" bersarang: selain menggunakan pernyataan "for", kita juga dapat menggunakan pernyataan "while" untuk membuat perulangan bersarang. Contohnya, jika kita ingin menghitung jumlah elemen dalam setiap baris matriks, kita dapat menggunakan pernyataan "while" bersarang.</p><p></p>Contoh kode:<p></p><p>int i = 0;</p><p>while(i &lt; baris) {</p><p>    int j = 0;</p><p>    int jumlah = 0;</p><p>    while(j &lt; kolom) {</p><p>        jumlah += matriks[i][j];</p><p>        j++;</p><p>    }</p><p>    cout &lt;&lt; "Jumlah elemen baris " &lt;&lt; i &lt;&lt; " = " &lt;&lt; jumlah &lt;&lt; endl;</p><p>    i++;</p><p>}</p><p></p><p>3. Perulangan bersarang dapat membantu kita melakukan operasi pada setiap elemen dalam struktur data yang kompleks, seperti matriks atau array 2D. Namun, perlu diingat bahwa perulangan bersarang dapat menjadi sangat lambat jika digunakan pada struktur data yang sangat besar, karena setiap elemen akan diproses secara berulang-ulang. Oleh karena itu, kita perlu mempertimbangkan kecepatan dan efisiensi ketika menggunakan struktur kontrol perulangan bersarang.</p><br />
+                                            <h2 class="ez-toc-section" id="pemrograman-tidak-terstruktur-disebut">
+                            27. pemrograman tidak terstruktur disebut?</h2><br />
+                        <strong>pemograman terstuktur</strong> adalah pemograman yang programnya dapat dipahami oleh orang yang ingin mempelajari program yang dibuat oleh pembuat pemograman tersebut.<br />sedangkan <strong>pemogram tidak terstruktur</strong> adalah pemograman yang sudah disusun rapi agar program tersebut dapat di pelajari oleh seseorang yang ingin mempelajarinya.<br />
+                                            <h2 class="ez-toc-section" id="1-uraikan-pengertian-bahasa-tingkat-tinggi2-jelaskan-yang-kalian-ketahui-tentang-fungsi-array3-terangkan-yang-dimaksud-dengan-konstanta4-uraikan-yang-kalian-ketahui-tentang-definisi-struktur-ko">
+                            28. 1. Uraikan pengertian bahasa tingkat tinggi!2. Jelaskan yang kalian ketahui tentang fungsi Array!3. Terangkan yang dimaksud dengan konstanta!4. Uraikan yang kalian ketahui tentang definisi struktur kontrol percabangan!5. Jelaskan fungsi struktur kontrol perulangan FOR!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.Bahasa pemrograman tingkat tinggi adalah sebuah bahasa pemrograman yang jika dibandingkan dengan bahasa pemrograman tingkat rendah memiliki sifat lebih mudah digunakan, lebih portabel (mudah diadaptasikan) antar-platform, dan lebih abstrak.</p><p></p><p>2.Fungsi array adalah semacam variabel yang mempunyai index/key, karena terindex, maka mudah bagi kita untuk mengolah variabel yang bertipe array.</p><p></p><p>3.'Konstanta' adalah identifier yang terkait nilai tidak bisa biasanya diubah oleh program selama pelaksanaannya (meskipun dalam beberapa kasus ini dapat dielakkan, misalnya menggunakan self-modifying code).</p><p></p><p>4.Struktur Kontrol Pecabangan merupakan suatu algoritma program memiliki suatu kondisi yang dimana kondisi tersebutlah yang akan menentukan perintah-perintah yang akan dijalankan oleh suatu program.</p><p></p><p>5.struktur yg berfungsi untuk melakukan perulangan pada suatu block code. tujuan penggunaan struktur perulangan yaitu untuk memudahkan serta mempeecepat pekerjaan manusia. Tidak efisien apabila suatu proses yg berulang namun memiliki suatu pola dilakukan manusia secara berulang ulang</p><p></p><p></p><p><strong>Penjelasan:</strong></p><p>IT</p><br />
+                                            <h2 class="ez-toc-section" id="apa-kegunaan-struktur-kontrol-dalam-bahasa-pemrograman-java%e2%80%8b">
+                            29. apa kegunaan struktur kontrol dalam bahasa pemrograman java​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Struktur Kontrol pada pemrograman java bertujuan untuk menentukan apa yang akan di lakukan oleh program selanjut nya berdasarkan kondisi yang ada saat itu.</p><p><strong>Penjelasan:</strong></p><p><strong>semoga membantu</strong></p><p></p><p><strong>Jawaban:</strong></p><p>struktur kontrol pada pemrograman java bertujuan untuk menentukan apa yang akan dilakukan oleh program selanjutnya berdasarkan kondisi yang ada saat itu</p><p><strong>Penjelasan:</strong></p><p> semoga membantu,jadikan yang terbaik </p><br />
+                                            <h2 class="ez-toc-section" id="1-suatu-perintah-yang-digunakan-untuk-mengatur-jalannya-suatu-program-disebut-dengan-istilah-struktur-a-kontrolb-keputusan-c-terdatad-pengulangane-percabangan-2-tujuan-utama-dari-struktur-kon">
+                            30. 1. suatu perintah yang digunakan untuk mengatur jalannya suatu program disebut dengan istilah struktur...a. kontrolb. keputusan c. terdatad. pengulangane. percabangan 2. Tujuan utama dari struktur kontrol keputusan dalam bahasa pemrograman adalah untuk...a. meneruskan b. menimbang c. mengingatd. memutuskan e. menafsirkan 3. Adanya perulangan pada blok-blok tertentu dapat menggunakan struktur...a. kontrolb. keputusan c. terdatad. pengulangan e. percabangan4. Titik pemberhentian dapat diberikan dengan secara...a. acak dan bebasb. bersyarat dan pencacah c. sesuai aturan pemrogramand. tipe data bentukan e. variabel yang sejenis ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1) a. kontrol</p><p>2) d. memutuskan</p><p>3) e. cabang</p><p>4) c. sesuai aturan pemrograman </p><p><strong>Penjelasan:</strong></p><p>semuga membantu</p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/Hy3sZ4LLngU?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ujian_nasional</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/apa-yang-dimaksud-watak-tokoh-dongeng.html">Apa Yang Dimaksud Watak Tokoh Dongeng</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/headstand-dikenal-juga-dengan-nama.html">Headstand Dikenal Juga Dengan Nama</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/mengambil-3-kartu-ace-dari-4-kartu-ace.html">Mengambil 3 Kartu Ace Dari 4 Kartu Ace</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/berikut-pernyataan-yang-tidak-tepat-mengenai-kelurahan-glodok-adalah.html">Berikut Pernyataan Yang Tidak Tepat Mengenai Kelurahan Glodok Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/contoh-cerita-orientasi-komplikasi-resolusi-koda.html">Contoh Cerita Orientasi Komplikasi Resolusi Koda</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/jawaban-ipa-kelas-7-semester-2-halaman-144-145.html">Jawaban Ipa Kelas 7 Semester 2 Halaman 144 145</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/ringkasan-d-topeng-museum-angkut.html">Ringkasan D Topeng Museum Angkut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/tempat-terjadinya-pertukaran-oksigen-dan-karbon-dioksida-adalah.html">Tempat Terjadinya Pertukaran Oksigen Dan Karbon Dioksida Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/tinggi-rendahnya-bunyi-dalam-lagu-disebut.html">Tinggi Rendahnya Bunyi Dalam Lagu Disebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/kakawihan-nyaeta.html">Kakawihan Nyaeta</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/atom-c-kuartener-ditunjukkan-oleh-nomor.html">Atom C Kuartener Ditunjukkan Oleh Nomor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/pekerjaan-luqman-adalah.html">Pekerjaan Luqman Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/arti-dame-dame.html">Arti Dame Dame</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/titik-b-8-5-dicerminkan-terhadap-garis-y-2.html">Titik B 8 5 Dicerminkan Terhadap Garis Y 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/bilangan-kelipatan-5-yang-kurang-dari-25-adalah.html">Bilangan Kelipatan 5 Yang Kurang Dari 25 Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/rangkuman-materi-prakarya-kelas-9-semester-2.html">Rangkuman Materi Prakarya Kelas 9 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/langkah-pertama-menggambar-cerita-adalah.html">Langkah Pertama Menggambar Cerita Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/chord-sid-bulan-dan-ksatria.html">Chord Sid Bulan Dan Ksatria</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/ya-rohman-ya-rohim.html">Ya Rohman Ya Rohim</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/tantangan-dan-perubahan-zaman-yang-berkembang-dengan-pesat.html">Tantangan Dan Perubahan Zaman Yang Berkembang Dengan Pesat</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://variableph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://variableph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

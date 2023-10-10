@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register Mikroprosesor Terbagi Menjadi Beberapa Golongan Kecuali - QnA</title>
+    <meta name="description" content="Register Mikroprosesor Terbagi Menjadi Beberapa Golongan Kecuali, Tutorial Lab Mikroprosesor D3 Universitas Gunadarma, , , , ELKOM Laboratory, 2020-03-25T15:36:52.000000Z, 4, ELEKTRONIKA: Arsitektur Mikroprosesor, elektroniks-digital.blogspot.com, 800 x 506, jpeg, , 20, register-mikroprosesor-terbagi-menjadi-beberapa-golongan-kecuali, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Register Mikroprosesor Terbagi Menjadi Beberapa Golongan Kecuali - QnA" />
+    <meta property="og:description" content="Register Mikroprosesor Terbagi Menjadi Beberapa Golongan Kecuali, Tutorial Lab Mikroprosesor D3 Universitas Gunadarma, , , , ELKOM Laboratory, 2020-03-25T15:36:52.000000Z, 4, ELEKTRONIKA: Arsitektur Mikroprosesor, elektroniks-digital.blogspot.com, 800 x 506, jpeg, , 20, register-mikroprosesor-terbagi-menjadi-beberapa-golongan-kecuali, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Register Mikroprosesor Terbagi Menjadi Beberapa Golongan Kecuali - QnA" />
+    <meta name="twitter:description" content="Register Mikroprosesor Terbagi Menjadi Beberapa Golongan Kecuali, Tutorial Lab Mikroprosesor D3 Universitas Gunadarma, , , , ELKOM Laboratory, 2020-03-25T15:36:52.000000Z, 4, ELEKTRONIKA: Arsitektur Mikroprosesor, elektroniks-digital.blogspot.com, 800 x 506, jpeg, , 20, register-mikroprosesor-terbagi-menjadi-beberapa-golongan-kecuali, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://variableph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://variableph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://variableph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://variableph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://variableph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://variableph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Register Mikroprosesor Terbagi Menjadi Beberapa Golongan Kecuali</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Evalyn9995</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Register+Mikroprosesor+Terbagi+Menjadi+Beberapa+Golongan+Kecuali" alt="Register Mikroprosesor Terbagi Menjadi Beberapa Golongan Kecuali">
+                    </div>
+                    <p></p>
+                    <p>Register mikroprosesor terbagi menjadi beberapa golongan kecuali</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#register-mikroprosesor-terbagi-menjadi-beberapa-golongan-kecuali">1.
+                                            Register mikroprosesor terbagi menjadi beberapa golongan kecuali</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#12-registet-mikroprosesor-terbagi-menjadibeberapa-golongan-kecualia-general-purpose-registerb-segment-registerc-pointer-registerd-separate-registere-flag-register13-register-yangmemiliki-kapasit">2.
+                                            12. registet mikroprosesor terbagi menjadibeberapa golongan, kecualia general purpose registerb. segment registerc. pointer registerd. separate registere flag register13. register yangmemiliki kapasitaspenyimpanansebesar 16 bit.kemudian dibagi menjadi register lowdan register high, merupakan definisidari golongan register mikroprosesora general purpose registerb. segment registerc: pointer registerd. separate registereflag register14. cpu menggunakan suatu cache memoryatau buffer memory dengan maksud ....a. mengefisiensikan kinerja cpub. mengurangi waktu yang terbuangc. meningkatkan kerja alud. mengaktifkan separate registere. a dan b benar​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-utama-mikroprosesor-yaitukecuali-%e2%80%8b">3.
+                                            fungsi utama mikroprosesor yaitu,kecuali......​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-mikroprosesor">4.
+                                            apa yang dimaksud dengan mikroprosesor?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#salah-satu-bagian-dari-sebuah-mikroprosesor-yang-berfungsi-untuk-melakukan-bilaangan-dan-aritmatika-adalah">5.
+                                            salah satu bagian dari sebuah mikroprosesor yang berfungsi untuk melakukan bilaangan dan aritmatika adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-mikroprosesor-dan-mikrokontroler">6.
+                                            perbedaan mikroprosesor dan mikrokontroler?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perusahaan-zilog-mengembangkan-seri-mikroprosesor-z180-yang-selanjutnya-di-adopsi-oleh-mikroprosesor">7.
+                                            perusahaan zilog mengembangkan seri mikroprosesor z180 yang selanjutnya di adopsi oleh mikroprosesor?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-ada-berapa-macam-mikroprosesor">8.
+                                            sebutkan ada berapa macam mikroprosesor</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-mikroprosesor">9.
+                                            apa yang dimaksud dengan mikroprosesor</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mikroprosesor-design-adalah">10.
+                                            mikroprosesor design adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagian-utama-pada-mikroprosesor-adalah-%e2%80%a6%e2%80%8b">11.
+                                            Bagian utama pada mikroprosesor adalah …​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-bagian-yang-terdapat-pada-mesin-cash-register">12.
+                                            Sebutkan bagian yang terdapat pada mesin Cash Register</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagian-yang-terdapat-pada-mesin-cash-register">13.
+                                            Bagian yang terdapat pada mesin cash register</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-industri-mikroprosesor-terdapat-hukum-yang-terkenal-moore%e2%80%99s-law-yang-menyatakan-bahwa-pertumbuhan-kecepatan-perhitungan-mikroprosesor-mengikuti-rumusan-eksponensial-menurut-anda-apa-p">14.
+                                            Dalam industri mikroprosesor terdapat hukum yang terkenal, Moore’s Law, yang menyatakan bahwa pertumbuhan kecepatan perhitungan mikroprosesor mengikuti rumusan eksponensial. Menurut anda apa pengaruh hukum ini terhadap perkembangan industri mikroprosesor?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mikroprosesor-adalah">15.
+                                            mikroprosesor adalah?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#register-yang-dapat-diprogram-adalah-sebagai-berikut-kecuali%e2%80%a6-a-register-penanda-b-register-penampung-data-c-register-penunjuk-stack-d-register-alamat-e-register-data">16.
+                                            Register yang dapat diprogram adalah sebagai berikut, kecuali… a. Register penanda b. Register penampung data c. Register penunjuk stack d. Register alamat e. Register data</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mikroprosesor-terdapat-dalam-bagian-%e2%80%8b">17.
+                                            mikroprosesor terdapat dalam bagian . . . .​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagian-dari-sistim-mikroprosesor-yang-mengatur-denyut-kerja-mpu-adalah">18.
+                                            Bagian dari sistim mikroprosesor yang mengatur denyut kerja mpu adalah .....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#register-merupakan-bagian-yang-dari-unit-cpu-yang-bertugas-untuk">19.
+                                            Register merupakan bagian yang dari unit cpu yang bertugas untuk </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-tentang-intruksi-register-dan-kendali-cpu2-sebutkan-pengertian-dari-a-register-perintahb-pendekoder-perintahc-pengontrol-waktu-dan-aliran-pengontrol-waktu-dan-aliran-d-memor">20.
+                                            
+1.	Jelaskan tentang intruksi register dan kendali cpu?
+2.	Sebutkan pengertian dari 
+a. Register Perintah
+b. Pendekoder Perintah
+c. Pengontrol waktu dan aliran ( pengontrol waktu dan aliran )
+d. Memory refresh register ( R)
+3.	Jelaskan tentang pinhandware mikroprosesor Z80 ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-kalkulator-dan-mikroprosesor-adalah">21.
+                                            Perbedaan kalkulator dan mikroprosesor adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagian-dari-sistim-mikroprosesor-yang-mengatur-denyut-kerja-mpu-adalah%e2%80%8b">22.
+                                            Bagian dari sistim Mikroprosesor yang mengatur denyut kerja MPU adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-apa-perbedaan-mikroprosesor-sistem-mikroprosesor-dan-mikrokontroler%e2%80%8b">23.
+                                            1. Apa perbedaan Mikroprosesor, sistem mikroprosesor, dan mikrokontroler​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-cpu-dan-mikroprosesor">24.
+                                            Perbedaan CPU dan mikroprosesor</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-pembagian-warna-register-suara-manusia%e2%80%8b">25.
+                                            Sebutkan pembagian warna register suara manusia!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-berikut-adalah-bagian-bagian-dari-processorkecualia-unit-logika-dan-matematikab-unit-pengontrolc-registerd-ram%e2%80%8b">26.
+                                            2. Berikut adalah bagian-bagian dari processor,kecualia. unit logika dan matematikab. unit pengontrolc. registerd. RAM​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yg-di-maksud-dengan-mikroprosesor">27.
+                                            apa yg di maksud dengan mikroprosesor</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-mikroprosesor">28.
+                                            Apa fungsi dari mikroprosesor</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mikroprosesor-adalah-istilah-lain-dari-perangkat">29.
+                                            mikroprosesor adalah istilah lain dari perangkat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-sejarah-mikroprosesor">30.
+                                            sebutkan sejarah mikroprosesor</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="register-mikroprosesor-terbagi-menjadi-beberapa-golongan-kecuali">
+                            1. Register mikroprosesor terbagi menjadi beberapa golongan kecuali</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>pointer register, general purpose register</p><br />
+                                            <h2 class="ez-toc-section" id="12-registet-mikroprosesor-terbagi-menjadibeberapa-golongan-kecualia-general-purpose-registerb-segment-registerc-pointer-registerd-separate-registere-flag-register13-register-yangmemiliki-kapasit">
+                            2. 12. registet mikroprosesor terbagi menjadibeberapa golongan, kecualia general purpose registerb. segment registerc. pointer registerd. separate registere flag register13. register yangmemiliki kapasitaspenyimpanansebesar 16 bit.kemudian dibagi menjadi register lowdan register high, merupakan definisidari golongan register mikroprosesora general purpose registerb. segment registerc: pointer registerd. separate registereflag register14. cpu menggunakan suatu cache memoryatau buffer memory dengan maksud ....a. mengefisiensikan kinerja cpub. mengurangi waktu yang terbuangc. meningkatkan kerja alud. mengaktifkan separate registere. a dan b benar​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>No. 12: C. Pointer Register</p><p>No. 13: A. General Purpose Register</p><p>No. 14: E. Jawaban A &amp; B Benar</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-utama-mikroprosesor-yaitukecuali-%e2%80%8b">
+                            3. fungsi utama mikroprosesor yaitu,kecuali......​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Fungsi utama Mikroprosesor adalah sebagai unit control yang mengendalikan seluruh kerja sistem mikroprosesor</strong><strong>,</strong><strong> </strong><strong>Yang</strong><strong> </strong><strong>bukan</strong><strong> </strong><strong>ini</strong><strong> </strong><strong>berarti</strong><strong> </strong><strong>bukan</strong><strong> </strong><strong>fungsi</strong><strong> </strong><strong>utama</strong><strong> </strong><strong>Mikroprosesor</strong><strong>.</strong></p><p></p><p><strong>sem</strong><strong>oga</strong><strong> membantu</strong><strong>.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-mikroprosesor">
+                            4. apa yang dimaksud dengan mikroprosesor?</h2><br />
+                        Mikroprosesor adalah suatu komponen yang berbentuk chip IC (Integrated
+Circuit) yang terdiri dari beberapa rangkaian yaitu ALU (Arithmatic Logic
+Unit), CU ( Control Unit), dan Register. Mikroprosesor juga disebut juga
+sebagai CPU (Central Processing Unit) dan merupakan komponen yang sangat
+penting di dalam sistem komputer. Mikroprosesor berfungsi sebagai pusat untuk
+memproses data di dalam sistem komputer.<br /><br />Bagian
+terpenting dari prosesor terbagi menjadi 3 yaitu :<br /><br />1. Aritcmatics Logical Unit (ALU), adalah alat yang
+     melakukan pelaksanaan dasar seperti pelaksanaan aritmatika (tambahan,
+     pengurangan, dan semacamnya), pelaksanaan logis (AND, OR, NOT), dan
+     pelaksanaan perbandingan (misalnya, membandingkan isi sebanyak dua slot
+     untuk kesetaraan). Pada unit inilah dilakukan "kerja" yang
+     nyata;<br /><br />2. Control Unit (CU),
+     merupakan suatu alat pengontrolan yang berada dalam komputer yang
+     memberitahukan unit masukan mengenai jenis data, waktu pemasukan, dan
+     tempat penyimpanan didalam primary storage. Control unit juga bertugas
+     memberitahukan kepada arithmatic logic unit mengenai operasi yang harus
+     dilakukan, tempat data diperoleh, dan letak hasil ditempatkan
+     Perangkat-perangkat alat proses bersertaperlengkapan;<br /><br />3. Memory Unit (MU), merupakan bagian dari
+     processor yang menyimpan alamat-alamat register data yang diolah oleh ALU
+     dan CU.<br /><br />Mikroprosesor juga disebut juga sebagai CPU (Central Processing Unit) dan merupakan komponen yang sangat penting di dalam sistem komputer. Mikroprosesor berfungsi sebagai pusat untuk memproses data di dalam sistem komputer.<br /><br />
+                                            <h2 class="ez-toc-section" id="salah-satu-bagian-dari-sebuah-mikroprosesor-yang-berfungsi-untuk-melakukan-bilaangan-dan-aritmatika-adalah">
+                            5. salah satu bagian dari sebuah mikroprosesor yang berfungsi untuk melakukan bilaangan dan aritmatika adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ALU (Algorithm and Logic Unit), berfungsi untuk mengerjakan perintah – perintah logika dan operasi aritmetika.</p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-mikroprosesor-dan-mikrokontroler">
+                            6. perbedaan mikroprosesor dan mikrokontroler?</h2><br />
+                        Mikroprosesor adalah IC yang hanya memiliki CPU di dalamnya yaitu hanya kekuatan pemrosesan seperti Intel Pentium 1,2,3,4, core 2 duo, i3, i5 dll. Mikroprosesor ini tidak memiliki RAM, ROM, dan perangkat lainnya. pada chip. Seorang perancang sistem harus menambahkannya secara eksternal untuk membuatnya berfungsi. Aplikasi mikroprosesor termasuk Desktop PC, Laptop, notes dll.<br /><br />Tetapi ini tidak terjadi dengan Microcontrollers. Mikrokontroler memiliki CPU, selain itu dengan sejumlah RAM, ROM, dan periferal lain yang semuanya tertanam pada satu chip. Kadang-kadang itu juga disebut sebagai komputer mini atau komputer pada satu chip. Saat ini produsen yang berbeda menghasilkan mikrokontroler dengan berbagai fitur yang tersedia dalam berbagai versi. Beberapa pabrikan adalah ATMEL, Microchip, TI, Freescale, Philips, Motorola, dll.<br /><br />Microcontrollers dirancang untuk melakukan tugas-tugas tertentu. Aplikasi sarana spesifik di mana hubungan input dan output didefinisikan. Tergantung pada input, beberapa pemrosesan perlu dilakukan dan output dikirimkan. Misalnya, keyboard, mouse, mesin cuci, digicam, flashdisk, remote, microwave, mobil, sepeda, telepon, ponsel, jam tangan, dll. Karena aplikasi sangat spesifik, mereka membutuhkan sumber daya kecil seperti RAM, ROM, port I / O dll dan karenanya dapat disematkan pada satu chip. Ini pada gilirannya mengurangi ukuran dan biaya.<br /><br />Mikroprosesor menemukan aplikasi di mana tugas tidak spesifik seperti mengembangkan perangkat lunak, permainan, situs web, mengedit foto, membuat dokumen, dll. Dalam kasus seperti itu hubungan antara input dan output tidak ditentukan. Mereka membutuhkan sumber daya yang tinggi seperti RAM, ROM, I / O port, dll.<br /><br />Kecepatan clock Mikroprosesor cukup tinggi dibandingkan dengan kontroler mikro. Sedangkan pengendali mikro beroperasi dari beberapa MHz hingga 30 hingga 50 MHz, mikroprosesor saat ini beroperasi di atas 1 GHz saat mereka melakukan tugas-tugas kompleks.<br /><br />dan mikroprosesor dalam hal biaya tidak dibenarkan. Tidak diragukan lagi pengendali mikro jauh lebih murah daripada mikroprosesor. Namun pengendali mikro tidak dapat digunakan di tempat mikroprosesor dan menggunakan mikroprosesor tidak disarankan di tempat pengendali mikro karena membuat aplikasi cukup mahal. Mikroprosesor tidak dapat digunakan sendiri. Mereka membutuhkan periferal lain seperti RAM, ROM, buffer, I / O port dll dan karenanya sistem yang dirancang di sekitar mikroprosesor cukup mahal.<br /><br />Semoga Membantu :)<br />
+                                            <h2 class="ez-toc-section" id="perusahaan-zilog-mengembangkan-seri-mikroprosesor-z180-yang-selanjutnya-di-adopsi-oleh-mikroprosesor">
+                            7. perusahaan zilog mengembangkan seri mikroprosesor z180 yang selanjutnya di adopsi oleh mikroprosesor?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perusahaan zilog mengembangkan seri mikroprosesor z180 yang selanjutnya di adopsi oleh mikroprosesor "INTEL"</p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-ada-berapa-macam-mikroprosesor">
+                            8. sebutkan ada berapa macam mikroprosesor</h2><br />
+                        ada 5 macam<br />1. Mikroprosessor 4 bit<br />2. Mikroprosessor 8 bit<br />3. Mikroprosessor 16 bit<br />4. Mikroprosessor 32 bit<br />5. Mikroprosessor 64 bitmikroprosesor ada 5 macam!<br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-mikroprosesor">
+                            9. apa yang dimaksud dengan mikroprosesor</h2><br />
+                        Mikroprosesor adalah suatu komponen yang berbentuk chip IC (Integrated Circuit) yang terdiri dari beberapa rangkaian yaitu ALU (Arithmatic Logic Unit), CU ( Control Unit), dan Register. Mikroprosesor juga disebut juga sebagai CPU (Central Processing Unit) dan merupakan komponen yang sangat penting di dalam sistem komputer....mikro prosesor adalah suatu komlenen yang berbentuk cip<br />
+                                            <h2 class="ez-toc-section" id="mikroprosesor-design-adalah">
+                            10. mikroprosesor design adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>mikroprosesor adalah sistem yang dibangun dari tiga komponen utama yaitu unit mikroprosesor, unit memori, dan unit input-output. Untuk itu pemahaman tentang mikroprosesor, sistem mikroprosesor, dan sekuen kerjanya perlu diuraikan pada bagian awal buku ini</p><p><strong>Penjelasan:</strong></p><p>no google</p><p>pliss jangan dihapus</p><br />
+                                            <h2 class="ez-toc-section" id="bagian-utama-pada-mikroprosesor-adalah-%e2%80%a6%e2%80%8b">
+                            11. Bagian utama pada mikroprosesor adalah …​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Unit mikroprosesor (CPU) merupakan komponen utama dalam system mikroprosesor.</p><p><strong>Penjelasan:</strong></p><p>Mikroprosesor adalah sebuah central processing unit elektronik komputer yang terbuat dari transistor mini dan sirkuit lainnya di atas sebuah sirkuit terintegrasi semikonduktor.</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-bagian-yang-terdapat-pada-mesin-cash-register">
+                            12. Sebutkan bagian yang terdapat pada mesin Cash Register</h2><br />
+                        <p>Berikut adalah <strong>bagian</strong> yang ada pada mesin kasir atau <strong>cash register</strong>:</p>Layar bacaKunci kasir, angka, uang, penghapus, dan operasiHandleLayar controlPencetak validasiPenutup mesin<p></p>Pembahasan<p><strong>Cash register </strong>atau umum disebut dengan kasir adalah salah satu alat bantu yang terintegrasi dengan laci atau cash drawer guna menyimpan uang yang dihasilkan dari transaksi yang terjadi. Kasir juga bisa digunakan untuk mencetak bukti transaksi atau struk penjualan yang nantinya akan diberikan kepada konsumen setelah menyelesaikan suatu transaksi. Mesin kasir sendiri bisa dibedakan menjadi:</p><strong>Kasir manual</strong>: jenis mesin kasir yang memiliki kapasitas 12 angka dan memiliki 10 kunci. Mesin kasir ini juga memiliki back spacer dan masih sangat umum digunakan, terutama pada toko kelontong.<strong>Kasir listrik</strong>: jenis mesi kasir yang paling umum digunakan di zaman sekarang di mana mesin ini menggunakan tenaga listrik. Jumlah digit yang ada pada mesin ini adalah 5.<strong>Kasir elektronik</strong>: jenis mesin kasir yang bisa dibilang paling modern ini di mana mesin kasir ini bisa menampilkan nama barang pada layar mesin kasir tersebut. Ada juga beberapa kasir elektronik yang terintegrasi langsung dengan aplikasi yang membuat pemilik usaha bisa mengetaui setiap transaksi yang terjadi.<p></p>Pelajari lebih lanjutMateri tentang penggunaan kasir https://brainly.co.id/tugas/16054487Materi tentang pengertian cash register https://brainly.co.id/tugas/4665977Materi tentang kelebihan cash register https://brainly.co.id/tugas/24264167<p></p>Detail jawaban<p><strong>Kelas</strong>: 10</p><p><strong>Mapel</strong>: Ekonomi</p><p><strong>Bab</strong>: -</p><p><strong>Kode</strong>: 10.12</p><p><strong></strong></p><p><strong>#AyoBelajar #SPJ2 </strong></p><br />
+                                            <h2 class="ez-toc-section" id="bagian-yang-terdapat-pada-mesin-cash-register">
+                            13. Bagian yang terdapat pada mesin cash register</h2><br />
+                        <p><strong>Mesin cash register</strong> atau biasa disebut dengan mesin daftar tunai merupakan  sebuah perangkat mekanik atau elektronik yang memiliki fungsi untuk menghitung dan menghimpun segala transaksi penjualan yang dilengkapi oleh sebuah laci tunai yang berguna untuk menyimpan uang disamping dapat mencetak bukti pembayaran kepada para pelanggan.</p><p><strong>Adapun bagian-bagian yang terdapat pada mesin cash register adalah sebagai berikut:</strong></p>Cash DrawerPrinter strukCostumer displayPapan ketikCentral unit<p></p><p><strong>Pembahasan</strong></p><p><strong>1. Cash Drawer</strong></p><p><strong>Cash drawer </strong>atau biasa disebut laci uang merupakan komponen yang berfungsi untuk menyimpan uang tunai. Laci uang dapat beroperasi secara otomatis, laci akan otomatis terbuka setelah transaksi selesai (saat mencetak struk) dan ditutup secara manual (didorong). Namun laci uang dapat juga dibuka secara manual dengan menggunakan anak kunci.</p><p><strong>2. Printer Struk</strong></p><p><strong>Printer struk </strong>merupakan alat yang berfungsi untuk mencetak daftar belanjaan beserta total tagihan. Untuk mencetak daftar belanjaan atau total tagihan alat ini menggunakan dua jenis alat yaitu pita dan thermal. Untuk pita, biasanya suaranya berbunyi seperti jarum yang menekan kertas. Sedangkan untuk thermal suara lebih halus namun tulisan tidak tahan lama.</p><p><strong>3. Customer Display</strong></p><p><strong>Costumer display</strong> merupakan alat berbentuk layar yang berfungsi untuk menampilkan total yang harus dibayar pelanggan. Saat ini display player sudah bisa menampilkan kata sambutan, serta item yang diinput oleh operator. Costumer display digunakan dengan maksud dan tujuan supaya pelanggan dapat memastikan jenis item dan harga yang diinput oleh operator sudah sesuai dengan barang belanjaan.</p><p><strong>4. Papan ketik </strong></p><p><strong>Papan ketik </strong>merupakan  alat berfungsi untuk melakukan input item yang dibeli oleh pelanggan. Terdapat beberapa tombol shortcut yang membantu untuk mempercepat pencarian.</p><p><strong>5. Central Unit</strong></p><p><strong>Central unit</strong> merupakan komponen atau alat yang berfungsi untuk menyimpan data serta memproses data. Alat ini mirip seperti komputer namun memiliki fungsi yang terbatas. Beberapa Unit telah berubah menggunakan PC Komputer dengan fungsional yang fitur yang lebih lengkap. Unit yang dilengkapi PC komputer merupakan  Mesin Kasir Modern.</p><p></p><p></p><p><strong>Pelajari Lebih Lanjut</strong></p>Materi tentang bagian pada <strong>mesin cash register </strong>https://brainly.co.id/tugas/18290256Materi tentang pengertian <strong>mesin cash register </strong>https://brainly.co.id/tugas/4665977Materi tentang kelebihan <strong>mesin cash register</strong> dibanding kalkulator https://brainly.co.id/tugas/24264167<p></p><p></p><p><strong>Detail Jawaban</strong></p><p><strong>Kelas:</strong> 12</p><p><strong>Mapel: </strong>Ujian Nasional (Akuntansi)</p><p><strong>Bab: </strong>1 –Akuntansi Sebagai Sistem Informasi</p><p><strong>Kode: </strong>12.12.1</p><p></p><p><strong>#AyoBelajar#SPJ2</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="dalam-industri-mikroprosesor-terdapat-hukum-yang-terkenal-moore%e2%80%99s-law-yang-menyatakan-bahwa-pertumbuhan-kecepatan-perhitungan-mikroprosesor-mengikuti-rumusan-eksponensial-menurut-anda-apa-p">
+                            14. Dalam industri mikroprosesor terdapat hukum yang terkenal, Moore’s Law, yang menyatakan bahwa pertumbuhan kecepatan perhitungan mikroprosesor mengikuti rumusan eksponensial. Menurut anda apa pengaruh hukum ini terhadap perkembangan industri mikroprosesor?​</h2><br />
+                        <p>Moore's Law adalah sebuah hukum yang dikemukakan oleh Gordon Moore, co-founder dari Intel, pada tahun 1965. Hukum ini menyatakan bahwa jumlah transistor yang terdapat pada sebuah chip mikroprosesor akan bertambah secara eksponensial setiap 18-24 bulan. Karena jumlah transistor yang lebih banyak biasanya berarti bahwa chip tersebut memiliki kemampuan komputasi yang lebih tinggi, maka Moore's Law juga dapat diartikan sebagai pertumbuhan kecepatan perhitungan mikroprosesor yang mengikuti rumusan eksponensial.</p><p>Pengaruh Moore's Law terhadap perkembangan industri mikroprosesor sangat besar. Hukum ini telah menjadi dasar bagi perusahaan-perusahaan mikroprosesor untuk terus meningkatkan kemampuan komputasi chip mereka dengan cara menambahkan jumlah transistor pada chip tersebut. Hal ini telah menyebabkan terjadinya pertumbuhan yang sangat cepat dalam industri mikroprosesor, dimana kemampuan komputasi mikroprosesor telah meningkat secara drastis selama beberapa dekade terakhir.</p><p>Selain itu, Moore's Law juga telah membantu menciptakan kondisi yang menguntungkan bagi perusahaan-perusahaan mikroprosesor untuk terus berinovasi dan mengembangkan teknologi baru. Karena kecepatan komputasi mikroprosesor terus meningkat, maka perusahaan-perusahaan tersebut harus terus berusaha untuk menciptakan teknologi yang lebih canggih dan efisien agar dapat bersaing di pasar. Ini telah menjadi salah satu faktor yang memacu perkembangan industri mikroprosesor dan membantu menciptakan produk-produk yang lebih canggih dan bermanfaat bagi masyarakat.</p><br />
+                                            <h2 class="ez-toc-section" id="mikroprosesor-adalah">
+                            15. mikroprosesor adalah?</h2><br />
+                        mikroprosesor  adalah sebuah centralprocessing unit (CPU) elektronik komputer yang terbuat dari transistor mini dan sirkuit lainnya di atas sebuah sirkuit terintegrasi semikonduktor.Mikroprosesor adalah singkatan dari prosesor biasa juga disebut CPU (central processing unit) yang bekerja dengan program. Fungsi Mikroprosesor adalahsebagai pengontrol atau pengolah utama dalam suatu rangkaian elektronik. mikroprosesor biasa disebut juga CPU (Central Processing Unit)<br />
+                                            <h2 class="ez-toc-section" id="register-yang-dapat-diprogram-adalah-sebagai-berikut-kecuali%e2%80%a6-a-register-penanda-b-register-penampung-data-c-register-penunjuk-stack-d-register-alamat-e-register-data">
+                            16. Register yang dapat diprogram adalah sebagai berikut, kecuali… a. Register penanda b. Register penampung data c. Register penunjuk stack d. Register alamat e. Register data</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>antara a atau b menurut saya </p><p> </p><p></p><p>Mohon maaf bila kurang memuaskan </p><br />
+                                            <h2 class="ez-toc-section" id="mikroprosesor-terdapat-dalam-bagian-%e2%80%8b">
+                            17. mikroprosesor terdapat dalam bagian . . . .​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>mikroprosesor merupakan komponen utama dalam sebuah sistem. Mikroprosesor atau dapat diketahui CPU yaitu Central Processing Unit yang terbentuk dalam 1 chip</p><p></p><p>Maaf jika salah </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="bagian-dari-sistim-mikroprosesor-yang-mengatur-denyut-kerja-mpu-adalah">
+                            18. Bagian dari sistim mikroprosesor yang mengatur denyut kerja mpu adalah .....</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sehingga frekuensi clock berkaitan dengan kecepatan kerja komputer.</p><p><strong>Penjelasan:</strong></p><p>JanganLupaJadiinJwabanTerpintar </p><br />
+                                            <h2 class="ez-toc-section" id="register-merupakan-bagian-yang-dari-unit-cpu-yang-bertugas-untuk">
+                            19. Register merupakan bagian yang dari unit cpu yang bertugas untuk </h2><br />
+                        <p><strong>Penjelasan: </strong></p><p><strong>Register berfungsi membantu melakukan hubungan (interface) dan ke memori. Register mempunyai kecepatan tinggi, digunakn untuk menyimpan data dan instruksi yang sedang diproses.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-tentang-intruksi-register-dan-kendali-cpu2-sebutkan-pengertian-dari-a-register-perintahb-pendekoder-perintahc-pengontrol-waktu-dan-aliran-pengontrol-waktu-dan-aliran-d-memor">
+                            20. 
+1.	Jelaskan tentang intruksi register dan kendali cpu?
+2.	Sebutkan pengertian dari 
+a. Register Perintah
+b. Pendekoder Perintah
+c. Pengontrol waktu dan aliran ( pengontrol waktu dan aliran )
+d. Memory refresh register ( R)
+3.	Jelaskan tentang pinhandware mikroprosesor Z80 ?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kendali cpu adalah kendala pada suatu barang elektronik seperti handphone</p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-kalkulator-dan-mikroprosesor-adalah">
+                            21. Perbedaan kalkulator dan mikroprosesor adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p>Pengertian Kalkulator : <p>- kalkulator adalah sebuah perangkat yang khusus digunakan untuk menghitung. kalkulator yang canggih dibekali dengan banyak fitur hitung, misal: sin, cos, tangen, dll.</p><p></p>Pengertian mikroprosesor : <p>Mikroprosesor adalah sebuah IC (Integrated Circuit) yang digunakan sebagai otak/pengolah utama dalam sebuah sistem komputer. Mikroprosesor merupakan hasil dari pertumbuhan semikonduktor. Prosesor adalah chip yang sering disebut “Microprosessor” yang sekarang ukurannya sudah mencapai gigahertz.</p><p></p><p><strong>Penjelasan:</strong></p><p>Semoga membantu maaf kalo salah.</p><p><strong>Jawaban:</strong></p><p>mikroprosesor merupakan alat yg difungsikan sebagai pusat pengendali dan pengolahan data pada sistem komputer mikro biasanya dikenal dengan CPU ( central processing unit)</p><p>di dalamnya terdapat 3 kompenen yaitu arithmetic logic unit berfungsi dlm proses penghitungan dan operasi matematika sederhana sprti penjumlahan pengurangan pembagian dan perkalian selain itu berfungsi juga untuk operasi logika, register unit merupakan space penampungan data temporer yg ada di memori sebelum data tersebut diproses melalui ALU, control unit berfungsi sebagai pengambil intruksi yg ada di memori dan mengeksekusinya </p><p></p><p></p><p>sedangkan kalkulator adalah alat bantu untuk menghitung dan bentuk awal dr komputer</p><br />
+                                            <h2 class="ez-toc-section" id="bagian-dari-sistim-mikroprosesor-yang-mengatur-denyut-kerja-mpu-adalah%e2%80%8b">
+                            22. Bagian dari sistim Mikroprosesor yang mengatur denyut kerja MPU adalah​</h2><br />
+                        <p>Sehingga frekuensi clock berkaitan dengan kecepatan kerja komputer. </p><br />
+                                            <h2 class="ez-toc-section" id="1-apa-perbedaan-mikroprosesor-sistem-mikroprosesor-dan-mikrokontroler%e2%80%8b">
+                            23. 1. Apa perbedaan Mikroprosesor, sistem mikroprosesor, dan mikrokontroler​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Mikroprosesor merupakan Central Processing Unit (CPU) yang terbentuk dalam satu chip. ... Sedangkan mikrokontroler merupakan gabungan dari CPU, port input/output (I/O), memori, timer, port serial, port paralel, dan rangkaian pendukung lainnya yang dikemas menjadi satu chip.</p><p><strong>Penjelasan:</strong></p><p>semoga membantu </p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-cpu-dan-mikroprosesor">
+                            24. Perbedaan CPU dan mikroprosesor</h2><br />
+                        Unit Pemroses Sentral, merujuk kepada perangkat keras komputer yang memahami dan melaksanakan perintah dan data dari perangkat lunak. Istilah lain, pemroses/prosesor, sering digunakan untuk menyebut CPU. Sedangkan Sebuah mikroprosesor (sering dituliskan: µP atau uP) adalah sebuah central processing unit (CPU) elektronik komputer yang terbuat dari transistor mini dan sirkuit lainnya di atas sebuah sirkuit terintegrasi semikonduktor.<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-pembagian-warna-register-suara-manusia%e2%80%8b">
+                            25. Sebutkan pembagian warna register suara manusia!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>chest voice/suara dada</p><p>neck voice/suara leher</p><p>head voice/suara kepala</p><p>falsetto/suara palsu</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="2-berikut-adalah-bagian-bagian-dari-processorkecualia-unit-logika-dan-matematikab-unit-pengontrolc-registerd-ram%e2%80%8b">
+                            26. 2. Berikut adalah bagian-bagian dari processor,kecualia. unit logika dan matematikab. unit pengontrolc. registerd. RAM​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D</p><p><strong>Penjelasan:</strong></p><p>processor @ otak dari sebuah komp</p><br />
+                                            <h2 class="ez-toc-section" id="apa-yg-di-maksud-dengan-mikroprosesor">
+                            27. apa yg di maksud dengan mikroprosesor</h2><br />
+                        Mikroprosesor adalah sebuah IC (Integrated Circuit) yang digunakan sebagai otak/pengolah utama dalam sebuah sistem komputer.Mikroprosesor merupakan hasil dari pertumbuhan semikonduktor. Prosesor adalah chip yang sering disebut “Microprosessor” yang sekarang ukurannya sudah mencapai gigahertzMikroprosesor adalah sebuah IC (Integrated Circuit) yang digunakan sebagai otak/pengolah utama dalam sebuah sistem komputer. Mikroprosesor merupakan hasil dari pertumbuhan semikonduktor. Prosesor adalah chip yang sering disebut “Microprosessor” yang sekarang ukurannya sudah mencapai gigahertz<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-mikroprosesor">
+                            28. Apa fungsi dari mikroprosesor</h2><br />
+                        Sebuah mikroprosesor mengontrol semua fungsi dari CPU, atau central processing unit, dari komputer atau perangkat digital lainnya. Fungsi mikroprosesor sebagai otak buatan. Seluruh fungsi CPU dikontrol oleh satu sirkuit terpadu. Mikroprosesor yang diprogram untuk memberi dan menerima instruksi dari komponen lain dari perangkat. Sistem ini dapat mengontrol segala sesuatu dari perangkat kecil seperti kalkulator dan ponsel, sampai mobil besar .<br />
+                                            <h2 class="ez-toc-section" id="mikroprosesor-adalah-istilah-lain-dari-perangkat">
+                            29. mikroprosesor adalah istilah lain dari perangkat</h2><br />
+                        CPU (central processing unit)<br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-sejarah-mikroprosesor">
+                            30. sebutkan sejarah mikroprosesor</h2><br />
+                        Mikroprosesor ditemukan oleh Allen dan koleganya  yang terbuat dari silicon<br /><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ujian_nasional</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/what-is-the-writer-s-purpose-to-write-the-text.html">What Is The Writer s Purpose To Write The Text</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/jelaskan-proses-menggambar-ilustrasi.html">Jelaskan Proses Menggambar Ilustrasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/pola-rima-syair-adalah.html">Pola Rima Syair Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/pokok-pikiran-paragraf-3.html">Pokok Pikiran Paragraf 3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/mengapa-renang-gaya-dada-disebut-juga-renang-gaya-katak.html">Mengapa Renang Gaya Dada Disebut Juga Renang Gaya Katak</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/apa-ciri-bagian-teks-yang-disebut-identifikasi.html">Apa Ciri Bagian Teks Yang Disebut Identifikasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/gerak-spesifik-permainan-bola-basket.html">Gerak Spesifik Permainan Bola Basket</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/perhatikan-kalimat-berikut.html">Perhatikan Kalimat Berikut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/cara-merevisi-teks-laporan-percobaan.html">Cara Merevisi Teks Laporan Percobaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/sebutkan-dan-jelaskan-corak-gambar-ilustrasi.html">Sebutkan Dan Jelaskan Corak Gambar Ilustrasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/angkatan-1928-sering-disebut-sebagai.html">Angkatan 1928 Sering Disebut Sebagai</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/seleksi-bahan-limbah-anorganik-perlu-dilakukan-sebelum.html">Seleksi Bahan Limbah Anorganik Perlu Dilakukan Sebelum</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/urutan-langkah-langkah-dalam-metode-ilmiah-yang-tepat-adalah.html">Urutan Langkah Langkah Dalam Metode Ilmiah Yang Tepat Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/pada-gambar-berikut-panjang-bc-adalah.html">Pada Gambar Berikut Panjang Bc Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/jelaskan-teknik-mewarnai-patung-tanah-liat.html">Jelaskan Teknik Mewarnai Patung Tanah Liat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/program-yang-dicanangkan-kabinet-ampera-disebut.html">Program Yang Dicanangkan Kabinet Ampera Disebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/nama-bahasa-daerah-sunda.html">Nama Bahasa Daerah Sunda</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/pernyataan-berikut-yang-benar-berkaitan-dengan-reaksi-reduksi-adalah.html">Pernyataan Berikut Yang Benar Berkaitan Dengan Reaksi Reduksi Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/gambar-pola-lantai-spiral.html">Gambar Pola Lantai Spiral</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/gambar-flora-dan-fauna-mudah.html">Gambar Flora Dan Fauna Mudah</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://variableph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://variableph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

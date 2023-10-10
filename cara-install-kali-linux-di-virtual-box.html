@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cara Install Kali Linux Di Virtual Box - QnA</title>
+    <meta name="description" content="Cara Install Kali Linux Di Virtual Box, PANDUAN LENGKAP : CARA INSTALL KALI LINUX DI VIRTUALBOX 2022, , , , Agung Channel, 2021-08-15T11:30:09.000000Z, 20, , , , , , 0, cara-install-kali-linux-di-virtual-box, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cara Install Kali Linux Di Virtual Box - QnA" />
+    <meta property="og:description" content="Cara Install Kali Linux Di Virtual Box, PANDUAN LENGKAP : CARA INSTALL KALI LINUX DI VIRTUALBOX 2022, , , , Agung Channel, 2021-08-15T11:30:09.000000Z, 20, , , , , , 0, cara-install-kali-linux-di-virtual-box, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cara Install Kali Linux Di Virtual Box - QnA" />
+    <meta name="twitter:description" content="Cara Install Kali Linux Di Virtual Box, PANDUAN LENGKAP : CARA INSTALL KALI LINUX DI VIRTUALBOX 2022, , , , Agung Channel, 2021-08-15T11:30:09.000000Z, 20, , , , , , 0, cara-install-kali-linux-di-virtual-box, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://variableph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://variableph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://variableph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://variableph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://variableph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://variableph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Cara Install Kali Linux Di Virtual Box</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">terserahloo</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Cara+Install+Kali+Linux+Di+Virtual+Box" alt="Cara Install Kali Linux Di Virtual Box">
+                    </div>
+                    <p></p>
+                    <p>Jelaskan alasan dan cara mengembalian linux debian yang telah di install hilang ketika reboot Di virtual box</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-alasan-dan-cara-mengembalian-linux-debian-yang-telah-di-install-hilang-ketika-reboot-di-virtual-box">1.
+                                            Jelaskan alasan dan cara mengembalian linux debian yang telah di install hilang ketika reboot Di virtual box</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kenapa-saat-install-linux-debiam-di-virtual-box-yang-saat-di-enter-harus-muncul-proses-instal-malah-muncul-seperti-ini-dan-bagaimana-cara-instalnya">2.
+                                            kenapa saat install linux debiam di virtual box yang saat di enter harus muncul proses instal malah muncul seperti ini dan bagaimana cara instalnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-install-windows-di-virtual-box-%e2%80%8b">3.
+                                            cara install Windows di virtual box ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-install-so-cli-linux-ubuntu">4.
+                                            Cara install so cli linux ubuntu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-install-ulang-linux">5.
+                                            Bagaimana cara Install ulang Linux???</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-meng-install-suatu-windows-terdapat-beberapa-perintah-yang-terdapat-pada-pc-yang-tidak-dapat-memenuhi-spesifikasi-dalam-install-windows-dapat-menggunakan-suatu-aplikasi-virtual-box-antara-lain">6.
+                                            dalam meng-install suatu windows terdapat beberapa perintah. yang terdapat pada PC yang tidak dapat memenuhi spesifikasi dalam install windows dapat menggunakan suatu aplikasi virtual box antara lain sbb yaitu adalah ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-install-so-cli-linux-ubuntu">7.
+                                            Cara install so cli linux ubuntu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-caranya-menginstall-linux-di-laptop">8.
+                                            bagaimana caranya menginstall linux di laptop?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-install-kali-linux-dan-menginstall-drivernyapliss-jawab-ya">9.
+                                            cara install kali linux dan menginstall drivernya?
+pliss jawab ya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-menginstal-sistem-operasi-linux-ubuntu-menggunakan-virtual-box">10.
+                                            bagaimana cara menginstal Sistem Operasi Linux Ubuntu menggunakan Virtual Box ??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-install-ssh-pada-linux-debian-8-1">11.
+                                            cara install SSH pada linux Debian 8.1</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-menginstal-virtual-box-di-komputer">12.
+                                            cara menginstal virtual box di komputer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-menghapus-linux-dan-menginstall-windows">13.
+                                            bagaimana cara menghapus linux dan menginstall windows</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perekam-layar-yang-mudah-di-install-untuk-laptop-linux-jelaskan-juga-cara-menginstallnya">14.
+                                            Apa perekam layar yang mudah di install untuk laptop linux ? *Jelaskan juga cara menginstallnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-mencoba-virtualisasi-di-virtual-box">15.
+                                            cara mencoba virtualisasi di virtual box</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#setelah-menginstall-os-linux-apakah-harus-menginstall-memasang-networknya-agar-dapat-tersambung-internetnya-jika-iya-bagaimana-caranya-jelaskan">16.
+                                            Setelah menginstall OS linux, apakah harus menginstall / memasang networknya agar dapat tersambung internetnya ? 
+Jika iya bagaimana caranya ?
+#Jelaskan !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-langkah-langkah-menginstal-linux-di-virtual-boxvmware">17.
+                                            jelaskan langkah-langkah menginstal linux di virtual box/VMware !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimanakah-cara-untuk-melakukan-install-debian-melalui-virtual-box">18.
+                                            bagaimanakah cara untuk melakukan install debian melalui virtual box?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-install-os-linux-debian">19.
+                                            Cara install OS Linux Debian?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-install-debian-9-pada-virtual-box%e2%80%8b">20.
+                                            cara install debian 9 pada virtual box​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-install-wireless-driver-di-kali-linux-dengan-install-dari-terminal-dan-download-dari-browser">21.
+                                            bagaimana cara install wireless driver di kali linux dengan install dari terminal dan download dari browser</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-beberapa-perintah-yang-di-jalankan-untuk-menghubungkan-jaringan-linux-dan-windows-menggunakan-virtual-box">22.
+                                            Sebutkan  beberapa perintah yang di jalankan untuk menghubungkan jaringan Linux dan Windows menggunakan Virtual box</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#saya-ingin-menginstal-linux-divirtual-box-saat-saya-ingin-klik-start-aplikasinya-tidak-berjalan-seperti-biasa-malah-ada-peringatan-virtualbox-erorr-apa-yang-saya-harus-ubah">23.
+                                            saya ingin menginstal linux divirtual box saat saya ingin klik start, aplikasinya tidak berjalan seperti biasa malah ada peringatan "virtualbox erorr". apa yang saya harus ubah ? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-install-linux%e2%80%8b">24.
+                                            bagaimana cara install linux?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#install-konfigurasi-web-linux-adalah">25.
+                                            Install konfigurasi web Linux adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-install-windows-di-virtual-box-%e2%80%8b">26.
+                                            cara install Windows di virtual box ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-install-dual-boot-kali-linux">27.
+                                            cara install dual boot kali linux</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-install-ssh-pada-linux-debian-10">28.
+                                            Cara install SSH pada linux Debian 10</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ada-apa-dengan-virtual-box-yang-tidak-bisa-menginstall-dua-sistem-operasi-yang-sama-contohnya-debian6-dan-debian8-pasti-salah-satu-so-tersebut-tidak-berfungsi-bantuannya-dong">29.
+                                            ada apa dengan virtual box yang tidak bisa menginstall dua sistem operasi yang sama. contohnya debian6 dan debian8, pasti salah satu SO tersebut tidak berfungsi. bantuannya dong</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hal-yang-harus-dilakukan-saat-install-kali-linux-adalah">30.
+                                            Hal Yang Harus Dilakukan Saat Install kali Linux adalah</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="jelaskan-alasan-dan-cara-mengembalian-linux-debian-yang-telah-di-install-hilang-ketika-reboot-di-virtual-box">
+                            1. Jelaskan alasan dan cara mengembalian linux debian yang telah di install hilang ketika reboot Di virtual box</h2><br />
+                        <p>Sepertinya VM Anda mem-boot dari ISO / CD Image, bukan dari sistem Installed. Ini terjadi karena Anda masih memiliki ISO atau CD di drive VM.</p><p>Langkah pengembaliannya :</p>Un-mount VM dengan perintah # umount /mnt/iso atau jika terjadi error, paksa dengan perintah # umount -f /mnt/isoKeluarkan / Eject ISO / CD Image di drive VMReboot VM <p>Semoga berhasil</p><br /><br />
+                                            <h2 class="ez-toc-section" id="kenapa-saat-install-linux-debiam-di-virtual-box-yang-saat-di-enter-harus-muncul-proses-instal-malah-muncul-seperti-ini-dan-bagaimana-cara-instalnya">
+                            2. kenapa saat install linux debiam di virtual box yang saat di enter harus muncul proses instal malah muncul seperti ini dan bagaimana cara instalnya</h2><br />
+                        Masalah nya ialah CD instalasi nya error karena beberapa file dalam CD tersebut mungkin belum sepenuhnya ada atau ada yg error salah satu file nya<br /><br />Coba kamu pakai CD/ISO instalasi debian yg baru<br /><br />#semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="cara-install-windows-di-virtual-box-%e2%80%8b">
+                            3. cara install Windows di virtual box ​</h2><br />
+                        <p>1. Installah terlebih dahulu aplikasi VirtualBox di komputer Anda, lalu download file ISO Windows 10 melalui link ini. Jika sudah, maka Anda harus membuka aplikasi VirtualBox untuk membuat virtual machine yang digunakan untuk menginstall sistem operasi Windows 10. Kemudian klik tombol New.</p><p>2. Lalu berilah nama sistem operasi Anda. Kemudian klik tombol Next</p><p>3. Selanjutnya berikan ukuran memori RAM untuk virtual machine Windows 10. Disini saya memberikan memori RAM sebesar 2 GB saja. Lalu klik tombol Next.</p><p>4. Selanjutnya pilihlah Create a virtual hard disk now untuk membuat hard disk virtual untuk Windows 10. Lalu klik tombol Create.</p><p>5. Pilihlah tipe file untuk hard disk virtual Anda, kliklah VDI (Virtual Disk Image). Kemudian klik tombol Next.</p><p>6. Klik opsi Dynamically allocated. Kemudian klik tombol Next.</p><p>7. Kemudian Anda dapat memberikan ukuran virtual hard disk. Disini saya mengaturnya menjadi 50 GB. Kemudian klik tombol Create.</p><p>8. Saatnya memulai virtual machine dengan mengklik tombol Start.</p><p>9. Lalu masukkan file ISO Windows 10 dengan cara klik icon folder.</p><p>10. Maka akan muncul window Optical Disk Selector. Dan klik tombol Add untuk memasukkan file ISO Windows 10.</p><p>11. Klik file ISO WIndows 10 yang sudah Anda download, lalu klik tombol Open.</p><p>12. Selanjutnya klik tombol Choose</p><p>13. Klik tombol Start untuk memulai menginstall Windows 10 di virtualbox</p><p>14. Lalu pilihlah bahasa untuk menginstall Windows 10. Pilih saja English lalu klik tombol Next</p><p>15. Klik tombol Install Now untuk menginstall Windows 10.</p><p>16. Anda akan diminta untuk memasukkan product key. Tetapi jika Anda tidak memilikinya, maka klik saja tombol I dont have a product key.</p><p>17. Lalu pilih sistem operasi yang ingin Anda Install. Anda dapat memilih salah satu dari jenis sistem operasi keluaran Windows 10. Disini saya akan menginstall Windows 10 Pro. Lalu klik tombol Next.</p><p>18. Berikan centang pada opsi I accept the license terms. Lalu klik tombol Next.</p><p>19. Klik menu Custom : Install Windows only (advanced) untuk menginstall Windows 10.</p><p>20. Lalu Anda harus membuat partisi hard disk sebagai penyimpanan file dan juga untuk sistem. Klik tombol New. Lalu pada bagian Size, berikan ukuran partisi yang ingin Anda gunakan. Kemudian klik tombol Apply.</p><p>21. Klik pada bagian Drive 0 Partition 2, Lalu klik Next</p><p>22. Nah sekarang Anda hanya perlu menunggu sampai proses installasi Windows 10 selesai.</p><p>23. Kemudian Anda akan diminta untuk memilih wilayah. Pilih saja wilayah United States</p><p>24. Lalu Anda akan diminta untuk memilih layout keyboard, klik US.</p><p>25. Pada bagian untuk menambahkan layout keyboard yang kedia, klik button Skip.</p><p>26. Apabila komputer Anda tidak tersambung ke internet, klik tombol Next.</p><p>27. Pilih menu Set up for personal use, karena disini Anda menggunakan Windows 10 untuk keperluan pribadi. Lalu klik tombol Next.</p><p>28. Masuklah ke akun Microsoft Anda, jika belum memiliki maka Anda disarankan untuk mendaftar terlebih dahulu dengan klik button create account. Jika sudah memiliki akun, ketikkan alamat email Anda. Lalu klik  tombol Next. Lalu ketikkan password akun Anda.</p><p>29. Untuk Anda yang baru saja mendaftar akun, maka masukkan negara Anda dengan memilih Indonesia dan masukkan juga tanggal lahir Anda. Kemudian klik tombol Next.</p><p>30. Lalu buatlah PIN dengan cara klik Create PIN</p><p>31. Masukkan PIN yang ingin Anda atur, lalu klik tombol OK.</p><p>32. Klik tombol Accept.</p><p>33. Tunggu beberapa saat sampai proses pengaturan selesai. Maka kini Anda sudah bisa menikmati layanan Windows 10 di VirtualBox<strong>.</strong></p><p></p><p></p><p><strong>.Sekian </strong><strong>dari </strong><strong>saya</strong><strong> semoga</strong><strong> membantu</strong><strong> ya</strong><strong> kakak</strong><strong> kakak</strong><strong> sekalian</strong><strong> jika</strong><strong> ada</strong><strong> salah</strong><strong> mohon</strong><strong> dimaafkan</strong><strong> ❤️</strong><strong> (. ❛ ᴗ ❛.)</strong></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="cara-install-so-cli-linux-ubuntu">
+                            4. Cara install so cli linux ubuntu</h2><br />
+                        1. Pertama, kita buka Terminal..<br />ctrl+alt+T <br />2. Lalu masuk sebagai root.<br />3. Kemudian update ubuntu anda dengan cara..<br />apt-get update<br />5. Untuk menginstal aplikasi anda dapat mengetikan perintah berikut :<br />apt-get install namaaplikasi<br />contohnya saya menginstal aplikasi scilab..<br />apt-get install scilab<br />6. Apabila tampil gambar seperti di bawah ini, ketik Yuntuk menyetujui lalu Enter.<br />7. Proses instalasi sedang berjalan, tunggu sampai selesai<br />8. Jika proses instalasi selesai, coba anda buka aplikasi tersebut..<br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-install-ulang-linux">
+                            5. Bagaimana cara Install ulang Linux???</h2><br />
+                        Sama Aja kayak instal ulang Windows yang Ngebedain tampilan dan cara-nya doang klo di Windows kan lansung tinggal atur partisinya Doang <br /><br />klo di linux ada 2 pilihan yang Instal ulang hanya menggunakan keyboard Mouse tidak kebaca trus pilihan kedua Mouse kebaca <br />tapi klo gua saranin pilih yang pake keyboard aja karena sekalian belajar linux klo pake mouse itu gk ada tantangannya sama aja kayak instal windows 8/7<br /><br />klo di linux itu waktu penginstalan kita disuruh memasukkan keyword di setiap perintahnya <br /><br />setiap linux itu berbeda yang paling gampang diinstal itu Linux.Backtrack 5, trus Linux Ubuntu. klo debian itu agak sulit tapi gak sulit sih klo udah ngerti konsepnya <br /><br />SELAMAT BELAJAR LINUX<br /><br />
+                                            <h2 class="ez-toc-section" id="dalam-meng-install-suatu-windows-terdapat-beberapa-perintah-yang-terdapat-pada-pc-yang-tidak-dapat-memenuhi-spesifikasi-dalam-install-windows-dapat-menggunakan-suatu-aplikasi-virtual-box-antara-lain">
+                            6. dalam meng-install suatu windows terdapat beberapa perintah. yang terdapat pada PC yang tidak dapat memenuhi spesifikasi dalam install windows dapat menggunakan suatu aplikasi virtual box antara lain sbb yaitu adalah ​</h2><br />
+                        <p>Jawaban:</p><p>ORACLE VIRTUALBOX</p><p>VMWARE</p><p><br />Aku cuma tau itu semoga bermanfaat</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="cara-install-so-cli-linux-ubuntu">
+                            7. Cara install so cli linux ubuntu</h2><br />
+                        Unduh os tersebut dari web, formatlah kedalam sebuah usb lalu matikan komputer dan masukan usb, ketika startup pilih opsi untuk boot dari usb, mulai proses instalasi<br /><br />Untuk lebih detil mungkin lebih baik dilihat di youtube<br />
+                                            <h2 class="ez-toc-section" id="bagaimana-caranya-menginstall-linux-di-laptop">
+                            8. bagaimana caranya menginstall linux di laptop?</h2><br />
+                        ▶Siapkan sebuah flashdisk<br />▶Merestart komputer dan kemudian masuk dipengaturan BIOS komputer<br />▶Pada menu BOOT aturlah posisi booting dengan menempatkan flashdisk berada dipaling atas, selanjutnya diikuti HDD, CD/DVD dan klik save<br />▶Pilih bahasa lalu klik instal linux yg ingin dinstalPertama download ISO Linux/ubuntu/etc ke device<br /><br />Kedua gunakan Rufus atau sbb untuk burn ke flashdisk<br /><br />Ketiga atur first boot ke usb yang digunakan<br /><br />Keempat boot dari usb lalu install linux<br />
+                                            <h2 class="ez-toc-section" id="cara-install-kali-linux-dan-menginstall-drivernyapliss-jawab-ya">
+                            9. cara install kali linux dan menginstall drivernya?
+pliss jawab ya</h2><br />
+                        Pertama kamu masuk ke bios dan setting boot ke flashdisk/cd yang di gunakan dan ikuti prosesnya,kalau masalah driver kali linux kayaknya udah ada kok<br /><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-menginstal-sistem-operasi-linux-ubuntu-menggunakan-virtual-box">
+                            10. bagaimana cara menginstal Sistem Operasi Linux Ubuntu menggunakan Virtual Box ??</h2><br />
+                        <p><strong>Hal-hal yang dilakukan sebelum installasi:
+</strong></p>Download Virutal box terlebih dahulu
+Menyiapkan master ubuntunya
+Pembahasan
+<p><strong>Langkah-langkah menginstal Sistem Operasi Linux Ubuntu menggunakan Virtual Box:
+</strong></p>Buka Virtual Boxnya, dan klik new
+Isikan nama, tipe, versi dan next isi selanjutnya seperti ukuran memorinya ingin berapa, next sikan ingin membuat virtual hard disk now bertipe VHD dan dinamic alokasi dan next. Serta isikan lokasi dan uuran data ubuntunya.
+Setelah itu masuk setting di virtual box vmwarenya, setelah itu masuk storage, controller IDE - Empty setelah itu pilih Capital drive, pilih gambar cd.
+Dan pilih choose virtual optical disk flike, dan pilih data master ubuntunya dan klik oke
+Setelah itu akan kembali ke menu awal, dan pilih menu start. Installasi akan dimulai
+Isi installasi dengan keinginan dan kebutuhan, seperti pemilihan bahasa, atau hanya uji coba ubuntu atau menginstall penuh ubuntu, ketersediaan partisi untuk installasi, dan daerah mana anda berada, keyboard layoutnya, dan yang terakhir sampainya username dan password yang akan anda isikan.  Jika langkah next semua installasi sudah disini, maka akan restart atau langsung installasi seslai.
+<p><strong>
+</strong></p>Pelajari lebih lanjut
+<p>1. Langkah Instalasi Sistem Operasi Open Source?https://brainly.co.id/tugas/3002024
+</p><p>2. Setelah melakukan instalasi Sistem Operasi CLosed Source dan Sistem Operasi Open Source, ada perbedaan langkah instalasi yang ada hanya di Sistem operasi Closed Source. Apakah itu? https://brainly.co.id/tugas/17858090
+</p><p>-----------------------------------------
+</p><p>
+</p>Detil jawaban
+<p><strong>Kelas:  </strong>7
+</p><p><strong>Mapel:  </strong>TIK
+</p><p><strong>Bab:  </strong>Bab 6 - Operasi Dasar pada Sistem Operasi
+</p><p><strong>Kode:  </strong>7.11. 6
+</p><p><strong>
+</strong></p><p><strong>#AyoBelajar</strong></p><br />
+                                            <h2 class="ez-toc-section" id="cara-install-ssh-pada-linux-debian-8-1">
+                            11. cara install SSH pada linux Debian 8.1</h2><br />
+                        1. Instal paket ssh server, dengan perintah: apt-get install ssh<br /><br /><br /><br />2. Bila ada konfirmasi y / n, ketik saja y<br /><br /><br /><br />3. Untuk meremote server via localhost, ketikkan perintah: ssh root @ localhost , kemudian ketikkan yes<br /><br /><br />4. Kemudian jika Anda ingin mengubah port pada ssh server Anda, ketikkan perintah:<br />cd / etc / ssh - ls - pico sshd_config atau pico / etc / ssh / ssd_config<br /><br /><br />5. Lalu ubah port pada baris seperti gambar dibawah:<br /><br /><br />6. Ubah Port 22 menjadi port yang ingin Anda hendaki, misalnya: 850<br /><br /><br /><br />7. Setelah selesai, simpan file tersebut dengan CTRL-X, Y<br />8. Restart konfigurasi ssh Anda: /etc/init.d/ssh restart<br /><br /><br /><br />PENGUJIAN PADA KLIEN<br /><br />1. Anda harus memiliki aplikasi bernama Putty, jika belum silahkan download disini<br />2. Buka aplikasi Putty<br />3. Pada kolom Host Name (or IP address) masukkan alamat IP Address Anda<br />    Pada kolom Port masukkan Port yang tadi Anda konfigurasi<br /><br />Misalnya, port tadi kita ubah menjadi 850, maka pada kolom ini Anda masukkan 850.<br /><br />4. Open<br /><br /><br />5. Jika muncul Security Alert, pilih saja Yes<br /><br /><br /><br />5. Maka jika Anda berhasil akan muncul tampilan prompt putty Anda seperti gambar dibawah<br />6. Silahkan login akun debian Anda tadi, masukkan username dan password  Anda.<br />7. Dan jangan lupa masuk su atau root<br /><br /><br /><br />8. Jika Anda sudah dapat meremote server debian Anda, maka ssh server Anda telah berhasil.<br />9. Anda bisa menginstal dan konfigurasi  DNS, WEB, DHCP, FTP, PROXY, dll dari Klien Anda tanpa melalui server.<br /><br />atau agan buka link ini http://siiferysaputra.blogspot.co.id/2015/02/cara-konfigurasi-ssh-server.html<br />
+                                            <h2 class="ez-toc-section" id="cara-menginstal-virtual-box-di-komputer">
+                            12. cara menginstal virtual box di komputer</h2><br />
+                        Pertama, double klik icon virtual box pada komputer/laptop anda <br />Kemudian, ikuti langkah berikut klik next &gt; <br />Selanjutnya akan muncul menu shotcut, centang keduanya dan klik Next&gt;
+
+  Kemudian akan mucul perintah instalasi, maka pilih yes<br />Pada menu “Ready to Install” pilih install
+
+  
+
+<br />Maka akan muncul proses instalasinya tunggu beberapa saat
+
+ 
+<br />
+Ketika proses instalasi maka akan muncul dialog perijinan, maka pilih yes<br />Pada menu ”Windows Security” pilih instal
+
+ 
+
+  <br />Pada menu ini pun langsung pilih install
+
+ 
+<br />
+Selanjutnya akan muncul menu seperti berikut, lalu pilih install
+
+ 
+
+<br />Instalasipun selesai, centang “start oracle..” dan klik finish
+
+<br />Dan VirtualBoxpun siap digunakan
+
+ 
+
+<br /><br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-menghapus-linux-dan-menginstall-windows">
+                            13. bagaimana cara menghapus linux dan menginstall windows</h2><br />
+                        Buka Setup Windows melalui Flashdisk atau DVD rom, lalu Kamu format partisi linux dan setelah itu isi partisi itu dengan windows.Jika anda sudah terlanjur menginstall linux, maka tinggal install windows seperti biasa dengan format hard disk. partisi linux biasanya menggunakan ext4 atau ext3, maka, partisi tersebut tidak akan terbaca di instalasi windows.<br /><br />jika anda dualboot dengan windows, masuk saja ke windows dan menggunakan program utility untuk menghapus partisi linux tersebut. jika mbr sudah di replace oleh grub loader, maka, harus memasukan kembali cd instalasi untuk mengembalikan boot windows .<br /><br />
+                                            <h2 class="ez-toc-section" id="apa-perekam-layar-yang-mudah-di-install-untuk-laptop-linux-jelaskan-juga-cara-menginstallnya">
+                            14. Apa perekam layar yang mudah di install untuk laptop linux ? *Jelaskan juga cara menginstallnya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>bandicam</p><p><strong>Penjelasan:</strong></p><p>cara menginstalnya mudah kakak</p><p>1.klik "bandicam download"di google</p><p>2.klik webnya</p><p>3.klik tanda "download"</p><p>4.di tunggu download sampai selesai</p><p>5.buka installernya</p><p>6.klik run</p><p>7.lalu kalau sudah selesai buka bandicamnya dan </p><p>nanti ada pilihan kilk "yes" dan "no" kakak tinggal klik yes</p><p> </p><p></p><p>dan maaf kalau salah ya</p><p>semoga membantu</p><p></p><p><strong>Jawaban:</strong></p><p>pertama cari di google filmora screen recorder</p><p>lalu pencet download</p><p>dan selesai</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="cara-mencoba-virtualisasi-di-virtual-box">
+                            15. cara mencoba virtualisasi di virtual box</h2><br />
+                        pertama buat mesin virtual terlebih dahulu, kedua tentukan mau OS apa yg di install, kemudian kamu harus memiliki iso file atau pun cd instalasi OS kemudian jalan kan mesin virtual kemudian install OS yg kamu pilih<br /><br /><br />jika kamu sudah ada memiliki Harddisk virtual kamu tinggal membuat mesin nya dan menentukan utk memakai Harddisk yg sudah ada<br />
+                                            <h2 class="ez-toc-section" id="setelah-menginstall-os-linux-apakah-harus-menginstall-memasang-networknya-agar-dapat-tersambung-internetnya-jika-iya-bagaimana-caranya-jelaskan">
+                            16. Setelah menginstall OS linux, apakah harus menginstall / memasang networknya agar dapat tersambung internetnya ? 
+Jika iya bagaimana caranya ?
+#Jelaskan !</h2><br />
+                        Gunakan terminal untuk menginstall drivernya, kamu bisa mencari perintahnya di google. Masukkan perintahnya, nanti dia akan mendownload file nya dari google. Atau kamu juga bisa ke website pembuat network card kamu, kamu download drivernya, dan install seperti biasa<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-langkah-langkah-menginstal-linux-di-virtual-boxvmware">
+                            17. jelaskan langkah-langkah menginstal linux di virtual box/VMware !</h2><br />
+                        1. Buka Aplikasi Vbox yang sudah kita install, kemudian klik New.<br /><br />2. Lalu klik next.<br /><br />3. Isi nama OS yang akan di install, kemudian pilih tipe OS dan distro yang ingin kamu install. Lalu klik Next.<br /><br />4. Tentukan besar memori (RAM) yang digunakan untuk virtualboxnya dan sesuaikan dengan kebutuhan. Kemudian klik next.<br /><br />5. Pilih create new hard disk jika belum ada hardisk yang kits buat di Vboxnya. Jika sudah ada pilih Use existing hard disk. Kemudian klik next.<br /><br />6. Lalu pilih tipe Virtual yang akan digunakan, karena kita menggunakan Vbox maka pilih VDI. Kemudian klik next.<br /><br />7. Pilih Dynamically alocated sehingga ukuran virtual disk file bisa diubah – ubah, jika ingin tetap pilih fixed size. Kemudian klik next.<br /><br />8. Lalu tentukan besar ukuran file untuk OS linux di Vbox. Kemudian klik next.<br /><br />9. Lalu klik Create untuk membuat Virtual Disk baru.<br /><br />10. Lalu klik Create untuk membuat Virtual mesin baru.<br />11. Selamat kamu berhasil membuat Virtual linux di windows kamu. Kemudian klik Mulai.<br /><br />12. Klik next.<br /><br />13. Lalu klik gambar folder di sebelah kanan untuk memasukkan file iso linux yang akan diinstall. Setelah itu, klik next.<br /><br />14. Setelah kamu temukan file .iso linux yang akan diinstall, klik open.<br /><br />15. Setelah file .iso linux sudah dimasukkan, klik mulai.<br /><br />16. Lalu tunggu sampai prosenya selesai.<br /><br />17. Lalu klik instal Ubuntu.<br />18. Klik continue.<br />19. Pilh installation type, pilih something else. Kemudian klik continue.<br />20. Klik new partition table, kemudian klik continue.<br />21. Klik free space, kemudian klik add:<br />Untuk Swap Area: Pada Type for the new partition: pilih logical<br />New partition size in megabytes: 3000MB<br />Location for the new partition: beginning<br />Use as: swap area<br />Mount point:&lt;kosong&gt;<br />Untuk /home: Pada Type for the new partition: pilih logical<br />New partition size in megabytes: 1500MB<br />Location for the new partition: beginning<br />Use as: Ext4 journaling file system<br />Mount point: /home<br />Untuk file system: Pada Type for the new partition: pilih logical<br />New partition size in megabytes: 4089MB<br />Location for the new partition: beginning<br />Use as: Ext4 journaling file system<br />Mount point: /<br />22. Setelah partisi selesai, klik install now<br />23. Lalu tentukan lokasi dimana kamu berada, Lalu klik continue.<br />24. Lalu tentukan keyboard layout kamu. Kalau aku pilih English(US), lalu klik continue.<br />25. Isikan nama, username, dan password, kemudian klik continue.<br />26. Tunggu proses penginstallan sampai selesai. Apabila telah selesai restart komputer anda.<br />
+                                            <h2 class="ez-toc-section" id="bagaimanakah-cara-untuk-melakukan-install-debian-melalui-virtual-box">
+                            18. bagaimanakah cara untuk melakukan install debian melalui virtual box?</h2><br />
+                        
+1. Setelah 
+selesai menginstal VirtualBox maka akan muncul gambar seperti ini. Lalu 
+pilih "Install" untuk memulai menginstal Linux Debian.<br />2.  Pilih bahasa yang akan digunakan " English" , Lalu pilih next.<br />3. Pilih bahas negara "other"<br />4. Lalu pilih wilayah "Asia"<br />5. Pilih bahasa negara"Indonesia"<br />6. Pilih keyboard American English<br />7. Masukan Hostname "Debian"<br />
+8.   Masukan domain name<br />
+9.  Pilih zona waktu Jakarta<br />
+10. Klik enter “ Guided – Use enteri disk”<br />
+11. Lalu klik enter “ SCSI 1 (0,0,0,) (sda) – 8.6 GB
+ATA VBOX HARDDISK”<br />
+12. Lalu klik enter “ ALL files in one pertition
+(recommended for new users)<br />
+13. Pilih “ Finish partitioning and write changes to
+disk”<br />14. Pilih Yes<br />15. Tunggu proses Installing the base system<br />
+16. Masukkan Root password<br />17. Masukkan password lagi<br />18.Masukkan nama pengguna<br />19.Masukkan Username akun<br />20.Masukkan user password<br />
+21. Masukkan kembali user password untuk memeriksa
+kembali<br />
+22.Tunggu proses Configuring apt<br />
+23. Pilih yes untuk configuring popularity-contest<br />
+24.   Tunggu proses instalisasi software<br />25.  Pilih software yang anda inginkan , lalu klik
+continue<br />
+26.  Pilih yes untuk install the GRUB boot loader on
+a  hard disk<br />
+27. Tunggu proses installing GRUB boot loader<br />
+28.  Pilih continue untuk mengakhiri installasi<br />Okeyy selesai<br /><br /><br /><br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="cara-install-os-linux-debian">
+                            19. Cara install OS Linux Debian?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>cari di google nanti akan ketemu atau liat youtube</p><br />
+                                            <h2 class="ez-toc-section" id="cara-install-debian-9-pada-virtual-box%e2%80%8b">
+                            20. cara install debian 9 pada virtual box​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>menggunakan VirtualBox nya :</p><p>1. Pertama buka Oracle VM VirtualBox</p><p>2.lalu klik,</p><p></p><p>3.Isikan nama sistem operasi yang akan di instal (Debian 9) , untuk tipe-nya Linux. Karena kita akan menginstal Debian 9 yang 32 bit kemudian Lanjut </p><p></p><p>4.Kemudian kita akan menentukan ukuran memori virtualnya , saya menggunakan memori sebesar 512MB , </p><p></p><p>5.Kemudian kita akan masuk ke pembuatan hardiskn virtual , kita pilih Create a virtual harddisk now lalu klik Buat.</p><p></p><p>6.Selanjutnya kita akan masuk ke pemilihan tipe harddisk virtual , pilih VDI (Virtual Disk Image) klik Lanjut.</p><p></p><p>7.Kemudian pilih Dinamically allocated lalu klik Lanjut.</p><p></p><p>8. Selanjutnya akan disuruh untuk menentukan lokasi dan ukuran berkas, Untuk tahap ini kita simpan lokasi nya sesuai keinginan, menentukan dengan ukuran hardisk  yaitu 20,00 GB, lalu klik Buat.</p><p></p><p>9.Di tahap ini kita sudah selesai membuat sebuah mesin virtual baru, kemudian kita akan melakukan setting pada mesin virtual tersebut. Klik pada mesin virtual yang kita buat tadi kemudian pilih Pengaturan.</p><p></p><p>10. Pilih tab SYSTEM,lalu centang ENABLE IO APIC</p><p></p><p>11. Pilih tab Penyimpanan , dan klik pada Pengendali IDE , klik di logo CD yang betuliskan Kosong. Kemudian pada bagian sebelah kanan di atribut Optical Drive klik logo CD lalu klik Choose Virtual Optical Disk File. Disini kita diminta memasukan tipe dari master sistem operasi yang akan digunakan. Dalam hal ini kita mengggunakan ISO file untuk instalasi Debuan Linux nya. Maka kita klik pada gambar CD lalu browser dimana file ISO debian kita simpan dan klik Open.</p><p></p><p>12.pada Tab NETWORK,pada bagian “Attached to” pilih Bridge Adapter,lalu klik pilihan advanced pada bagian “Prosmicuous Mode” pilih Allow All.setelah selesai klik OK</p><p></p><p>13.Pda jendela utama virtualbox, kita klik Debian yang tadi kita buat klik Mulai untuk memulai instalasi.</p><p></p><p>14.Selanjutnya akan muncul seperti dibawah ini kita pilih Install dan Enter.</p><p></p><p>15.tunggu sampai proses booting selesai, maka akan tampilan seperti ini, pilih bahasa kalau anda memilih bahasa indonesia tidak apa-apa tapi saya sarankan agar memilih bahasa Inggris agar kita cepat memahami perintah-perintah dalam bahasa inggris, kemudian tekan Enter.</p><p></p><p>16.Kemudian masuk untuk memilih area country, Kemudian tekan Enter</p><p></p><p>17.saat menu Contient or Region,pilih Asia</p><p></p><p>18.saat menu Country, Territory or Area pilih Indonesia</p><p></p><p>19.saat menu “Country to base default locale setting on” pilih United States</p><p></p><p>20.saat menu “Keymap to use” pilih American English</p><p></p><p>21.saat proses waiting pada setelan network,pilih cancel/tekan enter saat proses setelan network</p><p>22.saat menu “Configure the Network” pilih Configure network manually</p><p></p><p>23.saat menu “IP address” isilah ip Address pc kalian,</p><p></p><p>24.menu “netmask” isilah sesuai pc kalian,</p><p></p><p>25.menu “Gateway” isilah sesuai pc kalian,</p><p></p><p>26.menu “Name Server addresses” isilah ip address pc kalian,</p><p></p><p>27.menu “Hostname” isilah nama kalian,</p><p></p><p>27.menu “Domain name” isilah nama kalian,</p><p></p><p>28.menu “Root password” isilah terserah kalian,</p><p></p><p>29.menu “Re-enter password to verify” isilah password yang tadi,</p><p></p><p>30.menu “Full name for the new user” isilah nama kalian,</p><p></p><p>31.menu “username for your account” isilah nama kalian,</p><p></p><p>32.menu “Choose a password for the new user” isilah terserah kalian,</p><p></p><p>33.menu “Re-enter password to ferify” isilah password sebelumnya,</p><p></p><p>34.menu “Select city in your time zone” pilih yang paling atas,</p><p></p><p>35.Setelah itu masuk pada tahap selanjutnya yaitu mempartisi hardisk, di situ ada 4 pilihan bisa secara manual bisa juga secara otomatis, kalau saya pilih yang paling atas biasa ngirit waktu soalnya kalau manual banyak langkah-langkahnya, hehehe kemudian tekan Enter, tahap berikutnya tidak perlu di ganti-ganti lagi jadi tekan Enter saja , , ,</p><p></p><p>36.menu “partitioning scheme” pilih yang paling bawah,</p><p></p><p>37.tekan enter pada finish partitioning,</p><p></p><p>38.pilih yes,</p><p></p><p>39.Pada tahap berikutnya akan ada perintah ” Scan another CD or DVD ” pilih No kemudian tekan tombol Enter</p><p></p><p>40.Selanjutnya untuk ” Network Mirror ” pilih No juga kemudian Enter</p><p></p><p>41.Tahap selanjutnya sama saja dengan langkah ke-39 dan 40, pilih No kemudian Enter, tunggu proses sampai selesai</p><p></p><p>42.Pilih sosftware yang akan di instal, dipilih semua juga tidak apa-apa tapi untuk mempersingkat waktu pilih system standar/ standart system saja. Kalau kamu ingin tampilan debian berbasis GUI pilih juga Dekstop Environment dengan menekan (spasi), Setelah itu untuk melanjutkan tekan enter,</p><p></p><p>43.Install boot loader GRUB pada master boot record kita pilih Ya</p><p></p><p>44.menu ” Device for boot loader instalation” pilih yang bawah,</p><p></p><p>45.Akhirnya setelah lama menunggu selesai juga, kemudian tinggal tekan Enter aja, Mesin akan merestart sendiri</p><p></p><p>46.Debian V.5 siap digunakan, tinggal masukin username dan passwordnya</p><p></p><p>setelah berhasil log in maka sudah berhasil </p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-install-wireless-driver-di-kali-linux-dengan-install-dari-terminal-dan-download-dari-browser">
+                            21. bagaimana cara install wireless driver di kali linux dengan install dari terminal dan download dari browser</h2><br />
+                        Langkah pertama cek apakah benar-benar broadcom atau tidak vendor wireless anda.<br />Kemudian download script ini lewat terminal<br /><br /><br />Kemudian kasih hak akses eksekusi pada script yang tadi didownload<br /><br /><br />Jalankan script tadi tunggu sampai selesai<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-beberapa-perintah-yang-di-jalankan-untuk-menghubungkan-jaringan-linux-dan-windows-menggunakan-virtual-box">
+                            22. Sebutkan  beberapa perintah yang di jalankan untuk menghubungkan jaringan Linux dan Windows menggunakan Virtual box</h2><br />
+                        <p>Utamakan adapter Network diganti ke mode Host Only</p><br /><p>Dalam Linux :</p><p>Ketik "nano /etc/network/interface" untuk mengedit IP Address</p><p>cari kata yg bernama "dhcp" diganti dengan "static" dan juga tulis dibawahnya</p><p>address=192.168.1.1</p><p>network=192.168.1.0</p><p>netmask=255.255.255.0</p><p>gateway=192.168.1.2</p><br /><p>Setelah itu tekan Ctrl + x dan pilih yes untuk disave dan restart konfigurasi interface "/etc/init.d/networking restart" dan ketik ifconfig untuk melihat ip address dan port untuk melihatnya</p><br /><p>Untuk Windows, klik kanan "Open Network And Sharing Center" klik "Change Network Adapter" klik kanan Virtual Host ke properties pilih tcp/ip ipv4 dan isi address 192.168.1.2 netmask 255.255.255.0 gateway 192.168.1.1, setelah itu klik ok</p><br /><p>Jika sudah buka CMD, ping 192.168.1.1 (Linux) apakah sudah terhubung atau tidak.</p><p>Koreksi Jika salah ya :')</p><br />
+                                            <h2 class="ez-toc-section" id="saya-ingin-menginstal-linux-divirtual-box-saat-saya-ingin-klik-start-aplikasinya-tidak-berjalan-seperti-biasa-malah-ada-peringatan-virtualbox-erorr-apa-yang-saya-harus-ubah">
+                            23. saya ingin menginstal linux divirtual box saat saya ingin klik start, aplikasinya tidak berjalan seperti biasa malah ada peringatan "virtualbox erorr". apa yang saya harus ubah ? </h2><br />
+                        uninstall dan install kembali.. disarankan sambil melihat tutorial di youtube atau di internet..<br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-install-linux%e2%80%8b">
+                            24. bagaimana cara install linux?​</h2><br />
+                        <p>Jawaban: mungkin hp nya harus di root biar bisa masang linux</p><p></p><p>Penjelasan:</p><p>Cari apk nya di web apk pure aja</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="install-konfigurasi-web-linux-adalah">
+                            25. Install konfigurasi web Linux adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Web server merupakan perangkat lunak (software) dalam server yang berfungsi untuk menerima permintaan (request) berupa halaman web melalui protokol HTTP dan atau HTTPS dari client yang lebih dikenal dengan nama browser, kemudian mengirimkan kembali (respon) hasil permintaan tersebut ke dalam bentuk halaman-halaman web yang pada umumnya berbentuk dokumen HTML.</strong></p><p><strong>Jawaban:</strong></p><p>Instalasi dan Konfigurasi Web Server</p><p>Instalasi web server apache dan php7.0</p><p>Untuk melakukan instalasi web server, ketikkan perintah berikut pada terminal linux:</p><p></p><p>Konfigurasi Web Server Apache</p><p>#1 Masuk ke direktori sites-available dengan perintah berikut</p><p></p><p>#cd /etc/apache2/sites-available/</p><p></p><p>#2 Jika sudah berada pada direktori /etc/apache2/sites-available/, buatlah file “web” dengan cara mengcopy file 000-default.conf pada direktori yang sama dengan perintah berikut:</p><p></p><p></p><p>#cp 000-default.conf web</p><p></p><p>#3 Masuk ke file web dengan perintah berikut:</p><p></p><p>#nano web</p><p></p><p>Jika sudah terbuka, hapus semua script lalu ganti dengan script seperti gambar berikut ini (IP address dan domain dapat diganti sesuai keinginan):</p><p></p><p></p><p></p><p>#4 Buatlah file pada directory /var/www/html/ dengan nama index.php, dengan perintah berikut:</p><p></p><p>#pico /var/www/html/index.php</p><p></p><p>Lalu ketikkan script seperti gambar di bawah ini:</p><p></p><p></p><p></p><p>Restart web server apache2 dengan perintah berikut:</p><p></p><p>#/etc/init.d/apache2 restart</p><p></p><p>client dengan sistem operasi windows, terlebih dahulu harus mensetting IP address dan DNS server dengan mengakses konfigurasi IP address pada LAN/ethernet via Control Panel &gt; Network and Internet &gt;  Network and Sharing Center &gt; Change adapter settings &gt; Ethernet &gt; Properties &gt; Internet Protocol version 4 &gt; Properties</p><p></p><p></p><p>#apt-get install apache2 php7.0</p><br />
+                                            <h2 class="ez-toc-section" id="cara-install-windows-di-virtual-box-%e2%80%8b">
+                            26. cara install Windows di virtual box ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>emm mungkin pake komputer</p><p><strong>Penjelasan:</strong></p><p>maaf kalay slah</p><br />
+                                            <h2 class="ez-toc-section" id="cara-install-dual-boot-kali-linux">
+                            27. cara install dual boot kali linux</h2><br />
+                        1. pastikan OS anda saat ini adalah windows, lalu beri ruang kosong pada harddisk utk digunakan sebagai lokasi install kali linux<br />2. buat bootable kali linux sesuai dengan partisi yg anda gunakan (gpt/mbr)<br />3. install kali linux pada partisi yg sudah disediakan<br />langkah instalasi nya sama seperti biasa, yg beda adalah penempatan partisinya. hati-hati dalam pemilihan partisi, salah partisi akan menyebabkan kehilangan data windows. jangan lupa untuk grub loadernya di oke<br />
+                                            <h2 class="ez-toc-section" id="cara-install-ssh-pada-linux-debian-10">
+                            28. Cara install SSH pada linux Debian 10</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>sudo apt-get update &amp;&amp; sudo apt-get upgrade;</p><p>sudo apt-get install openssh-server;</p><p>sudo service ssh start;</p><p>sudo apt-get install openssh-client;</p><p>ssh user@ipaddress;</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="ada-apa-dengan-virtual-box-yang-tidak-bisa-menginstall-dua-sistem-operasi-yang-sama-contohnya-debian6-dan-debian8-pasti-salah-satu-so-tersebut-tidak-berfungsi-bantuannya-dong">
+                            29. ada apa dengan virtual box yang tidak bisa menginstall dua sistem operasi yang sama. contohnya debian6 dan debian8, pasti salah satu SO tersebut tidak berfungsi. bantuannya dong</h2><br />
+                        1.jika kedua os tersebut telah terinstal, maka coba os yang tidak dapat dibuka ubah jaringan nya menjadi nat. <br />2.restart pc asliya<br />3. jiak masih tidak bisa hatddisk nya tidak mencukupi<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="hal-yang-harus-dilakukan-saat-install-kali-linux-adalah">
+                            30. Hal Yang Harus Dilakukan Saat Install kali Linux adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Mengganti Repository Kali Linux</p><p>2.Update &amp; Upgrade</p><p>3.Install Driver Sound</p><p>4. Install Archive Manager</p><p>5. Install Wine</p><p>6. Install Flash</p><p><strong>Jawaban:</strong></p><p>Ada baiknya, bila kita men-backup file (yang sekiranya dianggap penting) yang ada di OS yang lama, baik dari Windows ataupun jenis Linux lainnya yang penah kita pakai (untuk instalasi full, bukan dualboot).</p><p>Kali Linux itu sendiri basic-nya (rata-rata) untuk coding / pemrograman, bahkan hacking dikarenakan fitur-fiturnya yang sudah disupport untuk melakukan beberapa hal itu tadi.</p><p>Hal yang harus diperhatikan saat pertama kali install :</p><p>1. Kita membutuhkan tampilan Desktop, atau</p><p>2. Hanya memerlukan standart utilities (berbasis teks)</p><p>Hal berikutnya adalah menyesuaikan dengan kebutuhan, saat install Kali Linux tergantung dengan kebutuhan, semisal kita ingin menginstal Kali Linux hanya untuk coba" / iseng, atau kita memang benar-benar butuh untuk coding. </p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/Hu1Gs3Jqymw?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/bahan-untuk-menghias-vas-bunga.html">Bahan Untuk Menghias Vas Bunga</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/sebutkan-gerak-spesifik-permainan-bola-voli.html">Sebutkan Gerak Spesifik Permainan Bola Voli</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/60-gram-berapa-sendok.html">60 Gram Berapa Sendok</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/mengapa-menyanyikan-lagu-harus-dengan-irama-yang-tepat.html">Mengapa Menyanyikan Lagu Harus Dengan Irama Yang Tepat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/contoh-pengukuran-langsung.html">Contoh Pengukuran Langsung</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/mcb-listrik-900-watt.html">Mcb Listrik 900 Watt</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/peta-pemerataan-pembangunan-desa-dan-kota.html">Peta Pemerataan Pembangunan Desa Dan Kota</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/pak-dedi-membeli-suatu-sepeda-motor-bekas-dengan-harga.html">Pak Dedi Membeli Suatu Sepeda Motor Bekas Dengan Harga</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/jawaban-ips-kelas-8-halaman-133.html">Jawaban Ips Kelas 8 Halaman 133</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/sikap-berbagi-apa-yang-bisa-kita-contoh-dari-mang-samad.html">Sikap Berbagi Apa Yang Bisa Kita Contoh Dari Mang Samad</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/sifat-serat-kapas-yang-menyebabkan-mudah-kusut-adalah.html">Sifat Serat Kapas Yang Menyebabkan Mudah Kusut Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/sebutkan-contoh-bentuk-non-geometris.html">Sebutkan Contoh Bentuk Non Geometris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/cara-paket-telkomsel-4g-unlimited.html">Cara Paket Telkomsel 4g Unlimited</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/ayo-kita-berlatih-6-3-matematika-kelas-8-semester-2.html">Ayo Kita Berlatih 6 3 Matematika Kelas 8 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/stopwatch-adalah.html">Stopwatch Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/ciri-paguyuban-menurut-tonnies.html">Ciri Paguyuban Menurut Tonnies</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/sikap-akhir-gerakan-guling-belakang-adalah.html">Sikap Akhir Gerakan Guling Belakang Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/badan-yang-menulis-surat-kabar.html">Badan Yang Menulis Surat Kabar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/prinsip-harmoni-dalam-keberagaman.html">Prinsip Harmoni Dalam Keberagaman</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/gambar-flora-dan-fauna-mudah.html">Gambar Flora Dan Fauna Mudah</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://variableph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://variableph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

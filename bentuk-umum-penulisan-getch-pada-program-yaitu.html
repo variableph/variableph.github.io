@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bentuk Umum Penulisan Getch Pada Program Yaitu - QnA</title>
+    <meta name="description" content="Bentuk Umum Penulisan Getch Pada Program Yaitu, | Bahasa Pemrograman C ++ | !!, , , , Rafli Fasha, 2018-11-05T15:46:40.000000Z, 23, Format umum penulisan bmm3112, es.slideshare.net, 1024 x 1450, jpeg, , 20, bentuk-umum-penulisan-getch-pada-program-yaitu, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bentuk Umum Penulisan Getch Pada Program Yaitu - QnA" />
+    <meta property="og:description" content="Bentuk Umum Penulisan Getch Pada Program Yaitu, | Bahasa Pemrograman C ++ | !!, , , , Rafli Fasha, 2018-11-05T15:46:40.000000Z, 23, Format umum penulisan bmm3112, es.slideshare.net, 1024 x 1450, jpeg, , 20, bentuk-umum-penulisan-getch-pada-program-yaitu, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bentuk Umum Penulisan Getch Pada Program Yaitu - QnA" />
+    <meta name="twitter:description" content="Bentuk Umum Penulisan Getch Pada Program Yaitu, | Bahasa Pemrograman C ++ | !!, , , , Rafli Fasha, 2018-11-05T15:46:40.000000Z, 23, Format umum penulisan bmm3112, es.slideshare.net, 1024 x 1450, jpeg, , 20, bentuk-umum-penulisan-getch-pada-program-yaitu, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://variableph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://variableph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://variableph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://variableph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://variableph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://variableph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Bentuk Umum Penulisan Getch Pada Program Yaitu</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">tuker</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Bentuk+Umum+Penulisan+Getch+Pada+Program+Yaitu" alt="Bentuk Umum Penulisan Getch Pada Program Yaitu">
+                    </div>
+                    <p></p>
+                    <p>apa fungsi getch pada bahasa c++​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-getch-pada-bahasa-c%e2%80%8b">1.
+                                            apa fungsi getch pada bahasa c++​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-getch%e2%80%8b">2.
+                                            jelaskan fungsi getch​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fungsi-dari-putchgetchclrscrgotoxy%e2%80%8b">3.
+                                            Sebutkan fungsi dari putch,getch,clrscr,gotoxy​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mohon-bantuan-nya-kakak2-yang-tau-jelasin-baris-perbarisnyainclude-include-void-mainint-nilai15char-huruf15int-iclrscrfor-i0i15i-printfmasukkan-nilai-mahasiswa-k">4.
+                                            Mohon bantuan nya kakak2 yang tau jelasin baris perbarisnya
+#include 
+#include 
+void main()
+{
+int nilai[15];
+char huruf[15];
+int i;
+clrscr();
+for (i=0;i&lt;15;i++)
+{ printf("Masukkan nilai mahasiswa ke-%d: ",i+1);
+scanf("%d",&amp;nilai[i]);
+}
+for (i=0;i&lt;15;i++)
+{
+if (nilai[i]&gt;=81 &amp;&amp; nilai[i]&lt;=100)
+huruf[i]='A';
+else if (nilai[i]&gt;=71 &amp;&amp; nilai[i]&lt;=80)
+huruf[i]='B';
+else if (nilai[i]&gt;=56 &amp;&amp; nilai[i]&lt;=70)
+huruf[i]='C'
+else if (nilai[i]&gt;=41 &amp;&amp; nilai[i]&lt;=55)
+huruf[i]='D';
+}
+for(i=0;i&lt;15;i++)
+else
+huruf[i]='E';
+printf("Nilai mahasiswa ke-%d = %d. Nilai huruf = %c
+\n",i+1,nilai[i],huruf[i]);
+getch();
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#15-perhatikan-kode-program-di-bawah-iniinclude-iostreaminclude-conio-hint-mainusing-namespace-stdint-incoutmasukkan-angka-batasan-cinnfori1-in">5.
+                                            15. Perhatikan kode program di bawah ini!#include &lt;iostream&gt;#include &lt;conio.h&gt;int main(){using namespace std;int i,n;cout&lt;&lt;"Masukkan angka batasan :  " ;cin&gt;&gt;n;for(i=1; i&lt;=n; ++icout&lt;&lt;i&lt;&lt;"";getch();}Hasil output dari program tersebut,jika diberikan input 3 adalah....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-yang-salah-dimana-yacode-include-iostreaminclude-conio-husing-namespace-stdint-mainint-acoutmasukan-angkacinaifa0coutbilangan-positi">6.
+                                            Tolong yang salah dimana ya?code :#include &lt;iostream&gt;#include &lt;conio.h&gt;using namespace std;int main(){int a;cout&lt;&lt;"masukan angka:";cin&gt;&gt;a;if(a&gt;0)cout&lt;&lt;"bilangan positif:";elsecout&lt;&lt;"bilangan negatif:";getch();}​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-perbaiki-coding-dibawah-iniinclude-%e2%80%9cstudio%e2%80%9dinclude-%e2%80%9cconio-%e2%80%9dvoid-main-int-x-x-1-awal-variabel-while-x-10-batas-akhir-perulangan">7.
+                                            1. Perbaiki Coding dibawah ini:#include “studio”#include “conio.”void main(){    int x:   x = 1: /* awal variabel */   while (x &lt;= 10) /* Batas akhir perulangan */   { 	prntf(“%d BAHASA C\n”, x);	x+; /* variabel x ditambah dengan 1 */	   }   getch();}mohon bantuannya kakak/abang yang ngerti soal coding ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-input-yang-menambahkan-tanda%c2%a0overloaded-operator-extraction%c2%a0untuk-memasukkan-nilai-adalah-%c2%a0a-cin%c2%a0b-gets%c2%a0c-getch%c2%a0d-getcha%c2%a0e-printf%e2%80%8b">8.
+                                            Fungsi input yang menambahkan tanda overloaded operator extraction untuk memasukkan nilai adalah.. A   Cin B   Gets() C   Getch() D   Getcha() E    Printf()​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-apakah-kegunaan-perintah-nb-apa-yang-terjadi-bila-preprocessor-include-iostream-h-dihilangkanc-apa-yang-terjadi-bila-preprocessor-include-conio-h-dihilangkand-apa-yang-t">9.
+                                            a. Apakah kegunaan perintah \n?
+b. Apa yang terjadi bila preprocessor #include &lt;iostream.h&gt; dihilangkan?
+c. Apa yang terjadi bila preprocessor #include &lt;conio.h&gt; dihilangkan?
+d. Apa yang terjadi bila perintah getch() dihilangkan?
+e. Apa yang terjadi bila bagian kode main() diubah menjadi Main()?
+f. Apa yang terjadi bila symbol panah perintah cout diubah menjadi cout&gt;&gt;”nama : Arya \n” ?
+g. Hilangkan tanda semicolon (;) atau tanda titik-koma setiap baris, kemudian jalankan program, apa yang
+akan terjadi? Mengapa demikian?
+h. Apa yang terjadi apabila penanda kurawal buka ( { ) diawal dan kurawal tutup (}) diakhir program
+dihilangkan? Mengapa demikian?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-getch-dan-getchartolong-yang-bisa-ti-ya-kak%e2%80%8b">10.
+                                            Apa perbedaan Getch dan Getchar?Tolong yang bisa TI ya kak​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mohon-bantuannya-kakak2-jelasin-baris-perbarisnyainclude-stdio-hinclude-conio-hvoid-mainint-a33ijclrscra00-3-a01-7-a02-5a10-4-a11-2-a12">11.
+                                            Mohon bantuannya kakak2 jelasin baris perbarisnya
+#include "stdio.h"
+#include "conio.h"
+void main()
+{
+int A[3][3],i,j;
+clrscr();
+A[0][0] = 3; A[0][1] = 7; A[0][2] = 5;
+A[1][0] = 4; A[1][1] = 2; A[1][2] = 1;
+A[2][0] = 8; A[2][1] = 3; A[2][2] = 1;
+for (i=0;i&lt;=2;i++)
+{
+for(j=0;j&lt;=2;j++)
+printf("%d ",A[i][j]);
+printf("\n");
+}
+getch();
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#level-html-dasar-apa-sajakah-fungsi-dari-include-void-main-clrscr-cout-dan-getchinclude-void-mainclrscrcout-%e2%80%9dmugi-rachmat%e2%80%9dgetch">12.
+                                            Level : HTML Dasar
+ Apa sajakah Fungsi dari Include, Void Main, Clrscr, Cout dan Getch
+#include 
+void main()
+{
+clrscr()
+cout &lt;&lt;”Mugi Rachmat”;
+getch();
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-library-di-bawah-ini-poin155-1-a-fclose-b-fopen-c-fprint-d-fwrite-e-gets-f-printf-g-scanf-2-a-log-b-log10-c-pow-d-sqrt-3-a-abs-b-atof-c-a">13.
+                                            Jelaskan fungsi library di bawah ini: (poin15+5) 1. A. fclose() B. fopen() C. fprint() D. fwrite() E. gets() F. printf() G. scanf() 2. A. log() B. log10() C. pow() D. sqrt() 3. A. abs() B. atof() C. atoi() D. div() E. exit() F. malloc() G. rand() 4. A. strcpy() B. strcat() C. strcmp() D. strlen() 5. A. clrscr() B. getch() C. gotoxy() 6. A. stlower() B. toupper() Mohon dijawab... Kalo gak seluruh nya diisi gpp... Yang penting diisi sebagian</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-kegunaan-%e2%80%9ci1j1%e2%80%9d-pada-latihan-nomor-3-soal-no-3-penjumlahan-matrik-include-include-void-mainint-a23b23x23ijclrscr-matriks-a-for-i">14.
+                                            Apa kegunaan “i+1,j+1” pada latihan nomor 3? 
+soal no 3.
+/* Penjumlahan Matrik */
+#include 
+#include 
+void main();
+{
+int A[2][3],B[2][3],X[2][3],i,j;
+clrscr();
+/** Matriks A **/
+for (i=0;i&lt;2;i++)
+{
+for(j=0;j&lt;3;j++)
+{ printf("Masukkan data matrik A[%i][%i]: ",i+1,j+1);
+scanf("%i", &amp;A[i][j]);
+}
+}
+/** Matriks B **/
+for(i=0;i&lt;2;i++)
+{
+for(j=0;j&lt;3;j++)
+{ printf("Masukkan data matrik B[%i][%i]: "i,j);
+scanf("%i", &amp;B[i][j]);
+}
+} 
+4
+/** matriks A + matriks B **/
+for(i=0;i&lt;3;i++)
+{ for(j=0;j&lt;4;j++)
+{ X[i][j]=A[i][j]+B[i][j];
+}
+}
+/** Cetak isi matriks A **/
+printf("\n matrik A\n");
+for(i=0;i&lt;3;i++)
+{ for(j=0;j&lt;4;j++)
+printf("%6i",A[i][j]);
+printf("\n");
+}
+printf("\n");
+/** Cetak isi matriks B **/
+printf("\n matrik B\n");
+for(i=0;i&lt;3;i++)
+{ for(j=0;j&lt;4;j++)
+printf("%6i",B[i][j]);printf("\n");
+}
+printf("\n");
+/** Cetak hasil penjumlahan matriks A dan B **/
+printf("\n matrik penjumlahan A+B\n");
+for(i=0;i&lt;3;i++)
+{ for(j=0;j&lt;4;j++)
+printf("%6i",X[i][j]);printf("\n");
+}
+printf("\n\n");
+getch();
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-istila-includestdioconioreturnendicoutint-maingradegetch">15.
+                                            APA ISTILA INCLUDE,STDIO,CONIO,RETURN,ENDI,COUT,INT MAIN,GRADE,GETCH</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#15-terdapat-kesalahan-pada-script-di-bawah-ini-perbaikilah-kesalahan-dan-tuliskan-kembali-scriptyang-benar-includeiostream-hincludeconio-hmainstring-nilaicinmasukkan">16.
+                                            }15. Terdapat kesalahan pada script di bawah ini, perbaikilah kesalahan dan tuliskan kembali scriptyang benar !#include&lt;iostream.h&gt;#include&lt;conio.h&gt;main(){string nilai;cin&lt;&lt;"masukkan nilai :":cout&gt;&gt;nilai;if (nilai &gt;= 80}cin&lt;&lt;"lulus";getch();​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-iostreamusing-namespace-std-int-mainint-nilai-52491522court-ecout-cegetchlengkapi-script-array-diatas-untuk-mengahasilkan-nilai-2-dan-15-seperti-gambar-diatas">17.
+                                            #include &lt;iostream&gt;using namespace std ;int main){int nilai 5={24,9,1522),court &lt;ecout cegetch():Lengkapi script array diatas untuk mengahasilkan nilai 2 dan 15, seperti gambar diatas​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tunjukan-dan-jelaskan-makna-pada-contoh-program-dibawah-mana-yang-termasuka-tipe-datab-konstantac-variabled-deklarasie-operatorf-kata-tercadangg-komentar-programcontoh-program-inclu">18.
+                                            Tunjukan dan jelaskan makna pada contoh program dibawah, mana yang termasuk
+a.Tipe Data
+b. Konstanta
+c. Variable
+d. Deklarasi
+e. Operator
+f. Kata Tercadang
+g. Komentar Program
+Contoh Program : 
+#Include "stdio.h"
+#Include "conio.h"
+void main()
+{ int x;
+float y;
+char z;
+donle w;
+clrscr(); /* untuk membersihkan layar */
+x = 10; /* variable x diisi dengan 10 */
+y = 9.45; /* variable y diisi dengan 9.45 */
+z = 'C'; /* variable z diisi dengan karakter "C" */
+w = 3.45E+20; /* variable w diisi dengan 3.45E+20 */
+printf("Nilai dari x adalah : ℅i/n", x); /* Menampilkan isi variable x */
+printf("Nilai dari y adalah : ℅f/n", y); /* Menampilkan isi variable y */
+printf("Nilai dari z adalah : ℅c/n", z); /* Menampilkan isi variable z */
+printf("Nilai dari w adalah : ℅If/n", w); /* Menampilkan isi variable w */
+getch();
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#void-main-int-r-10-int-sclrscrs-10-rcout-%e2%80%9cr-%e2%80%9c-r-%e2%80%98n%e2%80%99-cout-%e2%80%9cs-%e2%80%9c-s-%e2%80%98">19.
+                                            void main() {
+ int r = 10; int s;
+clrscr();
+s = 10 + ++r;
+cout &lt;&lt;“r = “&lt;&lt; r &lt;&lt; ‘\n’; cout &lt;&lt;“s = “&lt;&lt; s &lt;&lt; ‘\n’; getch();
+}
+Jelaskan hasil eksekusi dari program diatas</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-stdio-hinclude-conio-hint-mainint-xfloat-ychar-zdouble-wx-10y-9-45z-cw-3-45e20printfnilai-dari-x-adalah-in-xprintfnilai-dari-y-adalah-fn-yprintf">20.
+                                            #include "stdio.h"#include "conio.h"int main(){int x;float y;char z;double w;x = 10;y = 9.45;z = 'C';w = 3.45E+20;printf("Nilai dari x adalah : %i\n", x);printf("Nilai dari y adalah : %f\n", y);printf("Nilai dari z adalah : %c\n", z);printf("Nilai dari w adalah : %lf\n", w);getch();​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-program-yang-baris-yang-berisi-include-pada-dasarnya-menggunakan-fungsi-sebagai-berikut-kecuali-a-printfb-coidc-putchard-scanfe-puts2-getch-dan-getche-dipakai-untuk-membac">21.
+                                             1. Program yang baris yang berisi #include pada dasarnya menggunakan fungsi sebagai berikut, kecuali.a. Printf()b. Coid()**c. Putchar()d. Scanf()e. Puts()2. Getch () dan Getche() dipakai untuk membaca sebuah karakter dengan sifat karakter yang dimasukkan tanpa perlu diakhiri dengan menekan.a. Enterb. Spasic. Homed. Pagedowne. Insert3. Perbedaan antara prototipe yang memiliki kemiripan dengan fungsi header adalah pada bagian akhir terdapat.a. Titik komab. Dua titikc. Titik duad. Spasi gandae. Pungtuasi4. Dalam beberapa literatur, array sering disebut sebagai.a. Garisb. Larikc. Cacahd. Indekse. Urutan5. Dalam program C++ yang masih berbasis under DOS, maka bisa membuat desain interface dengan cara sebagai berikut, kecuali. a. Memanipulasi tata letakb. Memanipulasi animasic. Penggunaan warnad. Menggunakan kode ASCIIe. Pembuat Aplikasi6. Bentuk SCANF ( ) pada dasarnya menyerupai fungsi.a. Getch ( )b. Getche( )c. Kontrol prosesd. Printf ( )e. Konversi data7. Tanda yang digunakan untuk menunjukkan elemen array, dimana perhitungan elemen array dimulai dari 0 adalah.a. { }b. ( )c. ! !d. | |e. [ ]8. User interface dapat diatur dengan cara sebagai berikut, kecuali.a. Pilihan dari pembuat komputerb. Analisis sistemc. Pemrogramand. Unsur yang bersangkutane. Tujuan awal sistem9. Elemen terakhir dari Array umumnya diisi dengan karakter.a. 0b. 1c. 2d. 3e. 410. Untuk melewatkan paramater dengan referansi, dapat dilakukan dengan menambahkan karekter di depan nama parameter yaitu.a. @b. &amp;c. #d. $e. %11. Prepocessor directive adalah statemen program yang diawalai dengan tanda.a. ?b. ( )c. [ ]d. #e. $$12.Pada dasarnya, kondisi dalam percabangan switch memiliki tipe.a. Stringb. Booleanc. Numerikd. Falsee. Trus13. Dalam bubble sort, elemen yang paling kecil “diapungkan” memiliki maksud.a. Dibiarkan sajab. Tetap di posisi semulac. Diturunkan ke bawahd. Diangkat ke atase. Digeser ke samping14. Berikut yang bukan termasuk karakter-karakter yang dapat bertindak sebagai pemisah data adalah.a. Koma (‘)b. Garis hubung (-)c. Titik dua (:)d. Dua titik (..)e. Spasi15. Karena menyimpan data ke dalam baris dan kolom, maka jumlah yang dibutuhkan adalah.a. Nolb. Duac. Empatd. Ename. Delapan16. Pada pembentukan program yang ditulis dalam C++ pada awalnya kode program akan diproses oleh program.a. Loaderb. Prepocessorc. Compilerd. Assemblere. Linker17. Variabel yang dipakai di dalam fungsi scanf harus di dahului dengan operator.a. @b. &amp;c. #d. $e. %18. File header (file dengan ekstensi .h) adalah file yang berisi.a. Deklarasib. Format menuc. Konstantad. Prototipee. implementas19. Fungsi yang paling umum digunakan dalam menampilkan data adalah.a. PRINTF ( )b. PUTS ( )c. PUTCAR ( )d. SCANF ( )e. GETVHE ( )20. Berikut yang bukan termasuk bagian-bagian dari definisi fungsi adalah.a. Nameb. Parameter listc. Bodyd. Reurn typee. Output21. Hal yang perlu dipahami dalam penggunaan metode bubble sort adalah pembandingan (pergeseran data) hanya sampai pada data terakhir dikurangi.a. Limab. Empatc. Tigad. Duae. Satu22. Nilai –nilai yang akan dikirim pada sebuah fungsi disebut sebagai.a. Fungsib. Datac. Argumend. Karaktere. Struktur kendali23. Berikut yang bukan termasuk keuntungan memakai fungsi (function) adalah.a. Menguraikan tugas pemrograman yang rumitb. Mengurangi duplikasi kode dalam programc. Dapat menggunakan kode yang ditulis dalam berbagai program yang berbedad. Menginkatkan kemampuan pelacakan kesalahane. Menggunakan kayword void​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-fungsi%c2%b2-codingan-c-berikut-ini1-includeiostream2-includeconio-h3includestring4-using-namespace-std5-int-main6-string7-cout8-endl9-getch">22.
+                                            tuliskan fungsi² codingan c++ berikut ini:1. #include&lt;iostream&lt;2.#include&lt;conio.h&lt;3#include&lt;string&lt;4. using namespace std;5. int main()6. string7. cout&lt;&lt;8. endl;9. getch;​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-terjemahkan-syntax-berikut-kedalam-bentuk-pseudocodesyntax-include-iostreaminclude-conio-husing-namespace-stdint-mainint-acoutmasukan-angkacinaifa">23.
+                                            Tolong terjemahkan syntax berikut kedalam bentuk pseudocodesyntax : #include &lt;iostream&gt;#include &lt;conio.h&gt;using namespace std;int main(){int a;cout&lt;&lt;"masukan angka:";cin&gt;&gt;a;if(a&gt;0)cout&lt;&lt;"bilangan positif:";elsecout&lt;&lt;"bilangan negatif:";getch();}​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-untuk-melewatkan-parameter-dengan-referensi-dapat-dilakukan-den-menambahkan-karakter-di-depan-nama-parameter-yaitu-a-b-c-d-e-2-nilai-nilai-yang-akan-dikirim-pada-sebuah-fungsi-disebu">24.
+                                            1. Untuk melewatkan parameter dengan referensi, dapat dilakukan den menambahkan karakter di depan nama parameter yaitu.a. #b. @c. $d. &amp;e. %2. Nilai-nilai yang akan dikirim pada sebuah fungsi disebut sebagaia. fungsib. datac. argumend. karaktere. struktur kendali terakhir dari array umumnya diisi dengan karakter...a. -2b. -1c. 0d. 1e. 24. Fungsi yang paling umum digunakan dalam menampilkan data adalah . a.PUTS ()b. PRINTF ()c. PUTCHAR Od. GETCHE ( )e. SCANF ()5. Berikut yang bukan termasuk keuntungan memakai fungsi (function) adalah a. menggunakan keyword voidb. menguraikan tugas pemrograman yang rumit c. dapat menggunakan kode yang ditulis dalam berbagai program yang berbedad. mengurangi duplikasi kode dalam program e. meningkatkan kemampuan pelacakan kesalahan6. Dalam beberapa literatur, array sering disebut sebagai ..a. indeksb. larikc. garisd. cacahe. urutan7. Berikut yang bukan termasuk bagian-bagian dalam definisi fungsi adalaha. bodyb. namec. parameter listd. outpute. return type8. Pembeda antara prototipe yang memiliki kemiripan dengan fungsi header adalah pada bagian akhir terdapat.....a. titik duab. dua titike. titik komad. pungtuasie. spasi ganda9. Bentuk sean pada dasarnya menyerupai fungsi.....a. getche ()b. getch()c. kontrol prosesd. konversi datae printf()10. Nama tungsi getche() sebenarnya singkatan dari .a. get currencyb. get character and echoc. going characterd.get charactere. get the click11. Jika sejumlah variabel dapat memakai nama yang sama, namun di antarasatu variabel dengan variabel yang lain dibedakan berdasarkan subscript,termasuk dalam kategori....a. elemenb. array c. fungsid. subscripte. code12. Penomoran indeks yang dibutuhkan dalam array dimensi satu adalah ....a. sembilanb. tujuhc. limad. tigae. satu13. Fungsi utama akan dipanggil secara otomatis saat program dimulai,namun fungsi yang lain harus dijalankan melalui pernyataan ....a. parameter listb. fungsi headerc. inisialisasid. function calle. definisi fungsi14. Suatu metode pengurutan yang terinspirasi dari gelembung sabun yangada di dalam permukaan air adalaha. Bubble Sortb. Exchange Sortc. Selection Sortd. Insertion Sorte. Quick Sort15. Pengiriman parameter berupa array dimensi dua hampir sama dengan pengiriman parameter array dimensi satu, hanya perbedaannya terletakpada array dimensi dua yang harus menyebutkan posisi ..a. parameter formalb. memoric. baris dan kolomd. kolom sajae. baris saja#TOLONG BANTU DENGAN JAWABAN YG BENAR​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ada-yang-bisa-memperbaiki-program-turbo-c-initolong-ya-kakak2-dan-abang2-includeincludevoid-mainint-paketjumlah_paketmejafloat-jumlah_harga-jumlah_bayar-harga_paket-ppn-jumlah_t">25.
+                                            Ada yang bisa memperbaiki program Turbo C++ Ini?
+Tolong ya Kakak2 dan Abang2..
+#include
+#include
+void main()
+{
+int paket,jumlah_paket,meja;
+float jumlah_harga, jumlah_bayar, harga_paket, ppn, jumlah_total, harga_meja, jumlah_meja;
+double bayar;
+char kar;
+clrscr();
+do{
+printf("RESTAURANT ITALIA\n");
+printf("======================================\n");
+printf("Inputkan jenis meja(S,M,P)  :");
+scanf("%d",&amp;meja);
+printf("Inputkan Nama Paket(1-4  :");
+scanf("%d",&amp;paket);
+printf("Inputkan Jumlah Paket   :");
+scanf("%d",&amp;jumlah_paket);
+if (meja==1)
+harga_meja=100000;
+else if (meja==2)
+harga_meja=200000;
+else if (meja==3);
+harga_meja=300000;
+if (paket==1)
+harga_paket=300000;
+if (paket==2)
+harga_paket=580000;
+if (paket==3)
+harga_paket=999000;
+if (paket==4)
+harga_paket=1367000;
+jumlah_harga=jumlah_paket*harga_paket;
+ppn=jumlah_harga*0.15;
+jumlah_bayar=jumlah_harga+ppn;
+printf("nama paket      :%d\n",paket);
+printf("jumlah paket    :%d\n",jumlah_paket);
+printf("\njumlah harga=%10.2f\n",jumlah_harga);
+printf("\npajak ppn=%10.2f\n",ppn);
+printf("\njumlah total=%10.2f\n",jumlah_bayar);
+printf("\nAnda ingin menambah pesanan ? (Y/T)\n");
+scanf("%s",&amp;kar);
+}while(kar=='Y');
+printf("TERIMA KASIH ATAS KUNJUNGAN ANDA");
+getch();
+}
+Soal nya seperti ini :
+1. Buatlah Algoritma Dan Program Dari Tampilan Output Berikut :
+RESTAURANT ITALIA
+=================================================================
+Jenis Meja (S, M, P) :
+Nama Paket (1- 4) :
+Jumlah Paket :
+Anda ingin menambah pesanan? (Y / T) :
+Jumlah Harga :
+PajakPPn15% :
+Jumlah Total :
+================================================================
+Dengan Ketentuan: Meja = Sederhana(S) Rp.100.000, Mewah(M)Rp.200.000,
+President(P) Rp.300.000.
+Paket = (1)Rp.300.000, (2)Rp. 580.000, (3)Rp.999.000, (4)Rp.1.367.000
+Jumlah Harga = Jenis Meja + (Nama Paket x Jumlah Paket)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-iostreaminclude-conio-husing-namespace-stdint-main-int-a24248035795320for-int-b0b2bfor-int-k0k4kcoutabk">26.
+                                            #include &lt;iostream&gt;#include &lt;conio.h&gt;using namespace std;int main() {	int A[2][4]={{2,4,8,0},{3,5,7,9},{5,3,2,0}};	for (int b=0;b&lt;2;b++){		for (int k=0;k&lt;4;k++){			cout&lt;&lt;A[b][k]&lt;&lt;" ";		}		cout &lt;&lt; endl;	}getch();}Hasil Output diatas adalah?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tes-coding-program-yang-terdapat-pada-tampilan-berikutinclude-include-using-namespace-stdmain-int-x-int-px-pointer-ke-variabel-int-ppx-pointer-ke-pointer-x-175-px-x">27.
+                                            Tes coding program yang terdapat pada tampilan berikut
+#include 
+#include 
+using namespace std;
+main() { 
+int x; 
+int *px; //pointer ke variabel 
+int **ppx; //pointer ke pointer 
+x = 175; 
+px = &amp;x; 
+ppx = &amp;px;
+cout &lt;&lt; "Nilai x = " &lt;&lt; x &lt;&lt; endl; 
+cout &lt;&lt; "Nilai px = " &lt;&lt; *px &lt;&lt; endl; 
+cout &lt;&lt; "Nilai ppx = " &lt;&lt; **ppx &lt;&lt; endl; 
+getch(); 
+}
+ Tugas
+1. Jelaskan maksud dari program di atas (di baca dari penulisan variabel) !
+2. Buatlah program pointer dengan menjelaskan maksud dari program tersebut !(coding dan hasil di capture)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#lengkapi-struktur-programperulangan-dibawah-ini-includeconio-hinclude-iostream-husing-namespace-stdint-main-a-b-a1-a-5-aforb-a-b-5-bcou">28.
+                                            Lengkapi struktur programperulangan dibawah ini *#include&lt;conio.h&gt;#include &lt;iostream h&gt;using namespace std;int main......... a, b,........(a=1; a &lt;= 5; a++)for(b = a; b &lt;= 5; b++)cout &lt;a&lt;&lt;"";getch():return 0;​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#analisa-dan-jelaskan-program-dibawah-ini-dengan-notasi-kalimat-terstruktur-program_analisa-cpp-include-conio-hinclude-iostream-hvoid-maksint-x-int-y-int-zvoid-mainint-x-y">29.
+                                            Analisa dan jelaskan program dibawah ini dengan notasi kalimat terstruktur.//program_analisa.cpp #include &lt;conio.h&gt;#include &lt;iostream.h&gt;void maks(int x, int y, int z);void main(){int x, y, z, minim;   cout&lt;&lt;"Masukkan X : ";   cin&gt;&gt;x;   cout&lt;&lt;"Masukkan Y : ";   cin&gt;&gt;y;   cout&lt;&lt;"Masukkan Z : ";   cin&gt;&gt;z;   maks(x, y, z);   getch();}void maks(int x, int y, int z){   int kecil;	if (x&lt;y)   	kecil =x;   else    	kecil = y;   if (z&lt;kecil)   	kecil = z;   cout&lt;&lt;"Bilangan terkecil = "&lt;&lt;kecil;}​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apa-fungsi-getch-pada-bahasa-c%e2%80%8b">
+                            1. apa fungsi getch pada bahasa c++​</h2><br />
+                        <p><strong>Jawaban:Fungsi getch sebenarnya merupakan fungsi yang digunakan untuk membaca input dari keyboard. getch() ini merupakan kepanjangan dari Get Character. Dan karakter yang diambil oleh fungsi getch ini tidak akan ditampilkan pada console. Adapun karakter yang diambil dari keyboard hanya satu karakter.</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>Lebih lengkap? cek gan </p><p>http://blajar-komputer.blogspot.com/2011/04/perbedaan-fungsi-getch-dan-getche-pada.html</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-getch%e2%80%8b">
+                            2. jelaskan fungsi getch​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Membaca input </p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fungsi-dari-putchgetchclrscrgotoxy%e2%80%8b">
+                            3. Sebutkan fungsi dari putch,getch,clrscr,gotoxy​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>memformat output pengolahan karakter dan string</p><br />
+                                            <h2 class="ez-toc-section" id="mohon-bantuan-nya-kakak2-yang-tau-jelasin-baris-perbarisnyainclude-include-void-mainint-nilai15char-huruf15int-iclrscrfor-i0i15i-printfmasukkan-nilai-mahasiswa-k">
+                            4. Mohon bantuan nya kakak2 yang tau jelasin baris perbarisnya
+#include 
+#include 
+void main()
+{
+int nilai[15];
+char huruf[15];
+int i;
+clrscr();
+for (i=0;i&lt;15;i++)
+{ printf("Masukkan nilai mahasiswa ke-%d: ",i+1);
+scanf("%d",&amp;nilai[i]);
+}
+for (i=0;i&lt;15;i++)
+{
+if (nilai[i]&gt;=81 &amp;&amp; nilai[i]&lt;=100)
+huruf[i]='A';
+else if (nilai[i]&gt;=71 &amp;&amp; nilai[i]&lt;=80)
+huruf[i]='B';
+else if (nilai[i]&gt;=56 &amp;&amp; nilai[i]&lt;=70)
+huruf[i]='C'
+else if (nilai[i]&gt;=41 &amp;&amp; nilai[i]&lt;=55)
+huruf[i]='D';
+}
+for(i=0;i&lt;15;i++)
+else
+huruf[i]='E';
+printf("Nilai mahasiswa ke-%d = %d. Nilai huruf = %c
+\n",i+1,nilai[i],huruf[i]);
+getch();
+}</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>#include&lt;stdio.h&gt;</p><p>/*stdio. h adalah berkas "header" untuk masukan dan keluaran standar di C. Berguna untuk mengambil masukan dari user (kibor) dan menapilkan teks hasil ke layar.*/</p><p>#include&lt;conio.h&gt;</p><p>/*conio.h adalah berkas "header"yang digunakan di compiler lama MS-DOS untuk membuat tampilan teks ke user di konsol*/</p><p></p><p>void main()</p><p>//void artinya ini adalah prosedur, bukan fungsi. sehingga tidak ada pengembalian hasil</p><p>//main() menandakan bahwa ini adalah bagian dari program utama yang akan dijalankan</p><p>{</p><p>    int nilai[15]; //penetapan variabel array sepanjang 15 isi yang berisikan tipe data integer</p><p>    char huruf[15]; //penetapan variabel array sepanjang 15 isi yang berisikan tipe data char</p><p>    int i; //penetapan variabel i bertipe data integer</p><p>    </p><p>    //clrscr(); //fungsi perintah untuk menghilangkan layar konsol dari segala tulisan</p><p></p><p>    for (i=0;i&lt;15;i++) //melakukan pengulangan berikut sebanyak 15 kali, dengan meningkatkan nilai i satu per satu dari 0 sampai 15-1</p><p>    { </p><p>        printf("Masukkan nilai mahasiswa ke-%d: ",i+1); //menampilkan tulisan sesuai di samping beserta variabel i+1 </p><p>        scanf("%d",&amp;nilai[i]); //membaca masukan dari user dan menyimpan ke array "nilai" dengan indeks sesuai dengan nilai dari i</p><p>    }</p><p></p><p>    for (i=0;i&lt;15;i++) //melakukan pengulangan berikut sebanyak 15 kali, dengan meningkatkan nilai i satu per satu dari 0 sampai 15-1</p><p>    {</p><p>        if (nilai[i]&gt;=81 &amp;&amp; nilai[i]&lt;=100) //cek apakah isi dari array "nilai" pada indeks "i" itu lebih besar atau sama dengan 81 dan juga lebih kecil atau sama dengan 100</p><p>            huruf[i]='A'; //jika memenuhi kriteria di atas, isikan array "huruf" pada indeks "i" dengan karakter "A"</p><p>        else if (nilai[i]&gt;=71 &amp;&amp; nilai[i]&lt;=80) //cek apakah isi dari array "nilai" pada indeks "i" itu lebih besar atau sama dengan 71 dan juga lebih kecil atau sama dengan 80</p><p>            huruf[i]='B'; //jika memenuhi kriteria di atas, isikan array "huruf" pada indeks "i" dengan karakter "B"</p><p>        else if (nilai[i]&gt;=56 &amp;&amp; nilai[i]&lt;=70) //cek apakah isi dari array "nilai" pada indeks "i" itu lebih besar atau sama dengan 56 dan juga lebih kecil atau sama dengan 70</p><p>            huruf[i]='C'; //jika memenuhi kriteria di atas, isikan array "huruf" pada indeks "i" dengan karakter "C"</p><p>        else if (nilai[i]&gt;=41 &amp;&amp; nilai[i]&lt;=55) //cek apakah isi dari array "nilai" pada indeks "i" itu lebih besar atau sama dengan 41 dan juga lebih kecil atau sama dengan 55</p><p>            huruf[i]='D'; //jika memenuhi kriteria di atas, isikan array "huruf" pada indeks "i" dengan karakter "D"</p><p>        else //masuk sini jika hasil pengecekan isi dari array "nilai" pada indeks "i" itu tidak memenuhi satu kriteria apapun di atas</p><p>            huruf[i]='E'; //isikan array "huruf" pada indeks "i" dengan karakter "E"</p><p>    }</p><p></p><p>    for(i=0;i&lt;15;i++) //melakukan pengulangan berikut sebanyak 15 kali, dengan meningkatkan nilai i satu per satu dari 0 sampai 15-1</p><p>    {</p><p>        printf("Nilai mahasiswa ke-%d = %d. Nilai huruf = %c \n",i+1,nilai[i],huruf[i]);</p><p>        //menampilkan tulisan sesuai di atas beserta nilai dari variabel i+1, isi dari nilai sesuai indeks i, dan isi dari huruf sesuai indeks i</p><p>    }</p><p>    </p><p>    getch(); //di sini fungsi aslinya adalah perintah untuk menunggu masukan dari user yang membaca 1 karakter saja,</p><p>    //namun jika bentuknya seperti ini, lebih bertujuan agar program tidak langsung berhenti dan tertutup begitu selesai</p><p>}</p><p></p><p><strong>Penjelasan:</strong></p><p>perhatikan kalimat2 yang saya buat setelah karakter "//"</p><br />
+                                            <h2 class="ez-toc-section" id="15-perhatikan-kode-program-di-bawah-iniinclude-iostreaminclude-conio-hint-mainusing-namespace-stdint-incoutmasukkan-angka-batasan-cinnfori1-in">
+                            5. 15. Perhatikan kode program di bawah ini!#include &lt;iostream&gt;#include &lt;conio.h&gt;int main(){using namespace std;int i,n;cout&lt;&lt;"Masukkan angka batasan :  " ;cin&gt;&gt;n;for(i=1; i&lt;=n; ++icout&lt;&lt;i&lt;&lt;"";getch();}Hasil output dari program tersebut,jika diberikan input 3 adalah....​</h2><br />
+                        <strong>Jawaban:</strong>Hasil dari :<p> #include &lt;iostream&gt;</p><p>#include &lt;conio.h&gt;</p><p>int main()</p><p>{</p><p>using namespace std;</p><p>int i,n;</p><p>cout&lt;&lt;"Masukkan angka batasan </p><p>: " ;</p><p>cin&gt;&gt;n;</p><p>for(i=1; i&lt;=n; ++i</p><p>cout&lt;&lt;i&lt;&lt;"";</p><p>getch();</p><p>}</p><p></p><p>Maka hasilnya seperti pada gambar 1</p>Perbaikan:Seharusnya : <p>#include &lt;iostream&gt;</p><p>#include &lt;conio.h&gt;</p><p>int main()</p><p>{</p><p>using namespace std;</p><p>int i,n;</p><p>cout&lt;&lt;"Masukkan angka batasan:" ;</p><p>cin&gt;&gt;n;</p><p>for(i=1; i&lt;=n; i++)</p><p>cout&lt;&lt;i&lt;&lt;"";</p><p>getch();</p><p>}</p><p></p><p>Maka hasilnya akan seperti pada gambar 2</p><p></p>Kesimpulan:<p>Hasil output dari program tersebut,jika diberikan input 3 adalah.... </p>123<p></p><p></p>Semoga membantu :-)Kategori: Pemrograman dan bahasa Pemrograman C++<p></p><br />
+                                            <h2 class="ez-toc-section" id="tolong-yang-salah-dimana-yacode-include-iostreaminclude-conio-husing-namespace-stdint-mainint-acoutmasukan-angkacinaifa0coutbilangan-positi">
+                            6. Tolong yang salah dimana ya?code :#include &lt;iostream&gt;#include &lt;conio.h&gt;using namespace std;int main(){int a;cout&lt;&lt;"masukan angka:";cin&gt;&gt;a;if(a&gt;0)cout&lt;&lt;"bilangan positif:";elsecout&lt;&lt;"bilangan negatif:";getch();}​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>itu sudah benar.</p><p><strong>Penjelasan:</strong></p><p>itu sudah benar.</p><br />
+                                            <h2 class="ez-toc-section" id="1-perbaiki-coding-dibawah-iniinclude-%e2%80%9cstudio%e2%80%9dinclude-%e2%80%9cconio-%e2%80%9dvoid-main-int-x-x-1-awal-variabel-while-x-10-batas-akhir-perulangan">
+                            7. 1. Perbaiki Coding dibawah ini:#include “studio”#include “conio.”void main(){    int x:   x = 1: /* awal variabel */   while (x &lt;= 10) /* Batas akhir perulangan */   { 	prntf(“%d BAHASA C\n”, x);	x+; /* variabel x ditambah dengan 1 */	   }   getch();}mohon bantuannya kakak/abang yang ngerti soal coding ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p>#include studio.h#include conio.h<p>void main()</p><p>{ </p><p>int x;</p><p>x = 1; /* awal variabel */</p><p>while (x &lt;= 10) /* Batas akhir perulangan */</p><p>{ </p><p>	prntf(“%d BAHASA C\n”, x);</p><p>	x+; /* variabel x ditambah dengan 1 */</p><p>	 }</p><p>getch();</p><p>}</p><p></p><p><strong>Maa</strong><strong>f</strong><strong> kalo</strong><strong> salah</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-input-yang-menambahkan-tanda%c2%a0overloaded-operator-extraction%c2%a0untuk-memasukkan-nilai-adalah-%c2%a0a-cin%c2%a0b-gets%c2%a0c-getch%c2%a0d-getcha%c2%a0e-printf%e2%80%8b">
+                            8. Fungsi input yang menambahkan tanda overloaded operator extraction untuk memasukkan nilai adalah.. A   Cin B   Gets() C   Getch() D   Getcha() E    Printf()​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. Cin</p><p><strong>Penjelasan:</strong></p>Cin ( )    = Digunakkan untuk menangani standar input pada C++ dengan menambahkan        overloaded operator extraction ( &gt;&gt; ) pada cin stream3Gets ()    =  Digunakan untuk memasukkan data bertipe karakter dan tidak dapat digunakan untuk memasukkan tipe data numeric , namun bedanya dengan Getche. Gets harus diakhiri dengan menekan tombol enter.Getch ( ) = digunakan untuk menampikan data yang mempunyai tipe characters. Tetapi hanya menampilkan 1 karakter. Fungsi getch ( ) tidak dapat menampilkan data yang diinput.Getche ( ) = sama seperti fungsi pada getch ( ) , hanya Fungsi getche( ) bisa menampilkan data yang diinput.Printf ( ) = digunakkan untuk mencetak data baik berupa teks , numerik, konstanta maupun   variabel<p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-apakah-kegunaan-perintah-nb-apa-yang-terjadi-bila-preprocessor-include-iostream-h-dihilangkanc-apa-yang-terjadi-bila-preprocessor-include-conio-h-dihilangkand-apa-yang-t">
+                            9. a. Apakah kegunaan perintah \n?
+b. Apa yang terjadi bila preprocessor #include &lt;iostream.h&gt; dihilangkan?
+c. Apa yang terjadi bila preprocessor #include &lt;conio.h&gt; dihilangkan?
+d. Apa yang terjadi bila perintah getch() dihilangkan?
+e. Apa yang terjadi bila bagian kode main() diubah menjadi Main()?
+f. Apa yang terjadi bila symbol panah perintah cout diubah menjadi cout&gt;&gt;”nama : Arya \n” ?
+g. Hilangkan tanda semicolon (;) atau tanda titik-koma setiap baris, kemudian jalankan program, apa yang
+akan terjadi? Mengapa demikian?
+h. Apa yang terjadi apabila penanda kurawal buka ( { ) diawal dan kurawal tutup (}) diakhir program
+dihilangkan? Mengapa demikian?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>. Untuk Menambah Baris baru(enter) atau alternatif menggunakan endl</p><p>B. Apabila #include di hilangkan maka tidak bisa menggunakan fungsi dari iostream.h yang biasanya menggunakan cin dan cout</p><p>C. Apabila #include di hilangkan maka tidak bisa menggunakan fungsi dari conio.h berupa getch();</p><p>D. fungsi dari perintah getch() adalah bisa menggunakan spasi ketika menggunakan kata(String) apabila dihilangkan kita hanya bisa menginput satu kata(string)</p><p>hantuciru avatar</p><p>E. C++ itu menggunakan Case Sensitive yang artinya huruf besar dan huruf kecil sangat mempengaruh terhadap program. sehingga mengubah menjadi Main() akan menjadi error.</p><p>F. yang terjadi adalah tidak berfungsi atau error</p><p>hantuciru avatar</p><p>G. yang terjadi adalah error atau kode pemrograman tidak terbaca oleh sistem compiler. karena semicolon berarti akhir dari kode yang berada pada line( baris tersebut)</p><p>H. Apabila di hilangkan maka program tidak akan berjalan dikarenakan compiler nyamembutuh kan { } yg dimana di dalam tersebut membutuhkan statement</p><p><strong>Penjelasan:</strong></p><p>tidak ada</p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-getch-dan-getchartolong-yang-bisa-ti-ya-kak%e2%80%8b">
+                            10. Apa perbedaan Getch dan Getchar?Tolong yang bisa TI ya kak​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Getch dapat membaca dari input stream apapun, tetapi getchar membaca dari input standar.</p><p><strong>getc dapat membaca dari input stream apapun, tetapi getchar membaca dari input standar.</strong></p><p><strong><strong>Penjelasan:</strong></strong></p><p>Semoga membantu :D</p><p></p><p><strong>Jgn </strong><strong>lupa </strong><strong>di </strong><strong>follow </strong><strong>ya </strong><strong>kak':</strong><strong>)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="mohon-bantuannya-kakak2-jelasin-baris-perbarisnyainclude-stdio-hinclude-conio-hvoid-mainint-a33ijclrscra00-3-a01-7-a02-5a10-4-a11-2-a12">
+                            11. Mohon bantuannya kakak2 jelasin baris perbarisnya
+#include "stdio.h"
+#include "conio.h"
+void main()
+{
+int A[3][3],i,j;
+clrscr();
+A[0][0] = 3; A[0][1] = 7; A[0][2] = 5;
+A[1][0] = 4; A[1][1] = 2; A[1][2] = 1;
+A[2][0] = 8; A[2][1] = 3; A[2][2] = 1;
+for (i=0;i&lt;=2;i++)
+{
+for(j=0;j&lt;=2;j++)
+printf("%d ",A[i][j]);
+printf("\n");
+}
+getch();
+}</h2><br />
+                        <p>Jawaban:</p><p></p><p>Penjelasan:</p><p>3, 5, 7, 9}, himpunan B</p><br />
+                                            <h2 class="ez-toc-section" id="level-html-dasar-apa-sajakah-fungsi-dari-include-void-main-clrscr-cout-dan-getchinclude-void-mainclrscrcout-%e2%80%9dmugi-rachmat%e2%80%9dgetch">
+                            12. Level : HTML Dasar
+ Apa sajakah Fungsi dari Include, Void Main, Clrscr, Cout dan Getch
+#include 
+void main()
+{
+clrscr()
+cout &lt;&lt;”Mugi Rachmat”;
+getch();
+}</h2><br />
+                        include itu seperti prosesor pengarah an header<br />main adalah nama judul fungsi<br />clrscr berfungsi membersihkan layar<br />cout berfungsi mengeluarkan/menampilkan text<br />getch berfungsi menginputkan/menampilkan enter/baris selanjutnya<br /><br />#best answer yaaaa<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-library-di-bawah-ini-poin155-1-a-fclose-b-fopen-c-fprint-d-fwrite-e-gets-f-printf-g-scanf-2-a-log-b-log10-c-pow-d-sqrt-3-a-abs-b-atof-c-a">
+                            13. Jelaskan fungsi library di bawah ini: (poin15+5) 1. A. fclose() B. fopen() C. fprint() D. fwrite() E. gets() F. printf() G. scanf() 2. A. log() B. log10() C. pow() D. sqrt() 3. A. abs() B. atof() C. atoi() D. div() E. exit() F. malloc() G. rand() 4. A. strcpy() B. strcat() C. strcmp() D. strlen() 5. A. clrscr() B. getch() C. gotoxy() 6. A. stlower() B. toupper() Mohon dijawab... Kalo gak seluruh nya diisi gpp... Yang penting diisi sebagian</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>1</strong><strong>.</strong><strong>D</strong><strong>.</strong><strong>fwrite</strong></p><p><strong>2</strong><strong>.</strong><strong>B</strong><strong>.</strong><strong>log</strong><strong> </strong><strong>1</strong><strong>0</strong></p><p><strong>3</strong><strong>.</strong><strong>E</strong><strong>.</strong><strong>exit</strong></p><p><strong>4</strong><strong>.</strong><strong>A</strong><strong>.</strong><strong>getch</strong><strong> </strong></p><p><strong>5</strong><strong>.</strong><strong>B</strong><strong>.</strong><strong>toupper</strong></p><br />
+                                            <h2 class="ez-toc-section" id="apa-kegunaan-%e2%80%9ci1j1%e2%80%9d-pada-latihan-nomor-3-soal-no-3-penjumlahan-matrik-include-include-void-mainint-a23b23x23ijclrscr-matriks-a-for-i">
+                            14. Apa kegunaan “i+1,j+1” pada latihan nomor 3? 
+soal no 3.
+/* Penjumlahan Matrik */
+#include 
+#include 
+void main();
+{
+int A[2][3],B[2][3],X[2][3],i,j;
+clrscr();
+/** Matriks A **/
+for (i=0;i&lt;2;i++)
+{
+for(j=0;j&lt;3;j++)
+{ printf("Masukkan data matrik A[%i][%i]: ",i+1,j+1);
+scanf("%i", &amp;A[i][j]);
+}
+}
+/** Matriks B **/
+for(i=0;i&lt;2;i++)
+{
+for(j=0;j&lt;3;j++)
+{ printf("Masukkan data matrik B[%i][%i]: "i,j);
+scanf("%i", &amp;B[i][j]);
+}
+} 
+4
+/** matriks A + matriks B **/
+for(i=0;i&lt;3;i++)
+{ for(j=0;j&lt;4;j++)
+{ X[i][j]=A[i][j]+B[i][j];
+}
+}
+/** Cetak isi matriks A **/
+printf("\n matrik A\n");
+for(i=0;i&lt;3;i++)
+{ for(j=0;j&lt;4;j++)
+printf("%6i",A[i][j]);
+printf("\n");
+}
+printf("\n");
+/** Cetak isi matriks B **/
+printf("\n matrik B\n");
+for(i=0;i&lt;3;i++)
+{ for(j=0;j&lt;4;j++)
+printf("%6i",B[i][j]);printf("\n");
+}
+printf("\n");
+/** Cetak hasil penjumlahan matriks A dan B **/
+printf("\n matrik penjumlahan A+B\n");
+for(i=0;i&lt;3;i++)
+{ for(j=0;j&lt;4;j++)
+printf("%6i",X[i][j]);printf("\n");
+}
+printf("\n\n");
+getch();
+}</h2><br />
+                        i+1 dan j+1 merupakan variabel perulangan maka fungsinya itu untuk mengisi nilai array a dan b<br /><br /><br />#semiga membantu<br />
+                                            <h2 class="ez-toc-section" id="apa-istila-includestdioconioreturnendicoutint-maingradegetch">
+                            15. APA ISTILA INCLUDE,STDIO,CONIO,RETURN,ENDI,COUT,INT MAIN,GRADE,GETCH</h2><br />
+                        itu istilah bahasa pemrograman (koding)<br />
+                                            <h2 class="ez-toc-section" id="15-terdapat-kesalahan-pada-script-di-bawah-ini-perbaikilah-kesalahan-dan-tuliskan-kembali-scriptyang-benar-includeiostream-hincludeconio-hmainstring-nilaicinmasukkan">
+                            16. }15. Terdapat kesalahan pada script di bawah ini, perbaikilah kesalahan dan tuliskan kembali scriptyang benar !#include&lt;iostream.h&gt;#include&lt;conio.h&gt;main(){string nilai;cin&lt;&lt;"masukkan nilai :":cout&gt;&gt;nilai;if (nilai &gt;= 80}cin&lt;&lt;"lulus";getch();​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>#include&lt;iostream .h=""&gt;
+</p><p>#include&lt;conio .h=""&gt;
+</p><p>main()
+</p><p>{
+</p><p>string nilai;
+</p><p>cin&amp;lt;&amp;lt;"masukkan nilai :":
+</p><p>cout&amp;gt;&amp;gt;nilai;
+</p><p>if (nilai &amp;gt;= 80}
+</p><p>cin&amp;lt;&amp;lt;"lulus";
+</p><p>getch();​&lt;/conio&gt;&lt;/iostream&gt;</p><p></p><p></p><p><strong>Penjelasan:</strong></p><p>Mode Parce AMP</p><br />
+                                            <h2 class="ez-toc-section" id="include-iostreamusing-namespace-std-int-mainint-nilai-52491522court-ecout-cegetchlengkapi-script-array-diatas-untuk-mengahasilkan-nilai-2-dan-15-seperti-gambar-diatas">
+                            17. #include &lt;iostream&gt;using namespace std ;int main){int nilai 5={24,9,1522),court &lt;ecout cegetch():Lengkapi script array diatas untuk mengahasilkan nilai 2 dan 15, seperti gambar diatas​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>90</p><p></p><p><strong>Penjelasan:</strong></p><p>index</p><p></p><p>1=0</p><p>2=1</p><p>3=2</p><p>4=3</p><p>5=4</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tunjukan-dan-jelaskan-makna-pada-contoh-program-dibawah-mana-yang-termasuka-tipe-datab-konstantac-variabled-deklarasie-operatorf-kata-tercadangg-komentar-programcontoh-program-inclu">
+                            18. Tunjukan dan jelaskan makna pada contoh program dibawah, mana yang termasuk
+a.Tipe Data
+b. Konstanta
+c. Variable
+d. Deklarasi
+e. Operator
+f. Kata Tercadang
+g. Komentar Program
+Contoh Program : 
+#Include "stdio.h"
+#Include "conio.h"
+void main()
+{ int x;
+float y;
+char z;
+donle w;
+clrscr(); /* untuk membersihkan layar */
+x = 10; /* variable x diisi dengan 10 */
+y = 9.45; /* variable y diisi dengan 9.45 */
+z = 'C'; /* variable z diisi dengan karakter "C" */
+w = 3.45E+20; /* variable w diisi dengan 3.45E+20 */
+printf("Nilai dari x adalah : ℅i/n", x); /* Menampilkan isi variable x */
+printf("Nilai dari y adalah : ℅f/n", y); /* Menampilkan isi variable y */
+printf("Nilai dari z adalah : ℅c/n", z); /* Menampilkan isi variable z */
+printf("Nilai dari w adalah : ℅If/n", w); /* Menampilkan isi variable w */
+getch();
+}</h2><br />
+                        Tipe data  (Data Type) = int(integer) untuk tipe data berupa angka. Contohnya pada baris x = 10. x disini adalah Variable dan 10 adalah isi dari variabel x dengan tipe data berupa integer (angka). Sama dengan y dan z, y masing masing adalah variabel dengan isinya berupa data. y dengan tipe data float (desimal) dan z dengan cata bertipe char (character)<br /><br />Deklarasi maksudnya untuk menyatakan suatu variabel tertentu. Contohnya int x; //ini adalah bentuk deklarasi variabel x dengan tipe data integer<br /><br />Operator yaitu operasi matematika. Bisa diliat di baris w = 3.45E + 20 //disini ada tanda '+' yg menandakan operator penjumlahan<br /><br />Komentar program, mungkin anda liat saya pakai '//' untuk menjelaskan disini, bahasa C menggunakan '//' untuk komentar 1 baris atau<br />" /*inikomentarbaris1<br />Ini komentar baris 2*/" tanda /*_*/  artinya multi line comment<br />
+                                            <h2 class="ez-toc-section" id="void-main-int-r-10-int-sclrscrs-10-rcout-%e2%80%9cr-%e2%80%9c-r-%e2%80%98n%e2%80%99-cout-%e2%80%9cs-%e2%80%9c-s-%e2%80%98">
+                            19. void main() {
+ int r = 10; int s;
+clrscr();
+s = 10 + ++r;
+cout &lt;&lt;“r = “&lt;&lt; r &lt;&lt; ‘\n’; cout &lt;&lt;“s = “&lt;&lt; s &lt;&lt; ‘\n’; getch();
+}
+Jelaskan hasil eksekusi dari program diatas</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>outputnya :</p><p>r=11</p><p>s = 21</p><p><strong>Penjelasan:</strong></p><p>++r adalah operasi pre-inrement sehingga saat diakses isi memory dari r akan ditambahkan 1 terlebih dagulu baru kemudian dibalikkan hasilnya</p><p>jadi s=10 + ++r = 10+11 = 21</p><p>setelah diincrement, nilai r akan tetap di memori yaitu 11</p><br />
+                                            <h2 class="ez-toc-section" id="include-stdio-hinclude-conio-hint-mainint-xfloat-ychar-zdouble-wx-10y-9-45z-cw-3-45e20printfnilai-dari-x-adalah-in-xprintfnilai-dari-y-adalah-fn-yprintf">
+                            20. #include "stdio.h"#include "conio.h"int main(){int x;float y;char z;double w;x = 10;y = 9.45;z = 'C';w = 3.45E+20;printf("Nilai dari x adalah : %i\n", x);printf("Nilai dari y adalah : %f\n", y);printf("Nilai dari z adalah : %c\n", z);printf("Nilai dari w adalah : %lf\n", w);getch();​</h2><br />
+                        <p><strong>Jawaban:</strong></p>Kategori: Pemrograman dan bahasa Pemrograman<p></p>Bahasa Pemrograman: C++<p></p>Nama Aplikasi Pemrograman: Cxxdroid (tipe aplikasi android)<p></p>Komentar: Semoga membantu ;-)<p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-program-yang-baris-yang-berisi-include-pada-dasarnya-menggunakan-fungsi-sebagai-berikut-kecuali-a-printfb-coidc-putchard-scanfe-puts2-getch-dan-getche-dipakai-untuk-membac">
+                            21.  1. Program yang baris yang berisi #include pada dasarnya menggunakan fungsi sebagai berikut, kecuali.a. Printf()b. Coid()**c. Putchar()d. Scanf()e. Puts()2. Getch () dan Getche() dipakai untuk membaca sebuah karakter dengan sifat karakter yang dimasukkan tanpa perlu diakhiri dengan menekan.a. Enterb. Spasic. Homed. Pagedowne. Insert3. Perbedaan antara prototipe yang memiliki kemiripan dengan fungsi header adalah pada bagian akhir terdapat.a. Titik komab. Dua titikc. Titik duad. Spasi gandae. Pungtuasi4. Dalam beberapa literatur, array sering disebut sebagai.a. Garisb. Larikc. Cacahd. Indekse. Urutan5. Dalam program C++ yang masih berbasis under DOS, maka bisa membuat desain interface dengan cara sebagai berikut, kecuali. a. Memanipulasi tata letakb. Memanipulasi animasic. Penggunaan warnad. Menggunakan kode ASCIIe. Pembuat Aplikasi6. Bentuk SCANF ( ) pada dasarnya menyerupai fungsi.a. Getch ( )b. Getche( )c. Kontrol prosesd. Printf ( )e. Konversi data7. Tanda yang digunakan untuk menunjukkan elemen array, dimana perhitungan elemen array dimulai dari 0 adalah.a. { }b. ( )c. ! !d. | |e. [ ]8. User interface dapat diatur dengan cara sebagai berikut, kecuali.a. Pilihan dari pembuat komputerb. Analisis sistemc. Pemrogramand. Unsur yang bersangkutane. Tujuan awal sistem9. Elemen terakhir dari Array umumnya diisi dengan karakter.a. 0b. 1c. 2d. 3e. 410. Untuk melewatkan paramater dengan referansi, dapat dilakukan dengan menambahkan karekter di depan nama parameter yaitu.a. @b. &amp;c. #d. $e. %11. Prepocessor directive adalah statemen program yang diawalai dengan tanda.a. ?b. ( )c. [ ]d. #e. $$12.Pada dasarnya, kondisi dalam percabangan switch memiliki tipe.a. Stringb. Booleanc. Numerikd. Falsee. Trus13. Dalam bubble sort, elemen yang paling kecil “diapungkan” memiliki maksud.a. Dibiarkan sajab. Tetap di posisi semulac. Diturunkan ke bawahd. Diangkat ke atase. Digeser ke samping14. Berikut yang bukan termasuk karakter-karakter yang dapat bertindak sebagai pemisah data adalah.a. Koma (‘)b. Garis hubung (-)c. Titik dua (:)d. Dua titik (..)e. Spasi15. Karena menyimpan data ke dalam baris dan kolom, maka jumlah yang dibutuhkan adalah.a. Nolb. Duac. Empatd. Ename. Delapan16. Pada pembentukan program yang ditulis dalam C++ pada awalnya kode program akan diproses oleh program.a. Loaderb. Prepocessorc. Compilerd. Assemblere. Linker17. Variabel yang dipakai di dalam fungsi scanf harus di dahului dengan operator.a. @b. &amp;c. #d. $e. %18. File header (file dengan ekstensi .h) adalah file yang berisi.a. Deklarasib. Format menuc. Konstantad. Prototipee. implementas19. Fungsi yang paling umum digunakan dalam menampilkan data adalah.a. PRINTF ( )b. PUTS ( )c. PUTCAR ( )d. SCANF ( )e. GETVHE ( )20. Berikut yang bukan termasuk bagian-bagian dari definisi fungsi adalah.a. Nameb. Parameter listc. Bodyd. Reurn typee. Output21. Hal yang perlu dipahami dalam penggunaan metode bubble sort adalah pembandingan (pergeseran data) hanya sampai pada data terakhir dikurangi.a. Limab. Empatc. Tigad. Duae. Satu22. Nilai –nilai yang akan dikirim pada sebuah fungsi disebut sebagai.a. Fungsib. Datac. Argumend. Karaktere. Struktur kendali23. Berikut yang bukan termasuk keuntungan memakai fungsi (function) adalah.a. Menguraikan tugas pemrograman yang rumitb. Mengurangi duplikasi kode dalam programc. Dapat menggunakan kode yang ditulis dalam berbagai program yang berbedad. Menginkatkan kemampuan pelacakan kesalahane. Menggunakan kayword void​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. B</p><p>2.A</p><p>4.B</p><p>5.E</p><p>6.A</p><p>7.E</p><p>8.A</p><p>11.D</p><p>12.A</p><p>14.E</p><p>16.C</p><p>19.A</p><p>23.E</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-fungsi%c2%b2-codingan-c-berikut-ini1-includeiostream2-includeconio-h3includestring4-using-namespace-std5-int-main6-string7-cout8-endl9-getch">
+                            22. tuliskan fungsi² codingan c++ berikut ini:1. #include&lt;iostream&lt;2.#include&lt;conio.h&lt;3#include&lt;string&lt;4. using namespace std;5. int main()6. string7. cout&lt;&lt;8. endl;9. getch;​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kurungsiku penulisannya &lt;&gt;</p><p>1. include </p><p>iostream </p><p>conio.h</p><p>string</p><p>using namespace std; </p><p>merupakan file header dalam penulisan program </p><p>int main () </p><p>string : karakter </p><p>cout : output </p><p>end : endline </p><p>getch : getcharacter</p><p></p><p>berikut penjelasan dr laporan saya dulu </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tolong-terjemahkan-syntax-berikut-kedalam-bentuk-pseudocodesyntax-include-iostreaminclude-conio-husing-namespace-stdint-mainint-acoutmasukan-angkacinaifa">
+                            23. Tolong terjemahkan syntax berikut kedalam bentuk pseudocodesyntax : #include &lt;iostream&gt;#include &lt;conio.h&gt;using namespace std;int main(){int a;cout&lt;&lt;"masukan angka:";cin&gt;&gt;a;if(a&gt;0)cout&lt;&lt;"bilangan positif:";elsecout&lt;&lt;"bilangan negatif:";getch();}​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>2. input nilai</p><p></p><p></p><p>#include &lt;iostream&gt;</p><p>using namespace std;</p><p>class Persegi</p><p> {   </p><p>int x,y; </p><p>public:   </p><p>void sisi (int x);   </p><p>int Luas (void) {</p><p>y=x*x;</p><p>return (y);</p><p>}</p><p>};</p><p>void Persegi::sisi (int i){</p><p>x = i;</p><p>}</p><p>int main(int argc, char** argv) {</p><p>Persegi kotak;</p><p>int i;</p><p>cout&lt;&lt;"Masukkan sisi : ";cin&gt;&gt;i;</p><p>kotak.sisi (i);</p><p>cout&lt;&lt;"Luas          : "&lt;&lt;kotak.Luas();</p><p>return 0;</p><p>}</p><p>Keteranagan :</p><p>Program diatas merupakan modifikasi dari contoh 1.Dengan menggunakan program ini kita dapat menginputkan nilai sisi sesuai dengan yang kita mau.</p><p></p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah semoga bermanfaat bagi semua orang ya</p><br />
+                                            <h2 class="ez-toc-section" id="1-untuk-melewatkan-parameter-dengan-referensi-dapat-dilakukan-den-menambahkan-karakter-di-depan-nama-parameter-yaitu-a-b-c-d-e-2-nilai-nilai-yang-akan-dikirim-pada-sebuah-fungsi-disebu">
+                            24. 1. Untuk melewatkan parameter dengan referensi, dapat dilakukan den menambahkan karakter di depan nama parameter yaitu.a. #b. @c. $d. &amp;e. %2. Nilai-nilai yang akan dikirim pada sebuah fungsi disebut sebagaia. fungsib. datac. argumend. karaktere. struktur kendali terakhir dari array umumnya diisi dengan karakter...a. -2b. -1c. 0d. 1e. 24. Fungsi yang paling umum digunakan dalam menampilkan data adalah . a.PUTS ()b. PRINTF ()c. PUTCHAR Od. GETCHE ( )e. SCANF ()5. Berikut yang bukan termasuk keuntungan memakai fungsi (function) adalah a. menggunakan keyword voidb. menguraikan tugas pemrograman yang rumit c. dapat menggunakan kode yang ditulis dalam berbagai program yang berbedad. mengurangi duplikasi kode dalam program e. meningkatkan kemampuan pelacakan kesalahan6. Dalam beberapa literatur, array sering disebut sebagai ..a. indeksb. larikc. garisd. cacahe. urutan7. Berikut yang bukan termasuk bagian-bagian dalam definisi fungsi adalaha. bodyb. namec. parameter listd. outpute. return type8. Pembeda antara prototipe yang memiliki kemiripan dengan fungsi header adalah pada bagian akhir terdapat.....a. titik duab. dua titike. titik komad. pungtuasie. spasi ganda9. Bentuk sean pada dasarnya menyerupai fungsi.....a. getche ()b. getch()c. kontrol prosesd. konversi datae printf()10. Nama tungsi getche() sebenarnya singkatan dari .a. get currencyb. get character and echoc. going characterd.get charactere. get the click11. Jika sejumlah variabel dapat memakai nama yang sama, namun di antarasatu variabel dengan variabel yang lain dibedakan berdasarkan subscript,termasuk dalam kategori....a. elemenb. array c. fungsid. subscripte. code12. Penomoran indeks yang dibutuhkan dalam array dimensi satu adalah ....a. sembilanb. tujuhc. limad. tigae. satu13. Fungsi utama akan dipanggil secara otomatis saat program dimulai,namun fungsi yang lain harus dijalankan melalui pernyataan ....a. parameter listb. fungsi headerc. inisialisasid. function calle. definisi fungsi14. Suatu metode pengurutan yang terinspirasi dari gelembung sabun yangada di dalam permukaan air adalaha. Bubble Sortb. Exchange Sortc. Selection Sortd. Insertion Sorte. Quick Sort15. Pengiriman parameter berupa array dimensi dua hampir sama dengan pengiriman parameter array dimensi satu, hanya perbedaannya terletakpada array dimensi dua yang harus menyebutkan posisi ..a. parameter formalb. memoric. baris dan kolomd. kolom sajae. baris saja#TOLONG BANTU DENGAN JAWABAN YG BENAR​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.b</p><p>2.d</p><p>3.b</p><p>4.c</p><p>5.a</p><p>6.e</p><p>7.b</p><p>8.d</p><p>9.a</p><p>10.b</p><p>11.e</p><p>12.b</p><p>13.c</p><p>14.b</p><p>15.e</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah ya kak semoga membantu ya kak</p><br />
+                                            <h2 class="ez-toc-section" id="ada-yang-bisa-memperbaiki-program-turbo-c-initolong-ya-kakak2-dan-abang2-includeincludevoid-mainint-paketjumlah_paketmejafloat-jumlah_harga-jumlah_bayar-harga_paket-ppn-jumlah_t">
+                            25. Ada yang bisa memperbaiki program Turbo C++ Ini?
+Tolong ya Kakak2 dan Abang2..
+#include
+#include
+void main()
+{
+int paket,jumlah_paket,meja;
+float jumlah_harga, jumlah_bayar, harga_paket, ppn, jumlah_total, harga_meja, jumlah_meja;
+double bayar;
+char kar;
+clrscr();
+do{
+printf("RESTAURANT ITALIA\n");
+printf("======================================\n");
+printf("Inputkan jenis meja(S,M,P)  :");
+scanf("%d",&amp;meja);
+printf("Inputkan Nama Paket(1-4  :");
+scanf("%d",&amp;paket);
+printf("Inputkan Jumlah Paket   :");
+scanf("%d",&amp;jumlah_paket);
+if (meja==1)
+harga_meja=100000;
+else if (meja==2)
+harga_meja=200000;
+else if (meja==3);
+harga_meja=300000;
+if (paket==1)
+harga_paket=300000;
+if (paket==2)
+harga_paket=580000;
+if (paket==3)
+harga_paket=999000;
+if (paket==4)
+harga_paket=1367000;
+jumlah_harga=jumlah_paket*harga_paket;
+ppn=jumlah_harga*0.15;
+jumlah_bayar=jumlah_harga+ppn;
+printf("nama paket      :%d\n",paket);
+printf("jumlah paket    :%d\n",jumlah_paket);
+printf("\njumlah harga=%10.2f\n",jumlah_harga);
+printf("\npajak ppn=%10.2f\n",ppn);
+printf("\njumlah total=%10.2f\n",jumlah_bayar);
+printf("\nAnda ingin menambah pesanan ? (Y/T)\n");
+scanf("%s",&amp;kar);
+}while(kar=='Y');
+printf("TERIMA KASIH ATAS KUNJUNGAN ANDA");
+getch();
+}
+Soal nya seperti ini :
+1. Buatlah Algoritma Dan Program Dari Tampilan Output Berikut :
+RESTAURANT ITALIA
+=================================================================
+Jenis Meja (S, M, P) :
+Nama Paket (1- 4) :
+Jumlah Paket :
+Anda ingin menambah pesanan? (Y / T) :
+Jumlah Harga :
+PajakPPn15% :
+Jumlah Total :
+================================================================
+Dengan Ketentuan: Meja = Sederhana(S) Rp.100.000, Mewah(M)Rp.200.000,
+President(P) Rp.300.000.
+Paket = (1)Rp.300.000, (2)Rp. 580.000, (3)Rp.999.000, (4)Rp.1.367.000
+Jumlah Harga = Jenis Meja + (Nama Paket x Jumlah Paket)</h2><br />
+                        kesalahan :<br />1. jika inputnya S, M, atau P, variable meja harusnya char.<br />   int paket,jumlah_paket;<br />   char meja;<br />   lalu pada input dan output, ganti %d, meja dengan %c, meja<br />2. untuk inputan variable kar, harusnya %c, bukan %s<br /><br />=========== maaf saya saat ini tidak ada program C++, karna itu tidak bisa mencoba.. tolong kasi tau kalo ada yang salah lagi...<br /><br />sehingga full program menjadi seperti :<br /><br />#include<br /> #include<br /> void main()<br /> {<br /> int paket,jumlah_paket;<br /> float jumlah_harga, jumlah_bayar, harga_paket, ppn, jumlah_total, harga_meja, jumlah_meja;<br /> double bayar;<br /> char meja, kar;<br /> clrscr();<br /><br /> do{<br /> printf("RESTAURANT ITALIA\n");<br /> printf("======================================\n");<br /> printf("Inputkan jenis meja(S,M,P) :");<br /> scanf("%c",&amp;meja);<br /> printf("Inputkan Nama Paket(1-4 :");<br /> scanf("%d",&amp;paket);<br /> printf("Inputkan Jumlah Paket :");<br /> scanf("%d",&amp;jumlah_paket);<br /><br /> if (meja=='s' || meja=='S')<br /> harga_meja=100000;<br /> else if (meja=='m' || meja=='M')<br /> harga_meja=200000;<br /> else if (meja=='p' || meja=='P');<br /> harga_meja=300000;<br /><br /> if (paket==1)<br /> harga_paket=300000;<br /> if (paket==2)<br /> harga_paket=580000;<br /> if (paket==3)<br /> harga_paket=999000;<br /> if (paket==4)<br /> harga_paket=1367000;<br /><br /> jumlah_harga=jumlah_paket*harga_paket;<br /> ppn=jumlah_harga*0.15;<br /> jumlah_bayar=jumlah_harga+ppn;<br /><br /><br /> printf("nama paket :%d\n",paket);<br /> printf("jumlah paket :%d\n",jumlah_paket);<br /> printf("\njumlah harga=%10.2f\n",jumlah_harga);<br /> printf("\npajak ppn=%10.2f\n",ppn);<br /> printf("\njumlah total=%10.2f\n",jumlah_bayar);<br /> printf("\nAnda ingin menambah pesanan ? (Y/T)\n");<br /> scanf("%c",&amp;kar);<br /> }while(kar=='Y');<br /> printf("TERIMA KASIH ATAS KUNJUNGAN ANDA");<br /> getch();<br /> }<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="include-iostreaminclude-conio-husing-namespace-stdint-main-int-a24248035795320for-int-b0b2bfor-int-k0k4kcoutabk">
+                            26. #include &lt;iostream&gt;#include &lt;conio.h&gt;using namespace std;int main() {	int A[2][4]={{2,4,8,0},{3,5,7,9},{5,3,2,0}};	for (int b=0;b&lt;2;b++){		for (int k=0;k&lt;4;k++){			cout&lt;&lt;A[b][k]&lt;&lt;" ";		}		cout &lt;&lt; endl;	}getch();}Hasil Output diatas adalah?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>logika dri perulangan diatas adalah ketika b mulai mnghitung 1 nilai perulangan, maka k akan melakukan perulangan sbnyak nilai kurang dari 4.</p><p></p><p>Maka hasilnya pecahan dari array tsb sbb:</p><p></p><p>Ambil array b ( misal nilai b = 0)</p><p>b[0] = {2,4,8,0}</p><p>Setelah nilai b[0] didaptkan, selanjutnya mendapatkan nilai k:</p><p></p><p>k[0] = 2</p><p>k[1] = 4</p><p>k[2] = 8</p><p>k[3] = 0</p><p></p><p>dst sampai batas nilai perulangan.</p><p></p><p></p><p>Maka output dri prulangan trsebut adalah</p><p>A[b][k]</p><p>A[0][0] = 2</p><p>A[0][1] = 4</p><p>A[0][2] = 8</p><p>A[0][3] = 0</p><p></p><p>A[1][0] = 3</p><p>A[1][1] = 5</p><p>A[1][2] = 7</p><p>A[1][3] = 9</p><p></p><p>Zemoga menbantu...</p><br />
+                                            <h2 class="ez-toc-section" id="tes-coding-program-yang-terdapat-pada-tampilan-berikutinclude-include-using-namespace-stdmain-int-x-int-px-pointer-ke-variabel-int-ppx-pointer-ke-pointer-x-175-px-x">
+                            27. Tes coding program yang terdapat pada tampilan berikut
+#include 
+#include 
+using namespace std;
+main() { 
+int x; 
+int *px; //pointer ke variabel 
+int **ppx; //pointer ke pointer 
+x = 175; 
+px = &amp;x; 
+ppx = &amp;px;
+cout &lt;&lt; "Nilai x = " &lt;&lt; x &lt;&lt; endl; 
+cout &lt;&lt; "Nilai px = " &lt;&lt; *px &lt;&lt; endl; 
+cout &lt;&lt; "Nilai ppx = " &lt;&lt; **ppx &lt;&lt; endl; 
+getch(); 
+}
+ Tugas
+1. Jelaskan maksud dari program di atas (di baca dari penulisan variabel) !
+2. Buatlah program pointer dengan menjelaskan maksud dari program tersebut !(coding dan hasil di capture)</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Salah satu kelebihan dari Bahasa C / C++ adalah Karena Bahasa ini mendukung sepenuhnya untuk pemanipulasian memori dengan menggunakan pointer, lalu apa itu pointer ? Pointer sendiri dapat didefinisikan sebagai variabel yang menyimpan alamat memori. Pada materi sebelumnya kita sudah terbiasa dengan penggunaan variabel, tapi variabel tersebut hanya berisi nilai, bukan alamat.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="lengkapi-struktur-programperulangan-dibawah-ini-includeconio-hinclude-iostream-husing-namespace-stdint-main-a-b-a1-a-5-aforb-a-b-5-bcou">
+                            28. Lengkapi struktur programperulangan dibawah ini *#include&lt;conio.h&gt;#include &lt;iostream h&gt;using namespace std;int main......... a, b,........(a=1; a &lt;= 5; a++)for(b = a; b &lt;= 5; b++)cout &lt;a&lt;&lt;"";getch():return 0;​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>#include &lt;iostream&gt;
+</p><p>#include &lt;conio.h&gt;
+</p><p>
+</p><p>using namespace std;
+</p><p>
+</p><p>int main()
+</p><p>{
+</p><p>	int a,b;
+</p><p>	for(a=1; a &lt;= 5; a++){
+</p><p>  for(b=a; b &lt;= 5; b++){
+</p><p>  	cout &lt;&lt; a &lt;&lt; " ";
+</p><p>  }
+</p><p>	}
+</p><p>  </p><p>	getch();
+</p><p>	return 0;
+</p><p>}
+</p><p></p><p><strong>Penjelasan:</strong></p><p>saya kurang paham sama pertanyaannya, jadi saya hanya memperbaiki programnya.</p><p>saya menggunakan tools DevC++ untuk menjalankan program diatas, jika anda tidak mempunyai tools nya, compiler online juga ada, silahkan gunakan kata kunci "onlinegdb compiler c++ online" di pencarian, karena saya juga mencoba di onlinegdb berfungsi dengan baik</p><br />
+                                            <h2 class="ez-toc-section" id="analisa-dan-jelaskan-program-dibawah-ini-dengan-notasi-kalimat-terstruktur-program_analisa-cpp-include-conio-hinclude-iostream-hvoid-maksint-x-int-y-int-zvoid-mainint-x-y">
+                            29. Analisa dan jelaskan program dibawah ini dengan notasi kalimat terstruktur.//program_analisa.cpp #include &lt;conio.h&gt;#include &lt;iostream.h&gt;void maks(int x, int y, int z);void main(){int x, y, z, minim;   cout&lt;&lt;"Masukkan X : ";   cin&gt;&gt;x;   cout&lt;&lt;"Masukkan Y : ";   cin&gt;&gt;y;   cout&lt;&lt;"Masukkan Z : ";   cin&gt;&gt;z;   maks(x, y, z);   getch();}void maks(int x, int y, int z){   int kecil;	if (x&lt;y)   	kecil =x;   else    	kecil = y;   if (z&lt;kecil)   	kecil = z;   cout&lt;&lt;"Bilangan terkecil = "&lt;&lt;kecil;}​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>pemograman untuk mencari bilangan terkecil dari 3 bilangan yang dimasukkan. </p><p><strong>Penjelasan:</strong></p><p>semoga membantu yaa~</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/7P4FlHtBUZ0?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/naskah-drama-bawang-merah-bawang-putih.html">Naskah Drama Bawang Merah Bawang Putih</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/pendapat-tentang-berbagai-teori-masuknya-islam-ke-indonesia.html">Pendapat Tentang Berbagai Teori Masuknya Islam Ke Indonesia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/sebuah-penggaris-plastik-yang-digosokkan-pada-kain-wol-akan-bermuatan.html">Sebuah Penggaris Plastik Yang Digosokkan Pada Kain Wol Akan Bermuatan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/bagaimana-bentuk-tanggung-jawab-pemilik-perusahaan-perseorangan.html">Bagaimana Bentuk Tanggung Jawab Pemilik Perusahaan Perseorangan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/induk-organisasi-senam-internasional-adalah.html">Induk Organisasi Senam Internasional Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/hukum-tajwid-qs-luqman-ayat-13-14.html">Hukum Tajwid Qs Luqman Ayat 13 14</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/jelaskan-tiga-teknik-penerapan-ragam-hias-pada-kayu.html">Jelaskan Tiga Teknik Penerapan Ragam Hias Pada Kayu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/nada-dalam-seni-musik-dapat-disimbolkan-dengan.html">Nada Dalam Seni Musik Dapat Disimbolkan Dengan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/bagian-yang-bernomor-3-berfungsi-untuk.html">Bagian Yang Bernomor 3 Berfungsi Untuk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/apa-yang-dimaksud-to-create-to-modify-to-combine.html">Apa Yang Dimaksud To Create To Modify To Combine</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/sebutkan-dan-jelaskan-corak-gambar-ilustrasi.html">Sebutkan Dan Jelaskan Corak Gambar Ilustrasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/rusuk-tegak-prisma.html">Rusuk Tegak Prisma</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/mengapa-perkembangan-islam-bermula-dari-pesisir.html">Mengapa Perkembangan Islam Bermula Dari Pesisir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/back-up-melatih-otot.html">Back Up Melatih Otot</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/apa-saja-yang-termasuk-kegiatan-menghemat-energi.html">Apa Saja Yang Termasuk Kegiatan Menghemat Energi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/linux-dikembangkan-pertama-kali-oleh.html">Linux Dikembangkan Pertama Kali Oleh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/why-did-the-people-gather-under-the-town-hall-clock.html">Why Did The People Gather Under The Town Hall Clock</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/sebutkan-format-laporan-hasil-wawancara.html">Sebutkan Format Laporan Hasil Wawancara</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/bagaimana-cara-kita-supaya-bisa-bekerja-sama-dalam-keberagaman.html">Bagaimana Cara Kita Supaya Bisa Bekerja Sama Dalam Keberagaman</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/tujuan-proses-penjernihan-air-adalah.html">Tujuan Proses Penjernihan Air Adalah</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://variableph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://variableph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

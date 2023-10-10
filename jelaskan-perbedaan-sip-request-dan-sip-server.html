@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jelaskan Perbedaan Sip Request Dan Sip Server - QnA</title>
+    <meta name="description" content="Jelaskan Perbedaan Sip Request Dan Sip Server, Seri Belajar Web Modern: #2 - Server-side Programming VS Client-side Programming, , , , Farid Surya, 2021-03-11T01:23:21.000000Z, 21, Jelaskan Perbedaan Sip Request Dan Sip Server - Pskji.org, pskji.org, 1200 x 630, png, , 20, jelaskan-perbedaan-sip-request-dan-sip-server, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jelaskan Perbedaan Sip Request Dan Sip Server - QnA" />
+    <meta property="og:description" content="Jelaskan Perbedaan Sip Request Dan Sip Server, Seri Belajar Web Modern: #2 - Server-side Programming VS Client-side Programming, , , , Farid Surya, 2021-03-11T01:23:21.000000Z, 21, Jelaskan Perbedaan Sip Request Dan Sip Server - Pskji.org, pskji.org, 1200 x 630, png, , 20, jelaskan-perbedaan-sip-request-dan-sip-server, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jelaskan Perbedaan Sip Request Dan Sip Server - QnA" />
+    <meta name="twitter:description" content="Jelaskan Perbedaan Sip Request Dan Sip Server, Seri Belajar Web Modern: #2 - Server-side Programming VS Client-side Programming, , , , Farid Surya, 2021-03-11T01:23:21.000000Z, 21, Jelaskan Perbedaan Sip Request Dan Sip Server - Pskji.org, pskji.org, 1200 x 630, png, , 20, jelaskan-perbedaan-sip-request-dan-sip-server, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://variableph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://variableph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://variableph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://variableph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://variableph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://variableph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://variableph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Jelaskan Perbedaan Sip Request Dan Sip Server</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">ChaAssan8656</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Jelaskan+Perbedaan+Sip+Request+Dan+Sip+Server" alt="Jelaskan Perbedaan Sip Request Dan Sip Server">
+                    </div>
+                    <p></p>
+                    <p>Perbedaan sip request dan sip server</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-sip-request-dan-sip-server">1.
+                                            Perbedaan sip request dan sip server</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-bagaimana-konsep-kerja-server-softswitch2-apakah-yang-dimaksud-sip-dan-softswitch3-jelaskan-bagaimanakah-prosedur-instalasi-server-softswitch-berbasis-sip">2.
+                                            1.bagaimana konsep kerja server softswitch?2.apakah yang dimaksud sip dan softswitch?3.jelaskan bagaimanakah prosedur instalasi server softswitch berbasis sip?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-hubungan-antara-pbx-server-softswitch-dengan-telepon-sip%e2%80%8b">3.
+                                            jelaskan hubungan antara pbx server softswitch dengan telepon sip​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-aplikasi-pendukung-sip">4.
+                                            sebutkan dan jelaskan aplikasi pendukung sip?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-komponen-unsur-unsur-standar-pada-sip">5.
+                                            Sebutkan dan jelaskan komponen / unsur unsur standar pada SIP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sip-lahapa-itu-hewan-karnivora">6.
+                                            SIP LAH
+Apa itu hewan karnivora?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-di-maksud-dengan-sip-pada-voip-%e2%80%8b">7.
+                                            apa yang di maksud dengan SIP pada VoIP ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#aplikasi-layanan-server-softswitch-berbasis-sip">8.
+                                            Aplikasi Layanan Server Softswitch berbasis SIP ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolongg-nomer-14-dan-15-beserta-caranya-sip-sip-makasih-untuk-besok-mohon-segera">9.
+                                            Tolongg nomer 14 dan 15. Beserta caranya ^.~ 
+Sip sip makasih, untuk besok. Mohon segera </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-konsep-serta-pri-sip-kepribadian-nasional">10.
+                                            Jelaskan konsep serta pri sip kepribadian nasional? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fungsi-dari-sip%e2%80%8b">11.
+                                            sebutkan fungsi dari SIP​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kuis-50-poin-dari-kexcvi-apakah-bahasa-korea-dari-aku-mencintaimu-aku-ingin-melihatmu-a-wihae-jug-igo-sip-eob-saenggag-anhae-gongbuhago-sip-eoc-jijunghae-meoggo-sip-eod-saranghae">12.
+                                            Kuis +50 poin dari kexcvi: 
+Apakah bahasa Korea dari "aku mencintaimu, aku ingin melihatmu."
+(a) Wihae, jug-igo sip-eo
+(b) Saenggag anhae, gongbuhago sip-eo
+(c) Jijunghae, meoggo sip-eo
+(d) Saranghae, bogo sip-eo</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jack-and-i-ac-coffee-together-on-saturday-a-do-sip-b-dont-sip-c-didnt-sip-d-isnt-sip%e2%80%8b">13.
+                                            jack and i.... ac coffee together on Saturday.   a.do sip b.don't sip c.didn't sip d.isn't sip​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-kerjakan-sip%e2%80%8b">14.
+                                            tolong kerjakan sip​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-dan-jelaskan-prinsip-pri-sip-demokrasi%e2%80%8b">15.
+                                            tuliskan dan jelaskan prinsip-pri sip demokrasi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-7-perintah-pada-sip">16.
+                                            Jelaskan 7 perintah pada SIP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#margana-ya-%e3%80%8a%c2%a4_%c2%a4%e3%80%8b-sip">17.
+                                            margana ya 《¤_¤》 sip..</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-peralatan-yang-di-persiapkan-sebelum-melakukan-penginstalan-server-softwitch-berbasis-sip-%c2%a0%e2%80%8b">18.
+                                            Sebutkan peralatan yang di persiapkan sebelum melakukan penginstalan server softwitch berbasis SIP ! *​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-7-perintah-pada-sip%e2%80%8b">19.
+                                            jelaskan 7 perintah pada SIP​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-aspek-aspek-sip">20.
+                                            Jelaskan aspek-aspek SIP?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kuis%e2%81%b5permutasi-dari-kata-sip-notesip-akun-ini-dah-pakar-lanjut-jenius%e2%80%8b">21.
+                                            #Kuis⁵Permutasi dari kata- Sip--------Note:Sip akun ini dah pakar lanjut jenius​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-kebutuhan-instalasi-server-softswich-berbasis-sip">22.
+                                            apa saja kebutuhan instalasi server softswich berbasis sip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dibawah-ini-yang-bukan-merupakan-komponen-pada-server-softswitch-berbasis-sip-adalah">23.
+                                            Dibawah ini yang bukan merupakan komponen pada server softswitch berbasis sip adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-komponen-unsur-unsur-standar-pada-sip">24.
+                                            Sebutkan dan jelaskan komponen / unsur unsur standar pada SIP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-7-perintah-pada-sip">25.
+                                            Jelaskan 7 perintah pada SIP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-terjemahan-dari-bogosiphosaranghae-neomubogo-sip-eobogo-sip-eul-ttae-neul-hesgallyeonaneun-seulpeudaneowa-hamkke-issgo-sip-eo%e2%80%8b">26.
+                                            apa terjemahan dari Bogosipho,Saranghae, neomubogo sip-eo,bogo sip-eul ttae neul hesgallyeo,naneun seulpeuda,neowa hamkke issgo sip-eo​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-yang-dimaksud-dengan-sip">27.
+                                            apakah yang dimaksud dengan SIP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#software-apa-saja-yang-dibutuhkan-untuk-melakukan-instalasi-server-softswitch-berbasis-sip">28.
+                                            Software apa saja yang dibutuhkan untuk melakukan Instalasi Server Softswitch berbasis SIP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-respons-sip-yang-menyatakan-bahwa-permintaan-tidak-dapat-dipenuhi-pada-server-apa-pun-adalah">29.
+                                            Jenis respons SIP yang menyatakan bahwa permintaan tidak dapat dipenuhi pada server apa pun adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#unsur-individual-pada-komponen-dan-protokol-sip-sebuah-server-yang-menerima-permintaan-register-dan-menempatkan-informasi-yang-diterimanya-alamat-sip-dan-terkait-alamat-ip-dari-perangkat-mendaftar-k">30.
+                                            Unsur Individual pada komponen dan protokol SIP sebuah server yang menerima permintaan REGISTER dan menempatkan informasi yang diterimanya (alamat SIP dan terkait alamat IP dari perangkat mendaftar) ke layanan lokasi untuk menangani domain.</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="perbedaan-sip-request-dan-sip-server">
+                            1. Perbedaan sip request dan sip server</h2><br />
+                        <p><strong>SIP server </strong>merupakan aplikasi yang bertujuan untuk menerima. Sementara itu, <strong>SIP request </strong>merupakan aplikasi yang bertujuan untuk menjawab.</p><p></p>Pembahasan<p><strong>SIP </strong>merupakan singkatan dari Session Initiation Protocol. SIP sendiri merupakan suatu persinyalan protokol dan pengontrolan lapisan atau layer aplikasi. Fungsi dari SIP adalah untuk membangun dan mengakhiri sebuah sesi multimedia.</p><p>Sesi multimedia merupakan sebutan bagi sesi di mana pengguna suatu aplikasi saling bertukar data. Data tersebut dapat berupa teks, suara, maupun video. Di situ, tugas SIP adalah untuk menyediakan dasar bagi protokol aplikasi lain.</p><p>Berikut ini adalah fungsi 4 server SIP secara singkat:</p>Proxy server, yaitu server yang berfungsi sebagai server dan client. Server ini juga melakukan routing, memastikan request untuk pihak yang berizin, dan membuat kebijakan.Redirect server, yaitu server yang berfungsi untuk menyelesaikan tugas request yang diberikan pengguna aplikasi.Registrar server, yaitu server yang berfungsi unutk menerima dan melakukan proses pada pemberitahuan pendaftaran dengan cara mengizinkan akses lokasi keberadaan suatu endpoint.Location server, yaitu server yang berfungsi untuk menyediakan layanan pada database abstrak dengan tujuan menerjemahkan keterangan pada domain jaringan.<p></p>Pelajari lebih lanjutMateri tentang beberapa perintah SIP https://brainly.co.id/tugas/23270703Materi tentang aspek yang membangun dan mengakhiri komunikasi multimedia https://brainly.co.id/tugas/25576471Materi tentang contoh kode yang mewakili respons server terhadap permintaan client​ https://brainly.co.id/tugas/35953489Detail jawaban<p>Kelas: 7</p><p>Mapel: TI</p><p>Bab: 2</p><p>Kode: 7.11.2</p><p></p><p><strong>#AyoBelajar #SPJ2</strong></p><br />
+                                            <h2 class="ez-toc-section" id="1-bagaimana-konsep-kerja-server-softswitch2-apakah-yang-dimaksud-sip-dan-softswitch3-jelaskan-bagaimanakah-prosedur-instalasi-server-softswitch-berbasis-sip">
+                            2. 1.bagaimana konsep kerja server softswitch?2.apakah yang dimaksud sip dan softswitch?3.jelaskan bagaimanakah prosedur instalasi server softswitch berbasis sip?</h2><br />
+                        1. Softswitch merupakan suatu alat yang bekerja pada jaringan VoIP. Softswitch menghubungkan antara jaringan sirkuit yang ada dengan jaringan paket. Jaringan tersebut meliputi jaringan telpon tetap (PSTN), internet yang berbasis IP, kabel TV dan juga jaringan seluler (GSM). Lalu bagaimana cara kerja Softswitch sendiri? Pada artikel kali ini akan kita bahas Konsep Kerja Protokoler Server Softswitch yang merupakan bagian dari artikel bertema VoIP.<br /><br />2. SIP adalah suatu signalling protocol pada layer aplikasi yang berfungsi untuk membangun, memodifikasi, dan mengakhiri suatu sesi multimedia yang melibatkan satu atau beberapa pengguna. Sesi multimedia adalah pertukaran data antar pengguna yangbisa meliputi suara, video, dan text.<br /><br />3. Pertama adalah menghubungkan SIP proxy dengan PBX system existing sebagai gateway ke PSTN. Untuk menghubungkan dari IP Network ke PSTN, SIP proxy akan me-routing-kan seluruh panggilan dari panggilan VoIP ke PSTN. Link koneksi bisa menggunakan PRI ISDN maupun T1 Pertama yang harus dilakukan adalah setup SIP proxy (SIP call manager), setelah set-up berjalan dengan baik, selanjutnya tinggal menghubungkan ke PBX existing dengan link ISDN, E1 atau T1. <br /><br />Kedua ,selanjutnya adalah migrasi existing user dan services ke SIP. Migrasi semua handset ke SIP baik menggunakan gateway maupun mengganti dengan handset yang native SIP. Pendekatan dengan menggabungkan keduanya biasanya menjadi pilihan yang baik. Selanjutnya adalah set-up SIP application server untuk mengakomodasi fitur-fitur yang dibutuhkan user seperti voice mail, multi-party conferencing, IVR, fine me follow me dan masih banyak lagi fitur yang disupport SIP.<br />Ketiga, Terakhir melakukan routing panggilan ke luar melalui koneksi internet.Banyak  operator memulai menjual SIP based dengan menawarkan layanan long distance dengan harga yang lebih murah. Yang perlu diantisipasi adalah nature network  internet yang unpredictable (seperti jitter dan error rate) dan tentu saja security. Sebagai tahap awal SIP dapat digunakan sebagai alternatif untuk melakukan panggilan ketika diluar kantor atau teleworkers.<br /><br />semoga membantu...<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-hubungan-antara-pbx-server-softswitch-dengan-telepon-sip%e2%80%8b">
+                            3. jelaskan hubungan antara pbx server softswitch dengan telepon sip​</h2><br />
+                        <p>Telepon SIP adalah bagian integral dari infrastruktur PBX Server Softswitch. Adapun infrastruktur tersebut (PBX Server Softswitch) merupakan perangkat utama yang berperan untuk mengatur lalu lintas komunikasi panggilan telepon (perangkat komunikasi, bisa berbentuk telepon meja, telepon selular atau komputer yang menggunakan standar SIP) dari satu saluran ke saluran telepon yang lain.</p><p></p>Pembahasan<p></p><p><strong>Telepon SIP</strong></p><p>Sederhananya, telepon SIP merupakan perangkat dengan standar SIP dalam mengatur setiap panggilan telepon. Alih-alih menggunakan jaringan telepon tetap (PSTN) seperti Telkom, telepon SIP membawa seluruh pertukaran suara melalui jaringan berbasis IP yang lebih populer atau kita kenal dengan protokol VoIP (voice over internet protocol)</p><p></p><p>Telepon SIP sendiri bisa berbentuk perangkat keras yang menyerupai telepon pada umumnya, sedangkan yang lainnya bisa berbentuk sebagai perangkat lunak yang terpasang pada komputer/smartphone.</p><p></p><p><strong>PBX Server Softswitch</strong></p><p>Secara teknis PBX Server Softswitch berfungsi untuk mengatur lalu lintas komunikasi antar saluran telepon atau perangkat yang terdiri dari telepon bebasis SIP, dimana setiap perangkat telepon tersebut harus terdaftar di PBX Server Softswitch itu sendiri.</p><p></p>Pelajari lebih lanjut<p>1. Pengaruh telepon pada kehidupan manusia https://brainly.co.id/tugas/17870513</p><p>2. VoIP dan manfaatnya https://brainly.co.id/tugas/20666116</p><p>3. Internet Protokol https://brainly.co.id/tugas/370574</p><p></p>Detil jawaban<p>Kelas: 7</p><p>Mapel: TIK</p><p>Bab: Berbagai Jenis Peralatan Teknologi Informasi dan Komunikasi</p><p>Kode: 7.11.1</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-aplikasi-pendukung-sip">
+                            4. sebutkan dan jelaskan aplikasi pendukung sip?</h2><br />
+                        sip maksudnya apa yaa agak ssah dimengerti<br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-komponen-unsur-unsur-standar-pada-sip">
+                            5. Sebutkan dan jelaskan komponen / unsur unsur standar pada SIP</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Unsur – unsur standart SIP :</p><p>· User Agent : agen pengguna berada di setiap stasiun akhir SIP.</p><p>· Redirect Server : untuk menentukan alamat selama inisialisai.</p><p>· Proxy Server : identitas perantara yang bertindak baik sebagai server dank lien untuk tujuan membuat permintaan atas nama klien lainnya.</p><p>· Paniter : server yang menerima permintaan Register dan menempatkan informasi yang diterimanya.</p><p>· Lokasi layanan : layanan lokasi yang digunakan oleh redirect SIP atau sever proxy untuk mendapakan informasi tentang kemungkinan lokasi yang dituju.</p><p> </p><p></p><p></p><p>trima kasih</p><p>~@Rifdha</p><br />
+                                            <h2 class="ez-toc-section" id="sip-lahapa-itu-hewan-karnivora">
+                            6. SIP LAH
+Apa itu hewan karnivora?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Karnivora adalah hewan pemakan daging yang memangsa hewan lainnya. Karnovora memiliki kemampuan berburu dengan gigi, cakar, taring, ataupun bisa yang membantunya membunuh mangsa.</p><p><strong>Jawaban:</strong></p>√⇒Karnivora adalah hewan pemakan daging yang memangsa hewan lainnya. Karnovora memiliki kemampuan berburu dengan gigi, cakar, taring, ataupun bisa yang membantunya membunuh mangsa.<p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-di-maksud-dengan-sip-pada-voip-%e2%80%8b">
+                            7. apa yang di maksud dengan SIP pada VoIP ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Volp menawarkan beberapa pilihan untuk pensinyalan salah satunya adalah session initiation Protocol (SIP] Yang adalah protokol yang memberikan spesifikasi perintah dan respon untuk membangun dan memutus komunikasi suara melalui jaringan paket data</p><br />
+                                            <h2 class="ez-toc-section" id="aplikasi-layanan-server-softswitch-berbasis-sip">
+                            8. Aplikasi Layanan Server Softswitch berbasis SIP ?</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Rayana sumber Indonesia llpl</p><br />
+                                            <h2 class="ez-toc-section" id="tolongg-nomer-14-dan-15-beserta-caranya-sip-sip-makasih-untuk-besok-mohon-segera">
+                            9. Tolongg nomer 14 dan 15. Beserta caranya ^.~ 
+Sip sip makasih, untuk besok. Mohon segera </h2><br />
+                        Kategori: Matematika Bab Trigonometri <br />Kelas: X SMA <br /><br /><br /><br />Perhitungan dapat dilihat pada lampiran <br />
+                                            <h2 class="ez-toc-section" id="jelaskan-konsep-serta-pri-sip-kepribadian-nasional">
+                            10. Jelaskan konsep serta pri sip kepribadian nasional? </h2><br />
+                        Mapel PPKn<br /><br />Kategori: Integrasi sosial<br /><br />Kata kunci: kepribadian nasional<br /><br />Pembahasan: Prinsip kepribadian nasional pada umumnya mengacu pada prinsip nilai Pancasila terutama bhineka tunggal Ika. dikarenakan nilai Hal Tersebut merupakan jati diri kepribadian masyarakat Indonesia<br /><br />semangat belajarnya kawankonsep dan prinsip kepribadian nasional<br /><br /><br /><br />KEANEKARAGAMAN BANGSA INDONESIA SEBAGAI KEPRIBADIAN NASIONAL<br /><br />Indonesia merupakan bangsa yang majemuk, dapat dilihat dari dua sudut pandang yaitu secara horizontal dan vertical.<br /><br />·         Horizontal yakni adanya perbedaan, tetapi tidak menunjukan tingkatan, seperti: perbedaan fisik atu ras, perbedaan suku bangsa, perbedaan agama, perbedaan jenis kelamin.<br /><br />·         Vertical yakni adanya perbedaan menunjukan adanya tingkatan. Hal ini ditunjukan dengan kualitas yang berbeda tiap individu. Misalnya dengan adanya tingkatan SD, SMP, SMA, Perguruan Tinggi.<br /><br /><br />B.   LATAR BELAKANG KEMAJEMUKAN BANGSA INDONESIA <br /><br />Secara geografis, kondisi kepulauan Indonesia berbeda, seperti perbedaan iklim, curah hujan, suhu, kelembapan udara, jenis tanah, morfologi tata air, flora, dan faunanya.<br /><br />Secara sosiologis dan cultural, dampak teknologi manuusia yang berkembang selama berabad-abad menghasilkan perbedaan yang berbeda. Heterogenitas selain merupakan potensi kekayaan bangsa, sekaligus jiga sangat rentan akan bahaya konflik.<br />KEANEKARAGAMAN KEBUDAYAAN YANG MERUPAKAN UNSUR KEBANGSAAN DAN KEPRIBADIAN NASIONAL<br /><br />1.   Kebudayaan daerah sebagai unsure kebudayaan nasional<br /><br />2.   Pengenalan keanekaragaman budaya di Indonesia<br /><br />3.   Suku-suku bangsa Indonesia<br /><br />4.   Budaya daerah<br /><br />5.   Membina dan melestarikan budaya daerah dan nasional<br /><br /><br />D.  BHINEKA TUNGGAL IKA DAN INTEGRASI NASIONAL<br /><br />Konsepsi bhineka tunggal ika lahir dilatarbelakangi oleh keanekaragaman suku bangsa Indonesia yang ingin bersatu. Untuk mewujudkan suatu kesatuan nasional terebut dikenal dengan istilah Integrasi nasinal, yaitu suatu proses dan hasil kehidupan social yang dicapai melalui beberapa tahap akomodasi, kerja sama, koordinasi, dan asimilas<br />Factor-faktor penunjang integrasi nasional:<br /><br />a.    Bahasa Nasional<br /><br />b.   Pancasila sebagai Dasar Negara<br /><br />c.    Kesadaran dan Solidaritas kelompok<br /><br />d.   Perundang-undangan yang bersifat Nasional<br /><br /><br />LANDASAN HUKUM BHINEKA TUNGGAL IKA<br /><br />1.   Pancasila<br /><br />2.   Pembukaan UUD 1945 alinea 2<br /><br />3.   Batang Tubuh UUD 1945<br /><br />4.   Pembinaan kebudayaan<br /><br /><br />MISI BANGSA INDONESIA DI ERA GLOBAL  <br /><br />Misi bangsa Indonesia di era global antara lain:<br /><br />1. Pengamalan pncasila secara konsisten dalam kehidupan bermasyarakat, berbangsa, dan bernegara<br /><br />2.Penegakan kedaulatan rakyat dalam segala aspek kehidupan bermasyrakat, berbangsa dan bernegara<br /><br />3.Peningkatan pengalaman pelajaran agama dalam kehidupan sehar-hari untuk mewujudkan kualitas keimanan dan ketakwaan kepada Tuhan Yang Maha Esa dalam kehidupan dan berakhlak mulia, toleran, rukun dan damai.<br /><br />4.Menjamin kondisi aman, damai, tertib dan ketenteraman masyarakat.<br /><br />5.Perwujudan system hokum nasional, yang menjamin tegaknya supremasi hokum dan hak asasi manusia berlandaskan keadilan dan kebenaran.<br /><br />6.Perwujudan kehidupan social budaya yang berkepribadian, dinamis, kreatif dan berdaya tahan terhaap pengaruh globalisasi.<br /><br />7.Pemberdayaan masyarakat dan seluruh kekuatan ekonomi nasional terutama pengusaha kecil, menengah, dan koperasi, dengan mengembangkan system ekonomi kerakyatan yang bertumpu pada mekanisme pasar yang berkeadilan berbasis pada sumber daya alam dan sumber daya manusia yang produktif, mandiri, maju, berdaya saing, berwawasan, dan berkelanjutan.<br /><br />8.Perwujudan otonomi daerah dalam rangka pembangunan daerah dan pemerataan pertumbuhan dalam wadah NKRI<br /><br />9.Perwujudan kesejahteraan rakyat yang ditandai oleh meningkatnya kualitas kehidupan yang layak dan bermartabat serta memeri perhatian utama pada tercukupinya kebutuhan dasar<br /><br />10.Perwujudan aparat Negara yang berfungsi melayani masyarakat, professional, berdaya guna, produktif transparan, bbebas dari KKN<br /><br /><br />11.perwujudan system dan iklim pendidikan nasional yang demokratis dan bermutu guna memperteguh akhlak mulia, kreatif, inovatif, berwawasan kebangsaan, cerdas, sehat, berdisiplin, dan bertanggung jawab, berketerampilan serta menguasai IPTEK dalam rangka mengembangkan kualitas manusia Indonesia<br /><br />12.Perwujudan politik luar negeri  yang berdaulat, bermanfaat, bebas dan proaktif bagi kepentingan nasional daalam menghadapi perkembangan global.        <br /><br /><br /><br /><br />maaf kalo salah<br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fungsi-dari-sip%e2%80%8b">
+                            11. sebutkan fungsi dari SIP​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>membangun, memodifikasi, dan mengakhiri suatu sesi multimedia yang melibatkan satu atau beberapa pengguna.</p><br />
+                                            <h2 class="ez-toc-section" id="kuis-50-poin-dari-kexcvi-apakah-bahasa-korea-dari-aku-mencintaimu-aku-ingin-melihatmu-a-wihae-jug-igo-sip-eob-saenggag-anhae-gongbuhago-sip-eoc-jijunghae-meoggo-sip-eod-saranghae">
+                            12. Kuis +50 poin dari kexcvi: 
+Apakah bahasa Korea dari "aku mencintaimu, aku ingin melihatmu."
+(a) Wihae, jug-igo sip-eo
+(b) Saenggag anhae, gongbuhago sip-eo
+(c) Jijunghae, meoggo sip-eo
+(d) Saranghae, bogo sip-eo</h2><br />
+                        ~Bahasa Korea<p>_______________</p><p></p>Soal<p>Apakah bahasa Korea dari <strong>"</strong><strong>a</strong><strong>k</strong><strong>u</strong><strong> </strong><strong>m</strong><strong>e</strong><strong>n</strong><strong>c</strong><strong>i</strong><strong>n</strong><strong>t</strong><strong>a</strong><strong>i</strong><strong>m</strong><strong>u</strong><strong>,</strong><strong> </strong><strong>a</strong><strong>k</strong><strong>u</strong><strong> </strong><strong>i</strong><strong>n</strong><strong>g</strong><strong>i</strong><strong>n</strong><strong> </strong><strong>m</strong><strong>e</strong><strong>l</strong><strong>i</strong><strong>h</strong><strong>a</strong><strong>t</strong><strong> </strong><strong>m</strong><strong>u</strong><strong>"</strong></p><p></p>– Pembahasan<p>Dalam bahasa Korea <strong>"</strong>Aku mencintaimu, aku ingin melihat mu adalah ➡️<strong>S</strong><strong>a</strong><strong>r</strong><strong>a</strong><strong>n</strong><strong>g</strong><strong>h</strong><strong>a</strong><strong>e</strong><strong>,</strong><strong> </strong><strong>b</strong><strong>o</strong><strong>g</strong><strong>o</strong><strong> </strong><strong>s</strong><strong>i</strong><strong>p</strong><strong>-</strong><strong>e</strong><strong>o</strong><strong> </strong><strong>(</strong><strong> </strong><strong>O</strong><strong>p</strong><strong>s</strong><strong>i</strong><strong> </strong><strong>D</strong><strong>)</strong></p><p></p>Bagian-Bagian Kata Pada KalimatSaranghae(사랑해)➡️Aku Mencintaimubogo sip-eo(보고 싶어) ➡️ Aku Ingin melihatmu<p>__________________________</p>Detail Jawaban<p>Mapel : Bahasa Korea</p><p>Kelas : Umum</p><p>Materi : Penggunaan Bahasa Korea</p><p>Kata kunci : Arti Kalimat </p><p></p><p>#GANBATTE</p><p>Kuis +50 poin dari kexcvi: </p><p>Apakah bahasa Korea dari "aku mencintaimu, aku ingin melihatmu."</p><p>(a) Wihae, jug-igo sip-eo</p><p>(b) Saenggag anhae, gongbuhago sip-eo</p><p>(c) Jijunghae, meoggo sip-eo</p><p>(d) Saranghae, bogo sip-eo</p><p></p><p>[tex]\red{{ \tt \: jawaban \green{}{ \tt \: }}}[/tex]</p><p>(d) Saranghae, bogo sip-eo</p><p></p><p></p><p>[tex]\pink{{ \tt \: pembahasan \green{}{ \tt \: }}}[/tex]</p><p>Bahasa koreanya aku mencintaimu adalah Saranghae.</p><p>Sedangkan aku ingin melihatmu adalah bogo sip-eo</p><p>사랑해 보고 싶어 =&gt; Saranghae, bogo sip-eo </p><p>Bisa juga dengan menggunakan saranghaeyo atau bisa juga menggunakan sarangmnida Artinya sama aja Seperti kalimat di atas aku mencintaimu aku menyukaimu.</p><p>Jika dalam bahasa mandarin Kita bisa menggunakan kalimat Wo ai ni =&gt; 我爱你 artinya aku mencintaimu </p><p>[tex]\orange{{ \tt \: semoga \: membantumu : ) \green{}{ \tt \: }}}[/tex]</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jack-and-i-ac-coffee-together-on-saturday-a-do-sip-b-dont-sip-c-didnt-sip-d-isnt-sip%e2%80%8b">
+                            13. jack and i.... ac coffee together on Saturday.   a.do sip b.don't sip c.didn't sip d.isn't sip​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>c.didn't sip</p><p></p><p><strong>S</strong><strong>E</strong><strong>M</strong><strong>O</strong><strong>G</strong><strong>A</strong><strong> </strong><strong>M</strong><strong>E</strong><strong>M</strong><strong>B</strong><strong>A</strong><strong>N</strong><strong>T</strong><strong>U</strong><strong> </strong><strong>:</strong><strong> </strong><strong>)</strong></p><p><strong>M</strong><strong>O</strong><strong>H</strong><strong>O</strong><strong>N</strong><strong> </strong><strong>M</strong><strong>A</strong><strong>A</strong><strong>F</strong><strong> </strong><strong>J</strong><strong>I</strong><strong>K</strong><strong>A</strong><strong> </strong><strong>S</strong><strong>A</strong><strong>L</strong><strong>A</strong><strong>H</strong></p><br />
+                                            <h2 class="ez-toc-section" id="tolong-kerjakan-sip%e2%80%8b">
+                            14. tolong kerjakan sip​</h2><br />
+                        <p>Jawaban:</p><p>Sudah ada di foto</p><p>Penjelasan:</p><p>Ingat kalau kalimat aktif itu biasanya menggunakan imbuhan me</p><p>Sedangkan Kalimat pasif menggunakan imbuhan di</p><p>Jadi kalau mau mengubahnya cukup ubah imbuhannya dan ubah objek pada kalimat aktif menjadi subjek pada kalimat pasif</p><p></p><p>Semoga bermanfaat dan bisa membantu ya</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-dan-jelaskan-prinsip-pri-sip-demokrasi%e2%80%8b">
+                            15. tuliskan dan jelaskan prinsip-pri sip demokrasi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>untuk melaksanaan demo /ketidaksetujuan undang2</p>1. Negara Berdasarkan Konstitusi<br /><br />2. Jaminan Perlindungan Hak Asasi Manusia<br /><br />3. Kebebasan Berserikat dan Mengeluarkan Pendapat<br /><br />4. Pergantian Kekuasaan Secara Berkala<br /><br />5. Adanya Peradilan Bebas dan Tidak Memihak<br /><br />6. Penegakan Hukum dan Persamaan Kedudukan Setiap Warga Negara di Depan Hukum<br /><br />7. Jaminan Kebebasan Pers<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-7-perintah-pada-sip">
+                            16. Jelaskan 7 perintah pada SIP</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>INVITE merupakan perintah untuk mengundang pengguna untuk panggilan.</p><p>Ø  ACK (Acknowledgement) merupakan perintah yang digunakan untuk memfasilitasi pertukaran pesan pada perintah INVITE.</p><p>Ø  BYE merupakan perintah untuk menghentikan hubungan antara pengguna.</p><p>Ø  CANCEL merupakan perintah untuk menghentikan permintaan atau mencari permintaan untuk seorang pengguna.</p><p>Ø  OPTION merupakan perintah untuk mengumpulkan sejumlah informasi tentang kemampuan sebuah server.</p><p>Ø  REGISTER merupakan perintah untuk register lokasi pengguna saat ini.</p><p>Ø  INFO merupakan perintah yang digunakan pada pertengahan sesi signaling.</p><p></p><p></p><p>Maaf Kalo Salah</p><p></p><p></p><p><strong>Jawaban:</strong></p><p>mantap kali kau ini jadi orang</p><br />
+                                            <h2 class="ez-toc-section" id="margana-ya-%e3%80%8a%c2%a4_%c2%a4%e3%80%8b-sip">
+                            17. margana ya 《¤_¤》 sip..</h2><br />
+                        Pertempuran Margarana dipimpin oleh kepala divisi Sunda Kecil Kolonel I Gusti Ngurah Rai<br /><br />Sekian.<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-peralatan-yang-di-persiapkan-sebelum-melakukan-penginstalan-server-softwitch-berbasis-sip-%c2%a0%e2%80%8b">
+                            18. Sebutkan peralatan yang di persiapkan sebelum melakukan penginstalan server softwitch berbasis SIP ! *​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Peralatan yang dibutuhkan adalah:</p>Sebuah PC LinuxSambungan LAN Sambungan Internet<p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-7-perintah-pada-sip%e2%80%8b">
+                            19. jelaskan 7 perintah pada SIP​</h2><br />
+                        <p>Berikut ini <strong>beberapa perintah pada SIP​, </strong>yang mana diantaranya ialah:</p>INVITE, yang mana dia sendiri akan mengindikasikan jika user atau layanan sedang diundang untuk bergabung dengan sesi.ACKNOWLEDGEMENT atau ACK, yang mana dia sendiri akan mengkonfirmasi jika client sudah menerima respon terakhir untuk permintaan INVITE, dan dia hanya digunakan pada permintaan REQUEST.OPTION, yang mana dia sendiri akan digunakan untuk mempertanyakan server tentang kemampuannya.BYE, yang mana dia sendiri akan dikirim oleh client user agent untuk mengindikasikan server jika percakapan akan segera dimatikan.CANCEL, yang mana dia sendiri untuk membatalkan permintaan yang sedang menunggu keputusan REGISTER, yang mana dia sendiri akan digunakan oleh client untuk mendaftarkan informasi kontak Respon pesan berisi kode status dan informasi tentang kondisi permintaan.<p></p>Pembahasan<p><strong>SIP </strong>sendiri pada dasarnya dapat kita maknai sebagai suatu singkatan dari Session Initiation Protocol yang dimana dia ialah protocol pensinyalan pada layer aplikasi yang berfungsi untuk membangun, memodifikasi, dan mengakhiri suatu sesi multimedia yang melibatkan satu user atau lebih. Selain itu Sesi ini sendiri ialah pertukaran data antar user yang meliputi suara,video,dan text, yang mana SIP tidak menyediakan layanan secara langsung tapi menyediakan layanan yang dapat digunakan oleh protokol aplikasi lainnya untuk memberikan layanan yang lebih lengkap.</p><p></p>Pelajari lebih lanjutMateri tentang Session Initiation Protocol https://brainly.co.id/tugas/25576471Materi tentang fungsi dari voip https://brainly.co.id/tugas/2299281Materi tentang Protocol https://brainly.co.id/tugas/18756999<p></p>Detail Jawaban  <p>Kelas : -</p><p>Mapel : TI</p><p>Bab : -</p><p>Kode :-</p><p></p><p><strong>#AyoBelajr #SPJ5</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-aspek-aspek-sip">
+                            20. Jelaskan aspek-aspek SIP?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>SIP adalah singkatan dari Session Initiation Protocol merupakan protocol pensinyalan pada layer aplikasi yang berfungsi untuk membangun, memodifikasi, dan mengakhiri suatu sesi multimedia yang melibatkan satu user atau lebih. Sesi ini adalah pertukaran data antar user yang meliputi suara,video,dan text</p><br />
+                                            <h2 class="ez-toc-section" id="kuis%e2%81%b5permutasi-dari-kata-sip-notesip-akun-ini-dah-pakar-lanjut-jenius%e2%80%8b">
+                            21. #Kuis⁵Permutasi dari kata- Sip--------Note:Sip akun ini dah pakar lanjut jenius​</h2><br />
+                        <p>S = 1</p><p>I = 1</p><p>P = 1</p><p></p><p><strong>Total</strong><strong> </strong><strong>huruf</strong><strong> </strong><strong>=</strong><strong> </strong><strong>3</strong></p><p><strong>Unsur</strong><strong> </strong><strong>ganda</strong><strong> </strong><strong>=</strong><strong> </strong><strong>-</strong></p><p></p><p><strong>=</strong><strong> </strong><strong>3</strong><strong>×</strong><strong>2</strong><strong>×</strong><strong>1</strong></p><p><strong>=</strong><strong> </strong><strong>6</strong><strong> </strong><strong>susunan</strong><strong> </strong><strong>k</strong><strong>ata</strong><strong> </strong></p><p></p><p><strong>[tex]{\colorbox{black}{\red{\boxed{\colorbox{black}{\red{ {❀Answer \: By \:  @ \: PunyaPutri13}}}}}}}[/tex]</strong></p><p></p>Permutasi<p>Permutasi merupakan cara yang digunakan untuk menghitung banyaknya suatu objek dari sebuah kata atau kalimat. Disusun dari n! dan k!.</p><p></p>Penyelesaian<p>Tentukan banyak susunan kata dari:</p><p><strong>Sip</strong></p><p></p><p>━━━━━━━━━━━━━━━━━━━━━━━━━</p><p></p><p>1.) <strong>Sip</strong></p><p>Jumlah Huruf : 3</p><p>Unsur Ganda : -</p><p></p><p>︶︶︶︶︶︶︶︶︶༉‧₊˚.</p><p></p><p>P = n!</p><p></p><p>P = 3!</p><p></p><p>P = 3×2×1</p><p></p><p>P =  <strong>6</strong><strong> </strong><strong>Susunan</strong></p><p></p><p></p><p></p><p>━━━━━━━━━━━━━━━━━━━━━━━━━</p><p></p><p>Kesimpulan</p><p>1.) Permutasi dari kata <strong>Sip</strong> adalah <strong>6</strong> Susunan</p><br />
+                                            <h2 class="ez-toc-section" id="apa-saja-kebutuhan-instalasi-server-softswich-berbasis-sip">
+                            22. apa saja kebutuhan instalasi server softswich berbasis sip</h2><br />
+                        1.router<br />2.kabel LAN<br />3.RJ45<br />4.Switch<br />
+                                            <h2 class="ez-toc-section" id="dibawah-ini-yang-bukan-merupakan-komponen-pada-server-softswitch-berbasis-sip-adalah">
+                            23. Dibawah ini yang bukan merupakan komponen pada server softswitch berbasis sip adalah</h2><br />
+                        <p><strong>Teknologi Informatika (TI) </strong>merupakan suatu istilah umum dalam teknologi apa saja yang dapat membantu manusia dalam membuat, mengubah, menyimpan, mengomunikasikan, dan menyebarkan informasi. Berdasarkan soal, dapat disimpulkan bahwa di bawah ini yang <strong>bukan</strong> merupakan <strong>komponen pada server softswitch berbasis sip</strong> adalah announcement protocol.</p><p></p><p><strong>Pembahasan:</strong></p><p>Manusia membutuhkan peran TI (Teknologi Informatika) dalam kehidupan sehari-hari. Misalnya untuk bekerja dan belajar. Pada saat kita mengalami kesulitan saat belajar, maka kita bisa mencari informasi melalui internet. <strong>Teknologi Informatika (TI) </strong>merupakan suatu istilah umum dalam teknologi apa saja yang dapat membantu manusia dalam membuat, mengubah, menyimpan, mengomunikasikan, dan menyebarkan informasi. Berdasarkan soal, dapat disimpulkan bahwa di bawah ini yang <strong>bukan</strong> merupakan <strong>komponen pada server softswitch berbasis sip</strong> adalah announcement protocol.</p><p><strong>Pelajari lebih lanjut</strong></p><p>Materi tentang pengertian TIK brainly.co.id/tugas/2038123</p><p></p><p><strong>#BelajarBersamaBrainly</strong></p><p><strong>#SPJ4</strong></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-komponen-unsur-unsur-standar-pada-sip">
+                            24. Sebutkan dan jelaskan komponen / unsur unsur standar pada SIP</h2><br />
+                        <p>Definisi dari SIP adalah suatu sesi tentang masa terjadi pertukaran data antar user yang meliputi data suara, data video, dan data text. Berikut ini adalah beberapa <strong>unsur </strong>dan penjelasan <strong>komponen standar pada SIP (Session Initiation Protocol)</strong>:</p>Agen Pengguna (User Agent): Agen pengguna berada di setiap stasiun akhir SIP.Redirect Server: Alamat yang ditentukan selama inisialisasi. Server Proxy: Identitas perantara yang bertindak  sebagai server dan klien, membuat permintaan atas nama klien lain. Registrar atau Paniter: Server yang menerima permintaan pendaftaran dan menempatkan informasi yang diterima. Layanan Lokasi: Layanan lokasi yang digunakan oleh redirector SIP atau server proxy untuk mendapatkan informasi tentang kemungkinan target.<p></p>Pembahasan<p>Definisi dari SIP adalah suatu sesi tentang masa terjadi pertukaran data antar user yang meliputi data suara, data video, dan data text. <strong>SIP</strong> tidak menyediakan layanan secara langsung, tetapi menyediakan layanan yang dapat digunakan oleh protokol aplikasi lain untuk menyediakan serangkaian layanan yang lebih lengkap kepada pengguna. Misalnya, ia menggunakan RTP (Real Time Transport Protocol) untuk transmisi data waktu nyata dan SDP (Session Description Protocol). Sesi menjelaskan komunikasi multimedia  dengan PSTN (Public Switch Telephone Network) menggunakan MEGACO (Media Gateway Control Protocol). Oleh karena itu, fungsionalitas dasar dan operasi  SIP tidak bergantung pada protokol ini. SIP juga independen dari protokol lapisan transport yang digunakan. </p><p>Perkembangan komunikasi multimedia dengan menggunakan SIP terjadi dalam beberapa tahap:</p>Lokasi Pengguna: Menentukan lokasi pengguna yang berkomunikasi dengan kita. Ketersediaan Pengguna: Menentukan tingkat keinginan pihak yang dipanggil untuk berpartisipasi dalam komunikasi yang diinginkan. Kegunaan: Tentukan media dan parameter terkait media yang  digunakan untuk komunikasi. Pengaturan sesi: "Dering", pengaturan koneksi antara penelepon dan pihak yang dipanggil. Manajemen sesi: termasuk transfer, modifikasi, dan penghentian sesi.<p></p>Pelajari lebih lanjutMateri tentang 7 perintah pada SIP https://brainly.co.id/tugas/23270703Materi tentang Sebutkan 5 Aspek yang membangun dan mengakhiri komunikasi multimedia https://brainly.co.id/tugas/25576471Materi tentang Sebutkan dan jelaskan fungsi dari voip https://brainly.co.id/tugas/2299281<p></p>Detail Jawaban<p>Kelas: SMP</p><p>Mapel: TI</p><p>Bab: -</p><p>Kode: -</p><p></p><p><strong>#AyoBelajar<br />#SPJ2</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-7-perintah-pada-sip">
+                            25. Jelaskan 7 perintah pada SIP</h2><br />
+                        <p><strong>SIP</strong> adalah singkatan dari Session Intial Protocol. SIP sendiri adalah protokol pensinyalan dan lapisan kontrol atau aplikasi. Fungsi SIP adalah untuk membangun dan mengakhiri sesi multimedia. Berikut di bawha ini adalah <strong>7 perintah yang ada pada SIP</strong>:</p>INVITE adalah perintah untuk mengundang pengguna ke panggilan.ACK atau acknowledgment adalah perintah yang digunakan untuk memudahkan pertukaran pesan melalui perintah INVITE.BYE adalah perintah untuk memutuskan koneksi antar pengguna.CANCEL adalah perintah untuk berhenti meminta atau mencari pengguna. Perintah ini digunakan saat klien mengirimkan perintah INVITE dan mengubah keputusannya untuk memanggil penerima.OPSI adalah perintah untuk mengumpulkan informasi tentang kemampuan server.REGISTER adalah perintah untuk mendaftarkan lokasi pengguna saat ini.INFO adalah perintah yang digunakan di tengah sesi pensinyalan.<p></p>Pembahasan<p><strong>SIP</strong> adalah singkatan dari Session Intial Protocol. SIP sendiri adalah protokol pensinyalan dan lapisan kontrol atau aplikasi. Fungsi SIP adalah untuk membangun dan mengakhiri sesi multimedia.</p><p><strong>SIP</strong> sendiri pada dasarnya dapat diartikan sebagai singkatan dari <strong>Session Initiation Protocol</strong>, sebuah protokol lapisan aplikasi yang digunakan untuk membuat, memodifikasi, dan mengakhiri sesi multimedia yang melibatkan satu atau lebih pengguna. langsung dari SIP, melainkan menyediakan layanan suara, video, dan teks yang dapat digunakan oleh protokol aplikasi lain untuk memberikan layanan yang lebih lengkap.</p><p></p>Pelajari lebih lanjutMateri tentang beberapa perintah SIP brainly.co.id/tugas/23270703Materi tentang aspek yang membangun dan mengakhiri komunikasi multimedia brainly.co.id/tugas/25576471Materi tentang contoh kode yang mewakili respons server terhadap permintaan client​ brainly.co.id/tugas/35953489<p></p>Detail jawaban<p>Kelas: 7</p><p>Mapel: TI</p><p>Bab: 2</p><p>Kode: 7.11.2</p><p></p><p><strong>#AyoBelajar #SPJ2</strong></p><br />
+                                            <h2 class="ez-toc-section" id="apa-terjemahan-dari-bogosiphosaranghae-neomubogo-sip-eobogo-sip-eul-ttae-neul-hesgallyeonaneun-seulpeudaneowa-hamkke-issgo-sip-eo%e2%80%8b">
+                            26. apa terjemahan dari Bogosipho,Saranghae, neomubogo sip-eo,bogo sip-eul ttae neul hesgallyeo,naneun seulpeuda,neowa hamkke issgo sip-eo​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>• <strong>보고 싶어</strong> ( bogosipho/bogosipda ) artinya <strong>aku merindukanmu</strong></p><p>• <strong>사랑해</strong> ( saranghae/saranghaeyo ) artinya <strong>aku mencintaimu</strong></p><p>• <strong>너무 보고 싶어</strong> ( neomu bogo sip-eo ) artinya <strong>sangat merindukanmu</strong></p><p>• <strong>나는 슬프다</strong> ( naneun seulpeuda ) artinya <strong>aku sedih</strong></p><p>• 너와 함께 있고 싶어 ( neowa hamkke issgo sip-eo ) artinya <strong>aku ingin bersamamu</strong></p><p><strong>Penjelasan:</strong></p>maaf kalo salah dan semoga membantusemangat belajar bahasa Korea nya <br />
+                                            <h2 class="ez-toc-section" id="apakah-yang-dimaksud-dengan-sip">
+                            27. apakah yang dimaksud dengan SIP</h2><br />
+                        SIP ( Session Initiation Protocol) <br /><br />kalo gasalah sih:vSIP (Session Initiation Protocol<br />maaf kalau salah<br />
+                                            <h2 class="ez-toc-section" id="software-apa-saja-yang-dibutuhkan-untuk-melakukan-instalasi-server-softswitch-berbasis-sip">
+                            28. Software apa saja yang dibutuhkan untuk melakukan Instalasi Server Softswitch berbasis SIP</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Pengertian Softswitch
+</p><p>Softswitch merupakan switching berbasis software. Secara umum sistem softswitch merupakan suatu sistem komunikasi yang menggunakan elemen jaringan yang berupa software sebagai pusat pegendalian panggilan.
+</p><p>
+</p><p>Pengertian SIP
+</p><p>SIP adalah suatu protokol pensinyalan apda layer aplikasi yang berfungsi untuk mengontrol suatu sesi multimedia yang melibatkan satu atau beberapa pengguna.
+</p><p>
+</p><p>Prosedur Instalasi Server Softwitch Berbasis SIP</p><p></p><p>Instalasi server softswitch berbasis SIP yang akan dilakukan menggunakan Asterisk. Asterisk merupakan software IP PBX yang digunakan untuk membuat sistem layanan komunikasi telepon melalui internet atau biasa disebut VoIP. Asterisk adalah software open source yang berjalan di linux. Asterisk juga memungkinkan komunikasi antar pengguna telepon reguler dengan telepon berbasis SIP (SIP Phones).
+</p><p>
+</p><p>Dalam prosedur instalasi server softswitch berbasis SIP, sebenarnya tidak banyak yang harus diinstalasi untuk menjalankan Asterisk secara minimal yang hanya mempunyai beberapa fungsi, yaitu sebagai berikut.
+</p><p>a. Autentikasi user dengan nomor telepon dan password.
+</p><p>b. Dial plan, untuk mengatur apa yang harus dilakukan untuk call ke sebuah nomor tertentu.
+</p><p>c. ENUM, agar Asterisk nantinya mengenali nomor +62---
+</p><p>
+</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jenis-respons-sip-yang-menyatakan-bahwa-permintaan-tidak-dapat-dipenuhi-pada-server-apa-pun-adalah">
+                            29. Jenis respons SIP yang menyatakan bahwa permintaan tidak dapat dipenuhi pada server apa pun adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>RTO = REQUEST TIME OF.......</p><br />
+                                            <h2 class="ez-toc-section" id="unsur-individual-pada-komponen-dan-protokol-sip-sebuah-server-yang-menerima-permintaan-register-dan-menempatkan-informasi-yang-diterimanya-alamat-sip-dan-terkait-alamat-ip-dari-perangkat-mendaftar-k">
+                            30. Unsur Individual pada komponen dan protokol SIP sebuah server yang menerima permintaan REGISTER dan menempatkan informasi yang diterimanya (alamat SIP dan terkait alamat IP dari perangkat mendaftar) ke layanan lokasi untuk menangani domain.</h2><br />
+                        <p>Unsur individual yang Anda maksud adalah Registrar. Registrar adalah salah satu komponen dalam protokol SIP (Session Initiation Protocol) yang bertugas untuk menerima permintaan REGISTER dan menempatkan informasi yang diterimanya (alamat SIP dan terkait alamat IP dari perangkat mendaftar) ke layanan lokasi untuk menangani domain. Registrar bekerja sebagai server yang menerima permintaan dari perangkat SIP untuk mendaftarkan alamat dan alamat IP mereka ke layanan lokasi. Setelah mendaftarkan informasi tersebut, Registrar dapat menangani permintaan lokasi dari perangkat lain yang ingin menghubungi perangkat yang terdaftar. Registrar juga bertanggung jawab untuk mengirimkan pesan SIP ke perangkat yang tepat sesuai dengan alamat yang terdaftar di layanan lokasi.</p><p></p><p></p><p></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/Lu2GoQybI28?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/keluwesan-gerakan-pada-senam-irama-disebut.html">Keluwesan Gerakan Pada Senam Irama Disebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/identifikasikan-letak-astronomis-masing-masing-negara-asean.html">Identifikasikan Letak Astronomis Masing Masing Negara Asean</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/alat-yang-digunakan-untuk-menangkap-bola-dalam-permainan-softball-disebut.html">Alat Yang Digunakan Untuk Menangkap Bola Dalam Permainan Softball Disebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/mengoper-bola-dari-atas-kepala-disebut.html">Mengoper Bola Dari Atas Kepala Disebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/perkiraan-informasi-bacaan-berdasarkan-kata-kunci-yaitu.html">Perkiraan Informasi Bacaan Berdasarkan Kata Kunci Yaitu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/buku-geografi-kelas-10-kurikulum-2013.html">Buku Geografi Kelas 10 Kurikulum 2013</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/faktor-persekutuan-dari-12-dan-15-adalah.html">Faktor Persekutuan Dari 12 Dan 15 Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/tanda-panjang-pendek-lagu.html">Tanda Panjang Pendek Lagu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/wata-awanu-alal-birri-wattaqwa.html">Wata Awanu Alal Birri Wattaqwa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/apa-yang-dimaksud-kebugaran-jasmani.html">Apa Yang Dimaksud Kebugaran Jasmani</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/menciptakan-kembali-mengembalikan-sesuatu-yang-hilang-merupakan-makna.html">Menciptakan Kembali Mengembalikan Sesuatu Yang Hilang Merupakan Makna</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/bagaimana-peluang-usaha-kerajinan-dari-bahan-limbah.html">Bagaimana Peluang Usaha Kerajinan Dari Bahan Limbah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/pada-program-browser-yang-digunakan-untuk-menuliskan-alamat-website-adalah.html">Pada Program Browser Yang Digunakan Untuk Menuliskan Alamat Website Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/nabi-yahya-berdakwah-berdasarkan-kitab.html">Nabi Yahya Berdakwah Berdasarkan Kitab</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/di-bawah-ini-merupakan-tujuan-berdirinya-asean-kecuali.html">Di Bawah Ini Merupakan Tujuan Berdirinya Asean Kecuali</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/siapakah-tokoh-yang-terdapat-dalam-cerita-tersebut.html">Siapakah Tokoh Yang Terdapat Dalam Cerita Tersebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/20-sifat-mustahil-bagi-allah-beserta-artinya.html">20 Sifat Mustahil Bagi Allah Beserta Artinya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/teknik-bernyanyi-yang-dilakukan-secara-susul-menyusul-dinamakan.html">Teknik Bernyanyi Yang Dilakukan Secara Susul Menyusul Dinamakan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/yang-bukan-merupakan-gaya-renang-adalah.html">Yang Bukan Merupakan Gaya Renang Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://variableph.github.io/arti-tc-di-wa-dan-balasannya.html">Arti Tc Di Wa Dan Balasannya</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://variableph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://variableph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://variableph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
